@@ -31,6 +31,14 @@ if ($GLOBALS['EngagementType'] != "SpecsOnly")
         include_once ("result/config_bits/NCMConfig.php");
         include_once ("result/config_bits/NTAConfig.php");
         include_once ("result/config_bits/SAMConfig.php");
+        include_once ("result/config_bits/DPAConfig.php");
+        include_once ("result/config_bits/IPAMConfig.php");
+        include_once ("result/config_bits/UDTConfig.php");
+        include_once ("result/config_bits/VNQMConfig.php");
+        include_once ("result/config_bits/WPMConfig.php");
+        include_once ("result/config_bits/SCMConfig.php");
+        
+        
 }
 else {
     //server specs only
