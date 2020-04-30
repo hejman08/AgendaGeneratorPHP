@@ -1,12 +1,40 @@
 <?php
-
+global $isOrionEng;
+global $html;
 $acronyms = null;
 $modules = null;
 $hasNetworkModules = false;
 $hasNPM = false;
+global $rdc; //rolling day count
 global $NeedsSpecs;
-global $isOrionEng;
 global $isAPMEng;
+global $hasNPM;
+global $hasNTA;
+global $hasNCM;
+global $hasSAM;
+global $hasSCM;
+global $hasIPAM;
+global $hasUDT;
+global $hasVNQM;
+global $hasWPM;
+global $hasSRM;
+global $hasVMAN;
+global $hasDPA;
+global $hasWHD;
+global $hasSEM;
+global $hasLA;
+global $hasPM;
+global $hasARM;
+global $hasAPE;
+global $hasAWS;
+global $hasHA;
+global $hasNTM;
+global $hasKiwi;
+global $hasDW;
+global $hasServU;
+global $hasEOC;
+global $hasAPM;
+
 
 //actual POST variables
 
@@ -54,6 +82,7 @@ $chkIncludeVMAN = isset($_POST['chkIncludeVMAN']) ? 1 : 0;
 if (isset($_POST['VMANDays'])) { $VMANDays = $_POST['VMANDays']; } else { $VMANDays = null;}
 if (isset($_POST['VMANTrainDays'])) { $VMANTrainDays = $_POST['VMANTrainDays']; } else { $VMANTrainDays = null;}
 $chkIncludeSRM = isset($_POST['chkIncludeSRM']) ? 1 : 0;
+$chkSRMProfiler = isset($_POST['chkSRMProfiler']) ? 1 : 0;
 if (isset($_POST['SRMDays'])) { $SRMDays = $_POST['SRMDays']; } else { $SRMDays = null;}
 if (isset($_POST['SRMTrainDays'])) { $SRMTrainDays = $_POST['SRMTrainDays']; } else { $SRMTrainDays = null;}
 $chkIncludeLA = isset($_POST['chkIncludeLA']) ? 1 : 0;

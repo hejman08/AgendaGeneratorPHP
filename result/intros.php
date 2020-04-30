@@ -75,7 +75,7 @@ function introPara()
             case "HC":
                 $return .= "<p>The primary objective of this engagement is to perform a comprehensive Health Check of the client’s environment.</p>\n";
                 $GLOBALS['NeedsSpecs'] = 0;
-                echo "Got here";
+                
                 break;
             // case "Existing Environment Remediation":
             //     $return .= "<p>The primary objectives of this engagement are to analyze and perform remediation where necessary in the current SolarWinds environment, implement best practices configuration for all products included in the SolarWinds Software List, and provide hands-on training for the client’s SolarWinds administrators.</p>\n";

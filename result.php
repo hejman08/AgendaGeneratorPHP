@@ -14,7 +14,8 @@ include_once ("result/serverspecs.php"); //PHP function that will return specs f
 include_once ("result/dayheader.php"); //PHP function that will look at the Rolling Day Count (RDC) and return an appropriate Header for that day when called
 include_once ("result/serverspecs.php"); //contains PHP function for generating server specs. Or at least it will once the rest of this works.
 include_once ("result/intros.php"); //contains intro paragraphs for different engagement types
-echo $GLOBALS['NeedsSpecs'];
+include_once ("result/day1bits.php");
+include_once ("result/listservers.php");
 if ($GLOBALS['EngagementType'] != "SpecsOnly") 
 {     
         $html = "<h1>Project Overview</h1>";
@@ -25,6 +26,7 @@ if ($GLOBALS['EngagementType'] != "SpecsOnly")
             $html .= "<h1>Server Recommendations</h1>";
             $html .= serverSpecs();
         }
+        $html .= day1Bits();
 }
 else {
     //server specs only
