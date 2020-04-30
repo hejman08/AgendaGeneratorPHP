@@ -13,7 +13,7 @@
         <td><input type="number" name="NPMDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="NPMTrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="NPMSize">
+            <select name="NPMSize">
                 <option value="None"></option>
                 <option value="SL100">SL100</option>
                 <option value="SL250">SL250</option>
@@ -29,7 +29,7 @@
         <td><input type="number" name="NTADays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="NTATrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="NTASize">
+            <select name="NTASize">
                 <option value="None"></option>
                 <option value="No">No</option>
                 <option value="Yes">Yes</option>
@@ -42,7 +42,7 @@
         <td><input type="number" name="NCMDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="NCMTrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="NCMSize">
+            <select name="NCMSize">
                 <option value="None"></option>
                 <option value="DL50">DL50</option>
                 <option value="DL100">DL100</option>
@@ -60,7 +60,7 @@
         <td><input type="number" name="SAMDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="SAMTrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="SAMSize">
+            <select name="SAMSize">
                 <option value="None"></option>
                 <option value="AL150">AL150</option>
                 <option value="AL300">AL300</option>
@@ -86,7 +86,7 @@
         <td><input type="number" name="IPAMDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="IPAMTrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="IPAMSize">
+            <select name="IPAMSize">
                 <option value="None"></option>
                 <option value="IP1000">IP1000</option>
                 <option value="IP4000">IP4000</option>
@@ -101,7 +101,7 @@
         <td><input type="number" name="UDTDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="UDTTrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="UDTSize">
+            <select name="UDTSize">
                 <option value="None"></option>
                 <option value="UT2500">UT2500</option>
                 <option value="UT5000">UT5000</option>
@@ -118,7 +118,7 @@
         <td><input type="number" name="VNQMDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="VNQMTrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="VNQMSize">
+            <select name="VNQMSize">
                 <option value="None"></option>
                 <option value="SLA5">SLA5</option>
                 <option value="SLA25">SLA25</option>
@@ -134,7 +134,7 @@
         <td><input type="number" name="WPMDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="WPMTrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="WPMSize">
+            <select name="WPMSize">
                 <option value="None"></option>
                 <option value="WPM5">WPM5</option>
                 <option value="WPM10">WPM10</option>
@@ -152,7 +152,7 @@
         <td><input type="number" name="VMANDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="VMANTrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="VMANSize">
+            <select name="VMANSize">
                 <option value="None"></option>
                 <option value="VM8">VM8</option>
                 <option value="VM16">VM16</option>
@@ -172,7 +172,7 @@
         <td><input type="number" name="SRMDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="SRMTrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="SRMSize">
+            <select name="SRMSize">
                 <option value="None"></option>
                 <option value="SRM25">SRM25</option>
                 <option value="SRM50">SRM50</option>
@@ -194,7 +194,7 @@
         <td><input type="number" name="LADays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="LATrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="LASize">
+            <select name="LASize">
                 <option value="None"></option>
                 <option value="LA10">LA10</option>
                 <option value="LA25">LA25</option>
@@ -212,7 +212,7 @@
         <td><input type="number" name="SCMDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="SCMTrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="SCMSize">
+            <select name="SCMSize">
                 <option value="None"></option>
                 <option value="SCM10">SCM10</option>
                 <option value="SCM25">SCM25</option>
@@ -230,7 +230,7 @@
         <td><input type="number" name="SEMDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="SEMTrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="SEMSize">
+            <select name="SEMSize">
                 <option value="None"># of Events/Day</option>
                 <option value="5M">5M</option>
                 <option value="20M">20M</option>
@@ -269,7 +269,7 @@
         <td><input type="number" name="PM" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="PMTrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="PMSize">
+            <select name="PMSize">
                 <option value="None"></option>
                 <option value="No">No</option>
                 <option value="Yes">Yes</option>
@@ -282,7 +282,7 @@
         <td><input type="number" name="ARMDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="ARMTrainDays" step="0.5" min="0" max="100"></td>
         <td>
-            <select id="ARMSize">
+            <select name="ARMSize">
                 <option value="None"></option>
                 <option value="1000">1000</option>
                 <option value="4000">4000</option>
