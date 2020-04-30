@@ -1,11 +1,14 @@
 <?php
-function introPara($EngType) 
+function introPara() 
 {
     $return = null;
-            switch ($EngType)
-        {
-            case null:
-                $return = "Crap.";
+            $EngType = $GLOBALS['EngagementType'];
+            $isOrionEng = $GLOBALS['isOrionEng'];
+            $isAPMEng = $GLOBALS['isAPMEng'];
+            switch ($EngType) {
+
+            case "SpecsOnly":
+            break;
             case "Rebuild":
                 $return .= "<p>The primary objective of this engagement is to rebuild the client’s SolarWinds environment on new servers. This process will include the implementation of best practices configuration for all products included in the SolarWinds Software List, hands - on training, and knowledge transfer for the client’s SolarWinds administrators.</p>\n";
 
@@ -86,7 +89,7 @@ function introPara($EngType)
 
             //     $return .= "<p>Loop1 Systems encourages client participation whenever possible during the configuration of the environment as it will provide valuable hands-on experience to the SolarWinds administrators. The final product delivered will be a highly functional enterprise level monitoring solution providing both a view into the performance and status of your environment as well as a proactive system of monitoring, alerting, and reporting to keep users informed of any potential and current problems.</p>\n";
             //     break;
-            case "Training Only":
+            case "Training":
                 $return .= "<p>The primary objective of this engagement is to provide custom hands-on training for the client’s SolarWinds administrators. The client is responsible for upgrading their SolarWinds products to the latest stable release prior to the engagement.</p>\n";
                 break;
             // case "WHD On-Prem to Hosted":
@@ -106,8 +109,11 @@ function introPara($EngType)
 
             //     $return .= "<p>Loop1 Systems encourages client participation whenever possible during the configuration of the environment as it will provide valuable hands-on experience to the client’s SolarWinds administrators.</p>\n";
             //     break;
-            case "MSE SOW":
+            case "MSE":
                 $return .= "<p>The client is contracting Loop1 Systems for Managed Services and has requested a statement of goals and objectives (a “statement of work”) as laid out in this document. The hours are to be used on an ad-hoc basis, but for guidance purposes, some of the goals around the client’s SolarWinds environment are laid out in this document.</p>\n";
+                break;
+            default: 
+                $GLOBALS['ErrorMsg'] .= "No Engagement Type selected";
                 break;
         }
         return $return;

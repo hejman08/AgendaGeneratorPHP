@@ -1,8 +1,10 @@
 <?php
+$GLOBALS['isOrionEng'] = false;
+$GLOBALS['isAPMEng'] = false;
 $acronyms .="<ul>";
 if ($NPMDays > 0 || $NPMTrainDays > 0 || $chkIncludeNPM == 1 || $NPMSize != "None")
 {
-    $isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
     $modules .= "<li>NPM</li>\n";
     $hasNetworkModules = true;
     $hasNPM = true;
@@ -10,7 +12,7 @@ if ($NPMDays > 0 || $NPMTrainDays > 0 || $chkIncludeNPM == 1 || $NPMSize != "Non
 }
 if ($NCMDays > 0 || $NCMTrainDays > 0 || $chkIncludeNPM == 1 || $NCMSize != "None")
 {
-    $isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
     $modules .= "<li>NCM</li>\n";
     $hasNetworkModules = true;
     $hasNPM = true;
@@ -18,7 +20,7 @@ if ($NCMDays > 0 || $NCMTrainDays > 0 || $chkIncludeNPM == 1 || $NCMSize != "Non
 }
 if ($NTADays >  0 || $NTATrainDays > 0 || $chkIncludeNTA == 1 || $NTASize != "None")
 {
-    $isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
     $modules .= "<li>NTA</li>\n";
     $hasNetworkModules = true;
     $hasNTA = true;
@@ -27,7 +29,7 @@ if ($NTADays >  0 || $NTATrainDays > 0 || $chkIncludeNTA == 1 || $NTASize != "No
 
 if ($SAMDays >  0 || $SAMTrainDays > 0 || $chkIncludeSAM == 1 || $SAMSize != "None")	
 {	
-	$isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>SAM</li>\n";
 	//$hasNetworkModules = true;
 	$hasSAM = true;
@@ -35,7 +37,7 @@ if ($SAMDays >  0 || $SAMTrainDays > 0 || $chkIncludeSAM == 1 || $SAMSize != "No
 }	
 if ($IPAMDays >  0 || $IPAMTrainDays > 0 || $chkIncludeIPAM == 1 || $IPAMSize != "None")	
 {	
-	$isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>IPAM</li>\n";
 	$hasNetworkModules = true;
 	$hasIPAM = true;
@@ -43,7 +45,7 @@ if ($IPAMDays >  0 || $IPAMTrainDays > 0 || $chkIncludeIPAM == 1 || $IPAMSize !=
 }	
 if ($UDTDays >  0 || $UDTTrainDays > 0 || $chkIncludeUDT == 1 || $UDTSize != "None")	
 {	
-	$isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>UDT</li>\n";
 	$hasNetworkModules = true;
 	$hasUDT = true;
@@ -51,7 +53,7 @@ if ($UDTDays >  0 || $UDTTrainDays > 0 || $chkIncludeUDT == 1 || $UDTSize != "No
 }	
 if ($VNQMDays >  0 || $VNQMTrainDays > 0 || $chkIncludeVNQM == 1 || $VNQMSize != "None")	
 {	
-	$isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>VNQM</li>\n";
 	$hasNetworkModules = true;
 	$hasVNQM = true;
@@ -59,7 +61,7 @@ if ($VNQMDays >  0 || $VNQMTrainDays > 0 || $chkIncludeVNQM == 1 || $VNQMSize !=
 }	
 if ($WPMDays >  0 || $WPMTrainDays > 0 || $chkIncludeWPM == 1 || $WPMSize != "None")	
 {	
-	$isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>WPM</li>\n";
 //	$hasNetworkModules = true;
 	$hasWPM = true;
@@ -67,7 +69,7 @@ if ($WPMDays >  0 || $WPMTrainDays > 0 || $chkIncludeWPM == 1 || $WPMSize != "No
 }	
 if ($VMANDays >  0 || $VMANTrainDays > 0 || $chkIncludeVMAN == 1 || $VMANSize != "None")	
 {	
-	$isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>VMAN</li>\n";
 //	$hasNetworkModules = true;
 	$hasVMAN = true;
@@ -75,7 +77,7 @@ if ($VMANDays >  0 || $VMANTrainDays > 0 || $chkIncludeVMAN == 1 || $VMANSize !=
 }	
 if ($SRMDays >  0 || $SRMTrainDays > 0 || $chkIncludeSRM == 1 || $SRMSize != "None")	
 {	
-	$isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>SRM</li>\n";
 //	$hasNetworkModules = true;
 	$hasSRM = true;
@@ -83,7 +85,7 @@ if ($SRMDays >  0 || $SRMTrainDays > 0 || $chkIncludeSRM == 1 || $SRMSize != "No
 }	
 if ($LADays >  0 || $LATrainDays > 0 || $chkIncludeLA == 1 || $LASize != "None")	
 {	
-	$isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>LA</li>\n";
 	$hasNetworkModules = true;
 	$hasLA = true;
@@ -91,7 +93,7 @@ if ($LADays >  0 || $LATrainDays > 0 || $chkIncludeLA == 1 || $LASize != "None")
 }	
 if ($SCMDays >  0 || $SCMTrainDays > 0 || $chkIncludeSCM == 1 || $SCMSize != "None")	
 {	
-	$isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>SCM</li>\n";
 //	$hasNetworkModules = true;
 	$hasSCM = true;
@@ -99,7 +101,7 @@ if ($SCMDays >  0 || $SCMTrainDays > 0 || $chkIncludeSCM == 1 || $SCMSize != "No
 }	
 if ($SEMDays >  0 || $SEMTrainDays > 0 || $chkIncludeSEM == 1 || $SEMSize != "None")	
 {	
-//	$isOrionEng = true;
+//  $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>SEM</li>\n";
 //	$hasNetworkModules = true;
 	$hasSEM = true;
@@ -107,7 +109,7 @@ if ($SEMDays >  0 || $SEMTrainDays > 0 || $chkIncludeSEM == 1 || $SEMSize != "No
 }	
 if ($DPADays >  0 || $DPATrainDays > 0 || $chkIncludeDPA == 1 || $DPASize > 0)	
 {	
-//	$isOrionEng = true;
+//  $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>DPA</li>\n";
 //	$hasNetworkModules = true;
 	$hasDPA = true;
@@ -115,7 +117,7 @@ if ($DPADays >  0 || $DPATrainDays > 0 || $chkIncludeDPA == 1 || $DPASize > 0)
 }	
 if ($WHDDays >  0 || $WHDTrainDays > 0 || $chkIncludeWHD == 1 || $WHDSize > 0)	
 {	
-//	$isOrionEng = true;
+//	$GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>WHD</li>\n";
 //	$hasNetworkModules = true;
 	$hasWHD = true;
@@ -123,7 +125,7 @@ if ($WHDDays >  0 || $WHDTrainDays > 0 || $chkIncludeWHD == 1 || $WHDSize > 0)
 }	
 if ($PMDays >  0 || $PMTrainDays > 0 || $chkIncludePM == 1 || $PMSize != "None")	
 {	
-//	$isOrionEng = true;
+//	    $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>PM</li>\n";
 //	$hasNetworkModules = true;
 	$hasPM = true;
@@ -131,7 +133,7 @@ if ($PMDays >  0 || $PMTrainDays > 0 || $chkIncludePM == 1 || $PMSize != "None")
 }	
 if ($ARMDays >  0 || $ARMTrainDays > 0 || $chkIncludeARM == 1 || $ARMSize != "None")	
 {	
-//	$isOrionEng = true;
+//	    $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>ARM</li>\n";
 //	$hasNetworkModules = true;
 	$hasARM = true;
@@ -139,7 +141,7 @@ if ($ARMDays >  0 || $ARMTrainDays > 0 || $chkIncludeARM == 1 || $ARMSize != "No
 }	
 if ($APEDays >  0 || $chkIncludeAPEs == 1 || $numAPEs > 0)	
 {	
-	$isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>APE</li>\n";
 //	$hasNetworkModules = true;
 	$hasAPE = true;
@@ -148,7 +150,7 @@ if ($APEDays >  0 || $chkIncludeAPEs == 1 || $numAPEs > 0)
 
 if ($AWSDays >  0 || $chkIncludeAWSs == 1 || $numAWSs > 0)	
 {	
-	$isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>APE</li>\n";
 //	$hasNetworkModules = true;
 	$hasAWS = true;
@@ -156,7 +158,7 @@ if ($AWSDays >  0 || $chkIncludeAWSs == 1 || $numAWSs > 0)
 }	
 if ($HADays >  0 || $chkIncludeHA == 1)	
 {	
-	$isOrionEng = true;
+    $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>HA</li>\n";
 	$hasNetworkModules = true;
 	$hasHA = true;
@@ -201,7 +203,7 @@ if ($APMDays > 0 || $chkIncludeAPM == 1)
     $hasAPM = true;
     $modules .= "<li>APM</li>\n";
     $acronyms .= "<li><strong>APM</strong> - AppOptics Application Performance Monitor</li>\n";
-    
+    $GLOBALS['isAPMEng'] = true;
 }
 
 $acronyms .="</ul>";

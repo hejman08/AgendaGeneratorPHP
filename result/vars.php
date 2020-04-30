@@ -8,7 +8,13 @@ $hasNPM = false;
 
 //actual POST variables
 
-if (isset($_POST['EngagementType'])) { $EngagementType = $_POST['EngagementType']; } else { $EngagementType = null;}
+if (isset($_POST['EngagementType'])) 
+{ 
+    $GLOBALS['EngagementType'] = $_POST['EngagementType']; 
+} else { 
+    $GLOBALS['EngagementType'] = "None";
+    $GLOBALS['ErrorMsg'] .= "No Engagement type was selected";
+}
 if (isset($_POST['Day1Bits'])) { $Day1Bits = $_POST['Day1Bits']; } else { $Day1Bits = null;}
 if (isset($_POST['HCAssessmentDays'])) { $HCAssessmentDays = $_POST['HCAssessmentDays']; } else { $HCAssessmentDays = null;}
 if (isset($_POST['HCReviewDays'])) { $HCReviewDays = $_POST['HCReviewDays']; } else { $HCReviewDays = null;}
