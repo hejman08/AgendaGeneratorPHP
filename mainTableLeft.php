@@ -31,7 +31,6 @@
         <td>
             <select name="NTASize">
                 <option value="None"></option>
-                <option value="No">No</option>
                 <option value="Yes">Yes</option>
             </select>
         </td>

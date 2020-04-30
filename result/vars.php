@@ -92,20 +92,21 @@ if (isset($_POST['APMDays'])) { $APMDays = $_POST['APMDays']; } else { $APMDays 
 if (isset($_POST['numAPEs'])) { $numAPEs = $_POST['numAPEs']; } else { $numAPEs = null;}
 if (isset($_POST['numAWSs'])) { $numAWSs = $_POST['numAWSs']; } else { $numAWSs = null;}
 
-$NPMSize = $_POST['NPMSize'];
-$NCMSize = $_POST['NCMSize'];
-$NTASize = $_POST['NTASize'];
-$SAMSize = $_POST['SAMSize'];
-$IPAMSize = $_POST['IPAMSize'];
-$UDTSize = $_POST['UDTSize'];
-$VNQMSize = $_POST['VNQMSize'];
-$WPMSize = $_POST['WPMSize'];
-$VMANSize = $_POST['VMANSize'];
-$SRMSize = $_POST['SRMSize'];
-$LASize = $_POST['LASize'];
-$SCMSize = $_POST['SCMSize'];
-$SEMSize = $_POST['SEMSize'];
-$PMSize = $_POST['PMSize'];
-$ARMSize = $_POST['ARMSize'];
+if (isset($_POST['NPMSize'])) { $NPMSize = $_POST['NPMSize']; } else {$NPMSize = null; } 
+if (isset($_POST['NTASize'])) { $NTASize = $_POST['NTASize']; } else {$NTASize = "None"; } 
+if (isset($_POST['NCMSize'])) { $NCMSize = $_POST['NCMSize']; } else {$NCMSize = "None"; } 
+if (isset($_POST['SAMSize'])) { $SAMSize = $_POST['SAMSize']; } else {$SAMSize = "None"; } 
+if (isset($_POST['VNQMSize'])) { $VNQMSize = $_POST['VNQMSize']; } else {$VNQMSize = "None"; } 
+if (isset($_POST['UDTSize'])) { $UDTSize = $_POST['UDTSize']; } else {$UDTSize = "None"; } 
+if (isset($_POST['IPAMSize'])) { $IPAMSize = $_POST['IPAMSize']; } else {$IPAMSize = "None"; } 
+if (isset($_POST['WPMSize'])) { $WPMSize = $_POST['WPMSize']; } else {$WPMSize = "None"; } 
+if (isset($_POST['VMANSize'])) { $VMANSize = $_POST['VMANSize']; } else {$VMANSize = "None"; } 
+if (isset($_POST['SRMSize'])) { $SRMSize = $_POST['SRMSize']; } else {$SRMSize = "None"; } 
+if (isset($_POST['LASize'])) { $LASize = $_POST['LASize']; } else {$LASize = "None"; } 
+if (isset($_POST['SCMSize'])) { $SCMSize = $_POST['SCMSize']; } else {$SCMSize = "None"; } 
+if (isset($_POST['SEMSize'])) { $SEMSize = $_POST['SEMSize']; } else {$SEMSize = "None"; } 
+if (isset($_POST['PMSize'])) { $PMSize = $_POST['PMSize']; } else {$PMSize = "None"; } 
+if (isset($_POST['ARMSize'])) { $ARMSize = $_POST['ARMSize']; } else {$ARMSize = "None"; } 
+
 
 ?>
