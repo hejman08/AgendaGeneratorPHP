@@ -27,6 +27,10 @@ if ($GLOBALS['EngagementType'] != "SpecsOnly")
             $html .= serverSpecs();
         }
         $html .= day1Bits();
+        include_once ("result/config_bits/NPMConfig.php");
+        include_once ("result/config_bits/NCMConfig.php");
+        include_once ("result/config_bits/NTAConfig.php");
+        include_once ("result/config_bits/SAMConfig.php");
 }
 else {
     //server specs only
