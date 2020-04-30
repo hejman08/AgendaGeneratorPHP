@@ -4,7 +4,9 @@ $acronyms = null;
 $modules = null;
 $hasNetworkModules = false;
 $hasNPM = false;
-
+global $NeedsSpecs;
+global $isOrionEng;
+global $isAPMEng;
 
 //actual POST variables
 

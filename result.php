@@ -6,6 +6,7 @@
 <?php
 //includes and "pre-work" stuff
 $html = null;
+
 $GLOBALS['ErrorMsg'] = null; //will change in the vars file mainly, if the user didn't enter something on the form.
 include_once ("result/vars.php"); //built an entire sub-file for POST variables because good gods are there a lot in this form.
 include_once ("result/modules.php"); //File that determines modules/acronyms/boolean if it's an Orion engagement, and boolean if it has Network Modules
@@ -13,14 +14,24 @@ include_once ("result/serverspecs.php"); //PHP function that will return specs f
 include_once ("result/dayheader.php"); //PHP function that will look at the Rolling Day Count (RDC) and return an appropriate Header for that day when called
 include_once ("result/serverspecs.php"); //contains PHP function for generating server specs. Or at least it will once the rest of this works.
 include_once ("result/intros.php"); //contains intro paragraphs for different engagement types
+echo $GLOBALS['NeedsSpecs'];
 if ($GLOBALS['EngagementType'] != "SpecsOnly") 
 {     
-        $html .= "<h1>Project Overview</h1>";
+        $html = "<h1>Project Overview</h1>";
         $html .= introPara();
         $html .= "<h1>SolarWinds Software List & Acronyms</h1>";
         $html .= $acronyms;
+        if ($GLOBALS['NeedsSpecs'] == 1) {
+            $html .= "<h1>Server Recommendations</h1>";
+            $html .= serverSpecs();
+        }
 }
-
+else {
+    //server specs only
+    
+    $html = "<h1>Server Recommendations</h1>";
+    $html .= serverSpecs();
+}
 
 if ($GLOBALS['ErrorMsg'] != null) // you done messed up A-A-ron.
 {
@@ -31,6 +42,4 @@ if ($GLOBALS['ErrorMsg'] != null) // you done messed up A-A-ron.
 
     echo $html;
 ?>
-
-<?php  ?>
 </body>

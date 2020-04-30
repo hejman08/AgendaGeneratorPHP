@@ -1,6 +1,6 @@
 <?php
 function serverSpecs() {
-    echo "Server specs are coming soon. For now, replace this with specs from the old Excel calculator";
+    return "Server specs are coming soon. For now, replace this section with specs from the old Excel calculator";
 }
 
 ?>

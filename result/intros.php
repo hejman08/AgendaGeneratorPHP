@@ -8,15 +8,16 @@ function introPara()
             switch ($EngType) {
 
             case "SpecsOnly":
+                $GLOBALS['NeedsSpecs'] = true;
             break;
             case "Rebuild":
                 $return .= "<p>The primary objective of this engagement is to rebuild the client’s SolarWinds environment on new servers. This process will include the implementation of best practices configuration for all products included in the SolarWinds Software List, hands - on training, and knowledge transfer for the client’s SolarWinds administrators.</p>\n";
 
                 $return .= "<p>The rebuild process will include the preservation of monitored elements and custom configurations from the client’s existing SolarWinds deployment. Historical statistic data will not be preserved.</p>\n";
-                if ($isOrionEng == true)
+                if ($isOrionEng = true)
                 {
                     $return .= "<p>The client is responsible for providing – fully patched (OS & MS SQL) application server(s) and database server for the deployment. In addition, the client must have access to their SolarWinds Customer Portal for the purpose of obtaining license activation keys and downloading the SolarWinds product binaries. Downloading the product binaries prior to the start of the engagement will save valuable consultation time and is strongly encouraged.</p>\n";
-                    $NeedsSpecs = true;
+                    $GLOBALS['NeedsSpecs'] = true;
                 }
                 if ($isAPMEng == true)
                 {
@@ -34,7 +35,7 @@ function introPara()
                 if ($isOrionEng == true)
                 {
                     $return .= "<p>The client is responsible for providing – fully patched (OS & MS SQL) application server(s) and database server for the deployment. In addition, the client must have access to their SolarWinds Customer Portal for the purpose of obtaining license activation keys and downloading the SolarWinds product binaries. Downloading the product binaries prior to the start of the engagement will save valuable consultation time and is strongly encouraged.</p>\n";
-                    $NeedsSpecs = true;
+                    $GLOBALS['NeedsSpecs'] = true;
                 }
                 if ($isAPMEng == true)
                 {
@@ -45,7 +46,7 @@ function introPara()
 
 
                 $return .= "<p>The final product delivered will be a highly functional enterprise level monitoring solution providing both a view into the performance and status of your environment in addition to a proactive system of monitoring, alerting, and reporting to keep users informed of any potential and current problems.</p>\n";
-                $NeedsSpecs = true;
+                $GLOBALS['NeedsSpecs'] = true;
                 break;
             case "DBMigration":
                 $return .= "<p>The primary objectives of this engagement are to migrate and upgrade the client’s SolarWinds environment. This process will include hands-on training and knowledge transfer for the client’s SolarWinds administrators.</p>\n";
@@ -57,7 +58,7 @@ function introPara()
 
                 $return .= "<p>Loop1 Systems encourages client participation whenever possible during the configuration of the environment as it will provide valuable hands-on experience to the client’s SolarWinds administrators.</p>\n";
                 $DBMigration = true;
-                $NeedsSpecs = true;
+                $GLOBALS['NeedsSpecs'] = true;
                 break;
             case "EngineMigration":
                 $return .= "<p>The primary objectives of this engagement are to migrate and upgrade the client’s SolarWinds environment. This process will include hands-on training and knowledge transfer for the client’s SolarWinds administrators.</p>\n";
@@ -69,11 +70,12 @@ function introPara()
 
                 $return .= "<p>Loop1 Systems encourages client participation whenever possible during the configuration of the environment as it will provide valuable hands-on experience to the client’s SolarWinds administrators.</p>\n";
                 $DBMigration = false;
-                $NeedsSpecs = true;
+                $GLOBALS['NeedsSpecs'] = true;
                 break;
             case "HC":
                 $return .= "<p>The primary objective of this engagement is to perform a comprehensive Health Check of the client’s environment.</p>\n";
-
+                $GLOBALS['NeedsSpecs'] = 0;
+                echo "Got here";
                 break;
             // case "Existing Environment Remediation":
             //     $return .= "<p>The primary objectives of this engagement are to analyze and perform remediation where necessary in the current SolarWinds environment, implement best practices configuration for all products included in the SolarWinds Software List, and provide hands-on training for the client’s SolarWinds administrators.</p>\n";
