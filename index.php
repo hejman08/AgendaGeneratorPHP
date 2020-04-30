@@ -10,7 +10,7 @@
         <table class="w3-table" >    
             <tr>
                 <td colspan="4" class=w3-center><label for="EngagementType">Engagement Type</label>
-                    <select id="EngagementType">
+                    <select name="EngagementType">
                     <option value="None">Choose a type...</option>
                     <option value="SpecsOnly">Server Specs Only</option>
                     <option value="HC">Health Check</option>
