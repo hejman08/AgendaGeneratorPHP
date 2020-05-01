@@ -73,6 +73,7 @@ if ($GLOBALS['ErrorMsg'] != null) // you done messed up A-A-ron.
     $html = "<h1>Error(s) Encountered</h1>";
     $html .="Please resolve the following errors to continue.<ul>";
     $html .= $GLOBALS['ErrorMsg'];
+    $html .= "</ul>";
 }
 
     echo $html;
