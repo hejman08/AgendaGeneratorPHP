@@ -22,5 +22,5 @@ Clone the repository:
 - `sudo git clone https://github.com/loop1systems/AgendaGenerator`
 
 To update:
--`cd /opt/AgendaGenerator`
--`git pull`
+- `cd /opt/AgendaGenerator`
+- `git pull`
