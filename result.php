@@ -43,7 +43,16 @@ if ($GLOBALS['EngagementType'] != "SpecsOnly")
         include_once ("result/config_bits/AWSConfig.php");
         include_once ("result/config_bits/HAConfig.php");
         include_once ("result/config_bits/LAConfig.php");
+        include_once ("result/config_bits/NTMConfig.php");
+        include_once ("result/config_bits/EOCConfig.php");
         include_once ("result/config_bits/PMConfig.php");
+        include_once ("result/config_bits/KiwiConfig.php");
+        include_once ("result/config_bits/SEMConfig.php");
+        include_once ("result/config_bits/ServUConfig.php");
+        include_once ("result/config_bits/DWConfig.php");
+        include_once ("result/config_bits/WHDConfig.php");
+        include_once ("result/config_bits/ARMConfig.php");
+        include_once ("result/config_bits/APMConfig.php");
         
         
         

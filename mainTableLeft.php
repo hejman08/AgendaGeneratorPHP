@@ -265,7 +265,7 @@
     <tr>
         <td><strong>PM</strong></td>
         <td><input type="checkbox" name="chkIncludePM"></td>
-        <td><input type="number" name="PM" step="0.5" min="0" max="100"></td>
+        <td><input type="number" name="PMDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="PMTrainDays" step="0.5" min="0" max="100"></td>
         <td>
             <select name="PMSize">
