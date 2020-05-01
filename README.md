@@ -11,6 +11,16 @@ For use by Loop1 Sales Engineers to build an HTML agenda for services projects
 Requires PHP and some kind of web hosting to run this (I just used XAMPP when coding this locally)
 
 ## Installation
-Clone the repository, point Apache or other web hosting to the index.php file
+Install XAMPP on the server by running commands below
+- `wget https://www.apachefriends.org/xampp-files/7.2.2/xampp-linux-x64-7.2.2-0-installer.run`
+- `chmod +x xampp-linux-x64-7.2.2-0-installer.run`
+- `sudo ./xampp-linux-x64-7.2.2-0-installer.run`
+- `sudo /opt/lampp/xampp start`
+Answer "y" to any y/n questions and accept defaults
+Clone the repository:
+- `cd /opt`
+- `sudo git clone https://github.com/loop1systems/AgendaGenerator`
 
-### Managed by Nathan Hejnicki
+To update:
+-`cd /opt/AgendaGenerator`
+-`git pull`
