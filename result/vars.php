@@ -128,6 +128,8 @@ $chkIncludeAPM = isset($_POST['chkIncludeAPM']) ? 1 : 0;
 if (isset($_POST['APMDays'])) { $APMDays = $_POST['APMDays']; } else { $APMDays = null;}
 if (isset($_POST['numAPEs'])) { $numAPEs = $_POST['numAPEs']; } else { $numAPEs = null;}
 if (isset($_POST['numAWSs'])) { $numAWSs = $_POST['numAWSs']; } else { $numAWSs = null;}
+if (isset($_POST['numDPA'])) { $numDPA = $_POST['numDPA']; } else { $numDPA = null;}
+if (isset($_POST['numWHD'])) { $numWHD = $_POST['numWHD']; } else { $numWHD = null;}
 
 if (isset($_POST['NPMSize'])) { $NPMSize = $_POST['NPMSize']; } else {$NPMSize = null; } 
 if (isset($_POST['NTASize'])) { $NTASize = $_POST['NTASize']; } else {$NTASize = "None"; } 

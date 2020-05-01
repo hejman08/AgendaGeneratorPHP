@@ -106,7 +106,7 @@ if ($SEMDays >  0 || $SEMTrainDays > 0 || $chkIncludeSEM == 1 || $SEMSize != "No
 	$hasSEM = true;
 	$acronyms .= "<li><strong>SEM</strong> - Security Event Manager</li>\n";
 }	
-if ($DPADays >  0 || $DPATrainDays > 0 || $chkIncludeDPA == 1 || $DPASize > 0)	
+if ($DPADays >  0 || $DPATrainDays > 0 || $chkIncludeDPA == 1 || $numDPA > 0)	
 {	
 //  $GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>DPA</li>\n";
@@ -114,7 +114,7 @@ if ($DPADays >  0 || $DPATrainDays > 0 || $chkIncludeDPA == 1 || $DPASize > 0)
 	$hasDPA = true;
 	$acronyms .= "<li><strong>DPA</strong> - Database Performance Analyzer</li>\n";
 }	
-if ($WHDDays >  0 || $WHDTrainDays > 0 || $chkIncludeWHD == 1 || $WHDSize > 0)	
+if ($WHDDays >  0 || $WHDTrainDays > 0 || $chkIncludeWHD == 1 || $numWHD > 0)	
 {	
 //	$GLOBALS['isOrionEng'] = true;
 	$modules .= "<li>WHD</li>\n";

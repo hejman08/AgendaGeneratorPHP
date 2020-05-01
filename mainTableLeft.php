@@ -250,7 +250,7 @@
         <td><input type="number" name="DPADays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="DPATrainDays" step="0.5" min="0" max="100"></td>
         <td>
-        <input type="number" name="WHDSize" step="1" min="0" max="500"> Instances
+        <input type="number" name="numDPA" step="1" min="0" max="500"> Instances
         </td>
     </tr>
     <tr>
@@ -259,7 +259,7 @@
         <td><input type="number" name="WHDDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="WHDTrainDays" step="0.5" min="0" max="100"></td>
         <td>
-        <input type="number" name="WHDSize" step="1" min="0" max="500"> Seats
+        <input type="number" name="numWHD" step="1" min="0" max="500"> Seats
         </td>
     </tr>
     <tr>

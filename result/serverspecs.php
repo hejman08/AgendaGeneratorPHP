@@ -3,7 +3,7 @@ function serverSpecs() {
     
 //figure out what size category each module falls into
 global $NPMSize, $NCMSize, $NTASize, $SAMSize, $SCMSize, $IPAMSize, $UDTSize, $VNQMSize, $WPMSize, $LASize, $SEMSize, $DPASize, $WHDSize, $PMSize, $ARMSize, $SRMSize, $VMANSize;
-global $numAPEs, $numAWSss, $hasHA, $hasKiwi, $hasDW, $hasEOC, $hasAPM;
+global $numAPEs, $numAWSss, $hasHA, $hasKiwi, $hasDW, $hasEOC, $hasAPM, $numDPA, $numWHD;
 global $numAWSs, $hasDPA, $hasPM, $hasSEM, $hasNTA, $hasLA;
 global $isOrionEng;
 $ModuleCount = 12; //start with max # of modules and remove from each blank sized module in Orion
