@@ -12,7 +12,7 @@
                 <td colspan="4" class=w3-center><label for="EngagementType">Engagement Type</label>
                     <select name="EngagementType">
                     <option value="None">Choose a type...</option>
-                    <option value="SpecsOnly">Server Specs Only (Coming Soon)</option>
+                    <option value="SpecsOnly">Server Specs Only</option>
                     <option value="HC">Health Check</option>
                     <option value="Rebuild">Rebuild</option>
                     <option value="NewBuild">New Build</option>

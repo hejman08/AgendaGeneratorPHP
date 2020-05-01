@@ -23,7 +23,6 @@ if ($GLOBALS['EngagementType'] != "SpecsOnly")
         $html .= "<h1>SolarWinds Software List & Acronyms</h1>";
         $html .= $acronyms;
         if ($GLOBALS['NeedsSpecs'] == 1) {
-            $html .= "<h1>Server Recommendations</h1>";
             $html .= serverSpecs();
         }
         $html .= day1Bits();
@@ -61,8 +60,6 @@ if ($GLOBALS['EngagementType'] != "SpecsOnly")
 }
 else {
     //server specs only
-    
-    $html = "<h1>Server Recommendations</h1>";
     $html .= serverSpecs();
 }
 
