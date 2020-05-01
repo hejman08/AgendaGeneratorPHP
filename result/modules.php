@@ -1,5 +1,5 @@
 <?php
-
+global $isOrionEng;
 $acronyms .="<ul>";
 $modules .= "<ul>";
 if ($NPMDays > 0 || $NPMTrainDays > 0 || $chkIncludeNPM == 1 || $NPMSize != "None")

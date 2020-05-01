@@ -67,6 +67,7 @@ if ($formValidated == 1) {
         $html .= serverSpecs();
     }
 }
+
 if ($GLOBALS['ErrorMsg'] != null) // you done messed up A-A-ron.
 {
     $html = "<h1>Error(s) Encountered</h1>";
