@@ -27,7 +27,7 @@ function validateForm() {
 
     //User didn't enter an engagement type
     if ($EngagementType == "None") {
-        $ErrorMsg .= "No Engagement Type Selected";
+        $ErrorMsg .= "No Engagement Type Selected\n";
         $validated = 0;
     } 
     
@@ -38,7 +38,7 @@ function validateForm() {
             case "Rebuild":
             case "DBMigration":
             case "EngineMigration":
-                $ErrorMsg .= "No Day 1 Bits filled out for this engagement";
+                $ErrorMsg .= "No Day 1 Bits filled out for this engagement\n";
                 $validated = 0;
                 break;
             default:
