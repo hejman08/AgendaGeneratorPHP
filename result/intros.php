@@ -115,7 +115,7 @@ function introPara()
                 $return .= "<p>The client is contracting Loop1 Systems for Managed Services and has requested a statement of goals and objectives (a “statement of work”) as laid out in this document. The hours are to be used on an ad-hoc basis, but for guidance purposes, some of the goals around the client’s SolarWinds environment are laid out in this document.</p>\n";
                 break;
             default: 
-                $GLOBALS['ErrorMsg'] .= "No Engagement Type selected";
+               // $GLOBALS['ErrorMsg'] .= "No Engagement Type selected";
                 break;
         }
         return $return;

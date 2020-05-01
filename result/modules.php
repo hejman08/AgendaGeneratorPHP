@@ -204,4 +204,5 @@ if ($APMDays > 0 || $chkIncludeAPM == 1)
 }
 
 $acronyms .="</ul>";
+$KTModules = $modules; //setting up for admin/kt stuff later
 $modules .= "</ul>";
