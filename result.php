@@ -58,6 +58,22 @@ if ($formValidated == 1) {
             include_once ("result/config_bits/WHDConfig.php");
             include_once ("result/config_bits/ARMConfig.php");
             include_once ("result/config_bits/APMConfig.php");
+            include_once ("result/training_bits/NPMTraining.php");
+            include_once ("result/training_bits/NCMTraining.php");
+            include_once ("result/training_bits/NTATraining.php");
+            include_once ("result/training_bits/SAMTraining.php");
+            include_once ("result/training_bits/SCMTraining.php");
+            include_once ("result/training_bits/IPAMTraining.php");
+            include_once ("result/training_bits/UDTTraining.php");
+            include_once ("result/training_bits/VNQMTraining.php");
+            include_once ("result/training_bits/WPMTraining.php");
+            include_once ("result/training_bits/SRMTraining.php");
+            include_once ("result/training_bits/VMANTraining.php");
+            include_once ("result/training_bits/LATraining.php");
+            include_once ("result/training_bits/DPATraining.php");
+            include_once ("result/training_bits/SEMTraining.php");
+            include_once ("result/training_bits/PMTraining.php");
+            include_once ("result/training_bits/APITraining.php");
             include_once ("result/config_bits/AsBuilt.php");
             include_once ("result/config_bits/AdminKT.php");
 

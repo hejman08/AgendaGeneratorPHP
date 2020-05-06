@@ -33,6 +33,7 @@ global $hasKiwi;
 global $hasDW;
 global $hasServU;
 global $hasEOC;
+global $APITrainDays;
 global $hasAPM;
 
 
@@ -124,6 +125,7 @@ $chkIncludeServU = isset($_POST['chkIncludeServU']) ? 1 : 0;
 if (isset($_POST['ServUDays'])) { $ServUDays = $_POST['ServUDays']; } else { $ServUDays = null;}
 $chkIncludeEOC = isset($_POST['chkIncludeEOC']) ? 1 : 0;
 if (isset($_POST['EOCDays'])) { $EOCDays = $_POST['EOCDays']; } else { $EOCDays = null;}
+if (isset($_POST['APITrainDays'])) { $APITrainDays = $_POST['APITrainDays']; } else { $APITrainDays = null;}
 $chkIncludeAPM = isset($_POST['chkIncludeAPM']) ? 1 : 0;
 if (isset($_POST['APMDays'])) { $APMDays = $_POST['APMDays']; } else { $APMDays = null;}
 if (isset($_POST['numAPEs'])) { $numAPEs = $_POST['numAPEs']; } else { $numAPEs = null;}
