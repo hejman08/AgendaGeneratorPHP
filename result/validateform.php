@@ -17,10 +17,10 @@ function validateForm() {
     global $SCMDays, $SCMTrainDays, $SCMSize, $chkIncludeSCM;
     global $LADays, $LATrainDays, $LASize, $chkIncludeLA;
     global $SEMDays, $SEMTrainDays, $SEMSize, $chkIncludeSEM;
-    global $WHDDays, $WHDTrainDays, $WHDSize, $chkIncludeWHD;
+    global $WHDDays, $WHDTrainDays, $numWHD, $chkIncludeWHD;
     global $PMDays, $PMTrainDays, $PMSize, $chkIncludePM;
     global $ARMDays, $ARMTrainDays, $ARMSize, $chkIncludeARM;
-    global $DPADays, $DPATrainDays, $DPASize, $chkIncludeDPA;
+    global $DPADays, $DPATrainDays, $numDPA, $chkIncludeDPA;
     global $numAPEs, $chkIncludeAPEs, $chkIncludeAWSs, $APEDays, $AWSDays, $numAWSs;
 
     global $ErrorMsg;
@@ -124,12 +124,12 @@ function validateForm() {
             $ErrorMsg .= "<li>ARM missing a license size for " . $EngagementType . " engagement</li>";
             $validated = 0;
         }
-        if ($DPASize < 1 && ($chkIncludeDPA == 1 || $DPADays > 0 || $DPATrainDays > 0))
+        if ($numDPA < 1 && ($chkIncludeDPA == 1 || $DPADays > 0 || $DPATrainDays > 0))
         {
             $ErrorMsg .= "<li>DPA missing a count of instances for " . $EngagementType . " engagement</li>";
             $validated = 0;
         }
-        if ($WHDSize < 1 && ($chkIncludeWHD == 1 || $WHDDays > 0 || $WHDTrainDays > 0))
+        if ($numWHD < 1 && ($chkIncludeWHD == 1 || $WHDDays > 0 || $WHDTrainDays > 0))
         {
             $ErrorMsg .= "<li>WHD missing a count of instances for " . $EngagementType . " engagement</li>";
             $validated = 0;

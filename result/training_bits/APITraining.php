@@ -3,6 +3,7 @@ global $APITrainDays;
 if ($APITrainDays > 0)
     {
         $html .= "<h2>" . dayHeader($APITrainDays, "SolarWinds API Training") . "</h2>\n";
+        
         $html .= "<ul>\n";
 $html .= "<li>Overview of SQL and SWQL</li>\n";
 $html .= "<ul>\n";
