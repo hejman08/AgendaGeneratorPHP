@@ -15,7 +15,7 @@ if ($NCMDays > 0 || $NCMTrainDays > 0 || $chkIncludeNPM == 1 || $NCMSize != "Non
     $isOrionEng = true;
     $modules .= "<li>NCM</li>\n";
     $hasNetworkModules = true;
-    $hasNPM = true;
+    $hasNCM = true;
     $acronyms .= "<li><strong>NCM</strong> - Network Configuration Manager</li>\n";
 }
 if ($NTADays >  0 || $NTATrainDays > 0 || $chkIncludeNTA == 1 || $NTASize != "None")
