@@ -51,7 +51,7 @@ if (isset($_POST['Day1Bits'])) { $Day1Bits = $_POST['Day1Bits']; } else { $Day1B
 if (isset($_POST['HCAssessmentDays'])) { $HCAssessmentDays = $_POST['HCAssessmentDays']; } else { $HCAssessmentDays = null;}
 if (isset($_POST['HCReviewDays'])) { $HCReviewDays = $_POST['HCReviewDays']; } else { $HCReviewDays = null;}
 if (isset($_POST['HCRemediationDays'])) { $HCRemediationDays = $_POST['HCRemediationDays']; } else { $HCRemediationDays = null;}
-$IncludeMSEBlurb = isset($_POST['IncludeMSEBlurb']) ? 1 : 0;
+$IncludeMSEBlurb = isset($_POST['includeMSEBlurb']) ? 1 : 0;
 if (isset($_POST['AsBuiltDays'])) { $AsBuiltDays = $_POST['AsBuiltDays']; } else { $AsBuiltDays = null;}
 if (isset($_POST['RunbookDays'])) { $RunbookDays = $_POST['RunbookDays']; } else { $RunbookDays = null;}
 if (isset($_POST['AdminKTDays'])) { $AdminKTDays = $_POST['AdminKTDays']; } else { $AdminKTDays = null;}
