@@ -35,6 +35,7 @@ global $hasServU;
 global $hasEOC;
 global $APITrainDays;
 global $hasAPM;
+global $IncludeMSEBlurb;
 
 
 //actual POST variables
