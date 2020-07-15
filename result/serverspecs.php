@@ -553,7 +553,7 @@ $ModuleCount = 12; //start with max # of modules and remove from each blank size
                 if ($DPARepData >= 1000)
                 {
                     //we're in the TB range here.
-                    $DPARepData = Math.Round(($DPARepData / 1000), 1);
+                    $DPARepData = Round(($DPARepData / 1000), 1);
                     $DPAUnit = "TB";
                 }
                 $ReturnStr .= "<h2>DPA Application Server</h2>\n";
