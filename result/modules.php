@@ -10,7 +10,7 @@ if ($NPMDays > 0 || $NPMTrainDays > 0 || $chkIncludeNPM == 1 || $NPMSize != "Non
     $hasNPM = true;
     $acronyms .= "<li><strong>NPM</strong> - Network Performance Monitor</li>\n";
 }
-if ($NCMDays > 0 || $NCMTrainDays > 0 || $chkIncludeNPM == 1 || $NCMSize != "None")
+if ($NCMDays > 0 || $NCMTrainDays > 0 || $chkIncludeNCM == 1 || $NCMSize != "None")
 {
     $isOrionEng = true;
     $modules .= "<li>NCM</li>\n";
