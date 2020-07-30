@@ -77,6 +77,7 @@ if ($formValidated == 1) {
             include_once ("result/config_bits/AsBuilt.php");
             include_once ("result/config_bits/AdminKT.php");
             include_once ("result/config_bits/MSEBlurb.php");
+            include_once ("result/assumptions.php");
     }
     else {
         //server specs only
