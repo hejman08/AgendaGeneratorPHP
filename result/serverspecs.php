@@ -653,7 +653,7 @@ $ModuleCount = 12; //start with max # of modules and remove from each blank size
                         $SEMRAM = 96;
                         $SEMDisk = "1.5TB";
                         break;
-                    case "175M":
+                    case "170M":
                         $SEMCPU = 14;
                         $SEMRAM = 192;
                         $SEMDisk = "1.5TB";

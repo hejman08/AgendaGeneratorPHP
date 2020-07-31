@@ -1,0 +1,36 @@
+<?php
+$html .="<table width='100%'>\n";
+$html .="<tbody>\n";
+$html .="<tr id='TitleRow'>\n";
+$html .="<td colspan='2' width='100%'>\n";
+$html .="DameWare (DW)\n";
+$html .="</td>\n";
+$html .="</tr>\n";
+$html .="<tr>\n";
+$html .="<td width='34%'>\n";
+$html .="<h3>Task</h3>\n";
+$html .="</td>\n";
+$html .="<td width='65%'>\n";
+$html .="<h3>Assumptions &amp; Dependencies</h3>\n";
+$html .="</td>\n";
+$html .="</tr>\n";
+$html .="<tr>\n";
+$html .="<td width='34%'>\n";
+$html .="<p><strong>DameWare Service Account</strong></p>\n";
+$html .="</td>\n";
+$html .="<td width='65%'>\n";
+$html .="<p>Remote Access to workstations and servers or User with Domain Admin Role</p>\n";
+$html .="</td>\n";
+$html .="</tr>\n";
+$html .="<tr>\n";
+$html .="<td width='34%'>\n";
+$html .="<p><strong>Port Requirements</strong></p>\n";
+$html .="</td>\n";
+$html .="<td width='65%'>\n";
+$html .="<p>UDP 137, 138 and TCP 139,445 and WMI (135, 10,000+)</p>\n";
+$html .="</td>\n";
+$html .="</tr>\n";
+$html .="</tbody>\n";
+$html .="</table>\n";
+$html .="<p>&nbsp;</p>\n";
+?>

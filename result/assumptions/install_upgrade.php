@@ -73,7 +73,7 @@ $html .="<td width='34%'>\n";
 $html .="<p><strong>Download SolarWinds product binaries</strong></p>\n";
 $html .="</td>\n";
 $html .="<td width='65%'>\n";
-$html .="<p>Please download all SolarWinds product binaries prior to the engagement in the interest of saving valuable time for more critical tasks.</p>\n";
+$html .="<p>Please download all SolarWinds product binaries prior to the engagement in the interest of saving valuable time for more critical tasks. If downloading any Orion module version at or later than 2018.4, only one binary download is needed and will contain needed files/flags for any Orion module. The Customer Portal will contain versions for 'Online' and 'Offline' installers - please download Offline version if there is a slow or absent connection from the Orion server(s) to the Internet. The Online version will download the needed products during install.</p>\n";
 $html .="</td>\n";
 $html .="</tr>\n";
 $html .="<tr>\n";

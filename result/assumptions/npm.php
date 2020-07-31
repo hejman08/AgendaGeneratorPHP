@@ -21,6 +21,7 @@ $html .="<p><strong>Generate and populate custom properties</strong></p>\n";
 $html .="</td>\n";
 $html .="<td>\n";
 $html .="<p>A list of desired custom property values has been created or determined during the review phase.</p>\n";
+$html .="<p>Suggestion - use custom properties that match client CMDB (location, infrastructure details/labels, etc.)</p>\n";
 $html .="</td>\n";
 $html .="</tr>\n";
 $html .="<tr>\n";

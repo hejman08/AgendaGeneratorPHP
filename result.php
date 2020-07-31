@@ -22,7 +22,7 @@ include_once ("result/listservers.php");
 $formValidated = validateForm();
 
 if ($formValidated == 1) {
-    if ($GLOBALS['EngagementType'] != "SpecsOnly") 
+    if ($GLOBALS['EngagementType'] != "SpecsOnly" && $GLOBALS['EngagementType'] != "AssDepOnly") 
     {     
             $html = "<h1>Project Overview</h1>";
             $html .= introPara();
@@ -79,9 +79,13 @@ if ($formValidated == 1) {
             include_once ("result/config_bits/MSEBlurb.php");
             include_once ("result/assumptions.php");
     }
-    else {
+    elseif ($GLOBALS['EngagementType'] == "SpecsOnly")  {
         //server specs only
         $html .= serverSpecs();
+    }
+    elseif ($GLOBALS['EngagementType'] == "AssDepOnly")  {
+        //Only assumptions and dependencies
+        include_once ("result/assumptions.php");
     }
 }
 

@@ -1,9 +1,9 @@
 <?php
-$html .="<table>\n";
+$html .="<table width='100%'\n";
 $html .="<tbody>\n";
 $html .="<tr id='TitleRow'>\n";
 $html .="<td colspan='2'>\n";
-$html .="Orion Network Configuration Manager: (NCM)\n";
+$html .="Orion Network Configuration Manager (NCM)\n";
 $html .="</td>\n";
 $html .="</tr>\n";
 $html .="<tr>\n";
@@ -32,10 +32,11 @@ $html .="</td>\n";
 $html .="</tr>\n";
 $html .="<tr>\n";
 $html .="<td>\n";
-$html .="<p><strong>Generate policy reports</strong></p>\n";
+$html .="<p><strong>Generate policy reports and Baseline Configs</strong></p>\n";
 $html .="</td>\n";
 $html .="<td>\n";
-$html .="<p>Applicable policies for compliance verification have been identified.</p>\n";
+$html .="<p>Applicable policies for compliance verification / baseline config creation have been identified.</p>\n";
+$html .="<p>Examples include: Banner motd, vendor, model, network layer.</p>\n";
 $html .="</td>\n";
 $html .="</tr>\n";
 $html .="<tr>\n";

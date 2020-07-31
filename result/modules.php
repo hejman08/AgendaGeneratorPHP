@@ -188,7 +188,8 @@ if ($DWDays >  0 || $chkIncludeDW == 1)
     $acronyms .= "<li><strong>DW</strong> - DameWare</li>\n";
     $acronyms .= "<ul><li><strong>DameWare</strong> Remote Support </li>";
     $acronyms .= "<li><strong>DameWare MRC</strong> DameWare Mini Remote Control</li>\n</ul>";
-    $modules .= "<li>DW</li>\n";
+	$modules .= "<li>DW</li>\n";
+	$hasDW = true;
 }	
 if ($ServUDays >  0 || $chkIncludeServU == 1)	
 {	

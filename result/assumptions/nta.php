@@ -1,5 +1,5 @@
 <?php
-$html .="<table>\n";
+$html .="<table width='100%'\n";
 $html .="<tbody>\n";
 $html .="<tr id = 'TitleRow'>\n";
 $html .="<td colspan='2'>\n";
@@ -27,7 +27,7 @@ $html .="<td>\n";
 $html .="<p><strong>Verify Active Flows</strong></p>\n";
 $html .="</td>\n";
 $html .="<td>\n";
-$html .="<p>Flow exporters have been configured on source devices.</p>\n";
+$html .="<p>Flow exporters have been configured on source devices, or a list of device models and code versions provided to Loop1 if the scope of work includes Loop1 configuring the devices to export flows.</p>\n";
 $html .="</td>\n";
 $html .="</tr>\n";
 $html .="<tr>\n";
@@ -36,6 +36,7 @@ $html .="<p><strong>Define IP Address Groups</strong></p>\n";
 $html .="</td>\n";
 $html .="<td>\n";
 $html .="<p>Desired subnets have been identified during requirements phase.</p>\n";
+$html .="<p>Know IP Addresses of internal resources and groups (e.g. Exchange Servers, SQL Servers, etc.)</p>\n";
 $html .="</td>\n";
 $html .="</tr>\n";
 $html .="<tr>\n";

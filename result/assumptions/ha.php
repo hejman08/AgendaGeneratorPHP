@@ -1,0 +1,33 @@
+<?php
+$html .="<table width='100%'>\n";
+$html .="<tbody>\n";
+$html .="<tr id='TitleRow'>\n";
+$html .="<td colspan='2'>\n";
+$html .="HA (High Availability for SolarWinds Orion)\n";
+$html .="</td>\n";
+$html .="</tr>\n";
+$html .="<tr>\n";
+$html .="<td>\n";
+$html .="<h3>Task</h3>\n";
+$html .="</td>\n";
+$html .="<td>\n";
+$html .="<h3>Assumptions &amp; Dependencies</h3>\n";
+$html .="</td>\n";
+$html .="</tr>\n";
+$html .="<tr>\n";
+$html .="<td rowspan = '2'>\n";
+$html .="<p><strong>Create and Manage HA Pools</strong></p>\n";
+$html .="</td>\n";
+$html .="<td>\n";
+$html .="<p>Virtual IP (VIP) and Physical IP's of member servers added to all device ACL's (unless using DNS update for HA)</p>\n";
+$html .="</td>\n";
+$html .="</tr>\n";
+$html .="<td>\n";
+$html .="<tr>\n";
+$html .="<p>Access to iLo or equivalent for all physical servers involved (SQL, Primary Application server, APEs)</p>\n";
+$html .="</td>\n";
+$html .="</tr>\n";
+$html .="</tbody>\n";
+$html .="</table>\n";
+$html .="<p>&nbsp;</p>\n";
+?>
