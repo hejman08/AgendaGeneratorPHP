@@ -150,7 +150,7 @@ if ($APEDays >  0 || $chkIncludeAPEs == 1 || $numAPEs > 0)
 if ($AWSDays >  0 || $chkIncludeAWSs == 1 || $numAWSs > 0)	
 {	
     $isOrionEng = true;
-	$modules .= "<li>APE</li>\n";
+	$modules .= "<li>AWS</li>\n";
 //	$hasNetworkModules = true;
 	$hasAWS = true;
 	$acronyms .= "<li><strong>AWS</strong> - Additional Web Server</li>\n";
