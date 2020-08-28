@@ -261,10 +261,10 @@ if ($hasNTA == 1) {
     include_once ("result/assumptions/nta.php");
 }
 if ($hasNCM == 1) {
-    include_once ("result/assumptions/NCM.php");
+    include_once ("result/assumptions/ncm.php");
 }
 if ($hasSAM == 1) {
-    include_once ("result/assumptions/SAM.php");
+    include_once ("result/assumptions/sam.php");
 }
 if ($hasIPAM == true) {
     include_once ("result/assumptions/ipam.php");
