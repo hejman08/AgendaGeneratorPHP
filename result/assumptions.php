@@ -258,7 +258,7 @@ if ($hasNPM == 1) {
     include_once ("result/assumptions/npm.php");
 }
 if ($hasNTA == 1) {
-    include_once ("result/assumptions/NTA.php");
+    include_once ("result/assumptions/nta.php");
 }
 if ($hasNCM == 1) {
     include_once ("result/assumptions/NCM.php");
