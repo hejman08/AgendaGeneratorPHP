@@ -27,7 +27,7 @@ if ($NPMDays > 0)
         $html .= "<li>Wireless device monitoring features</li>";
         $html .= "<li>Custom map configuration overview</li>";
         $html .= "<ul><li>Global map view</li>";
-        $html .= "<li>Network Atlas</li></ul>";
+        $html .= "<li>Orion Mapping</li></ul>";
         $html .= "<li>Custom Dashboard configuration</li>";
         $html .= "<ul><li>NOC view</li>";
         $html .= "<li>Executive view</li></ul>";

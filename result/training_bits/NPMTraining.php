@@ -35,9 +35,9 @@ if ($NPMTrainDays > 0)
         $html .= "<li>Universal device pollers</li>\n";
         $html .= "<li>NPM polling settings and data retention</li>\n";
         $html .= "<li>Mapping overview</li>\n";
-        $html .= "<ul><li>Network Atlas</li>\n";
+        $html .= "<ul>\n";
         $html .= "<li>Worldwide Map</li>\n";
-        $html .= "<li>Orion Maps</li></ul>\n";
+        $html .= "<li>Orion Mapping</li></ul>\n";
         $html .= "<li>Working with Syslog</li>\n";
         $html .= "<li>Working with SNMP Traps</li>\n";
         $html .= "<li>Alerting overview</li>\n";

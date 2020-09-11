@@ -18,7 +18,7 @@ if ($VNQMTrainDays > 0)
         $html .= "<ul><li>Configuring Call Manager server access</li>\n";
         $html .= "<li>Configuring CDR/CMR FTP settings</li></ul>\n";
         $html .= "<li>Understanding call detail records</li>\n";
-        $html .= "<li>Leveraging VNQM statistics in Network Atlas</li>\n";
+        $html .= "<li>Leveraging VNQM statistics in Orion Mapping</li>\n";
         $html .= "<ul><li>Using VNQM data in maps</li></ul>\n";
         $html .= "<li>Working with VNQM alerts</li>\n";
         $html .= "<li>Working with VNQM in reports</li>\n";
