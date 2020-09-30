@@ -4,7 +4,7 @@ function serverSpecs() {
 //figure out what size category each module falls into
 global $NPMSize, $NCMSize, $NTASize, $SAMSize, $SCMSize, $IPAMSize, $UDTSize, $VNQMSize, $WPMSize, $LASize, $SEMSize, $DPASize, $WHDSize, $PMSize, $ARMSize, $SRMSize, $VMANSize;
 global $numAPEs, $numAWSss, $hasHA, $hasKiwi, $hasDW, $hasEOC, $hasAPM, $numDPA, $numWHD;
-global $numAWSs, $hasDPA, $hasPM, $hasSEM, $hasNTA, $hasLA;
+global $numAWSs, $hasDPA, $hasPM, $hasSEM, $hasNTA, $hasLA, $hasARM;
 global $isOrionEng;
 $ModuleCount = 12; //start with max # of modules and remove from each blank sized module in Orion
 
@@ -671,6 +671,52 @@ $ModuleCount = 12; //start with max # of modules and remove from each blank size
                 $ReturnStr .= "<li>Storage - " . $SEMDisk . " (Expandable for growth)</li>\n";
                 $ReturnStr .= "<li>1 GBE NIC</li>\n";
                 $ReturnStr .= "<li>*CPU and Memory resources must be dedicated to the SEM appliance</li></ul>\n";
+
+
+            }if ($hasARM == true)
+            {
+                
+                switch ($ARMSize)
+                {
+                    case "1000":
+                        $ARMCPU = 2;
+                        $ARMRAM = 8;
+                        $ARMDisk = "50GB";
+                        break;
+                    case "4000":
+
+                        $ARMCPU = 4;
+                        $ARMRAM = 12;
+                        $SEMDisk = "60GB";
+                        break;
+                    case "10000+":
+                        $ARMCPU = 4;
+                        $ARMRAM = 16;
+                        $SEMDisk = "60GB";
+                        break;
+                    
+                }
+                $ReturnStr .= "<H2>ARM Server</h2><ul>\n";
+                $ReturnStr .= "<li>OS - Server 2016 or 2019</li>\n";
+                $ReturnStr .= "<ul><li>Server Core versions are <b class=\"impact\">not </b>supported</li></ul>\n";
+                $ReturnStr .= "<li>CPUs - " . $ARMCPU . " cores or better (Expandable for growth)*</li>\n";
+                $ReturnStr .= "<ul><li>Intel Itanium platforms are <b class=\"impact\">not </b>supported</li></ul>\n";
+                $ReturnStr .= "<li>RAM - " . $ARMRAM . "GB or better (Expandable for growth)*</li>\n";
+                $ReturnStr .= "<li>.NET Framework 3.5 SP1 <b class=\"impact\">and </b>4.5.2 (or higher)</li>\n";
+                $ReturnStr .= "<li>Web Components/Web Interface require IIS version 7.5 or higher</li>\n";
+                $ReturnStr .= "<li>Drives:</li><ul>\n";
+                $ReturnStr .= "<li>80GB Standard OS Drive (C:)</li>\n";
+                $ReturnStr .= "<li>" . $ARMDisk . " Application Data Drive (D:)</li>\n</ul>\n</ul>\n";
+                
+                $ReturnStr .= "<h2>ARM SQL Server</h2>\n";
+                $ReturnStr .= "<ul>";
+                $ReturnStr .= "<li>OS - Server 2016 or 2019</li>\n";
+                $ReturnStr .= "<li>SQL Server 2014, 2016, or 2017; Standard, Enterprise, or Express* edition</li>\n";
+                $ReturnStr .= "<li>CPU - 2 Cores @2.4GHz or better</li>\n";
+                $ReturnStr .= "<li>RAM - 4GB</li>\n";
+                $ReturnStr .= "<li>Drives:</li><ul>\n";
+                $ReturnStr .= "<li>80GB Standard OS Drive (C:)</li>\n";
+                $ReturnStr .= "<li>150GB MS SQL Data storage (E:) (Expandable for growth)</li>\n</ul>\n</ul>\n";
 
 
             }
