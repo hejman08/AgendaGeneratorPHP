@@ -717,6 +717,8 @@ $ModuleCount = 12; //start with max # of modules and remove from each blank size
                 $ReturnStr .= "<li>Drives:</li><ul>\n";
                 $ReturnStr .= "<li>80GB Standard OS Drive (C:)</li>\n";
                 $ReturnStr .= "<li>150GB MS SQL Data storage (E:) (Expandable for growth)</li>\n</ul>\n</ul>\n";
+                $ReturnStr .="<p>*Note that SQL Express limits data storage to 10GB and will also impact performance in larger environments due to maximum RAM and CPU limitations. It is not recommended to use SQL express in environments with over 1000 users.</p>\n";
+                
 
 
             }
