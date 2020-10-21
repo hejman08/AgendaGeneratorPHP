@@ -24,15 +24,8 @@ if ($APMDays > 0)
         $html .= "<li>Ruby</li>\n";
         $html .= "<li>PHP</li></ul></ul>\n";
         $html .= "<li>Custom Dashboard configuration</li>\n";
-        $html .= "<li>Reporting Overview</li>\n";
-        $html .= "<ul><li>Report creation</li>\n";
-        $html .= "<li>Automation scheduling</li></ul>\n";
-        $html .= "<li>Advanced alert creation/configuration</li>\n";
-        $html .= "<ul><li>Noise reduction</li>\n";
-        $html .= "<li>Notification</li>\n";
-        $html .= "<li>Escalation</li>\n";
-        $html .= "<li>Severity</li></ul>\n";
-
+        $html .= "<li>Alert configuration</li>\n";
+        
         $html .= "</ul>";
     }
 ?>
