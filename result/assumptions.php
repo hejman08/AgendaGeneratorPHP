@@ -50,7 +50,7 @@ $html .="</tr>\n";
 $html .="<tr>\n";
 $html .="</td>\n";
 $html .="<td width='65%'>\n";
-$html .="<p>All anti-virus exclusions as described in <a href='https://support.solarwinds.com/SuccessCenter/s/article/Files-and-directories-to-exclude-from-antivirus-scanning-for-Orion-Platform-products?language=en_US'>this link</a> have been applied. It is strongly recommended to turn off anti-virus entirely or prevent its install until installation is complete</p>\n";
+$html .="<p>All anti-virus exclusions as described in <a href='https://support.solarwinds.com/SuccessCenter/s/article/Files-and-directories-to-exclude-from-antivirus-scanning-for-Orion-Platform-products?language=en_US'>this link</a> have been applied. It is strongly recommended to turn off anti-virus entirely or prevent its install until SolarWinds software installation is complete</p>\n";
 $html .="</td>\n";
 $html .="</tr>\n";
 $html .="</table>\n";
