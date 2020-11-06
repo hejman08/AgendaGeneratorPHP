@@ -25,6 +25,13 @@ if ($NPMDays > 0)
         $html .= "<li>Environmental devices (UPS|APC|Air Handler|Etc)</li></ul>";
         $html .= "<li>Capacity planning functionality</li>";
         $html .= "<li>Wireless device monitoring features</li>";
+        $html .= "<li>Configuration of Network Insight</li><ul>";
+        $html .= "<li>Cisco ASA</li>";
+        $html .= "<li>Cisco Nexus</li>";
+        $html .= "<li>F5 BigIP</li>";
+        $html .= "<li>Palo Alto Firewalls</li></ul>";
+        
+        
         $html .= "<li>Custom map configuration overview</li>";
         $html .= "<ul><li>Global map view</li>";
         $html .= "<li>Orion Mapping</li></ul>";
