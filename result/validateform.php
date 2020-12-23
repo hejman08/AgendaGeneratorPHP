@@ -38,6 +38,7 @@ function validateForm() {
             case "Rebuild":
             case "DBMigration":
             case "EngineMigration":
+            case "Upgrade":
                 $ErrorMsg .= "<li>No Day 1 Bits filled out for this engagement</li>";
                 $validated = 0;
                 break;
