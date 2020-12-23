@@ -17,6 +17,7 @@
                     <option value="HC">Health Check</option>
                     <option value="Rebuild">Rebuild</option>
                     <option value="NewBuild">New Build</option>
+                    <option value="Upgrade">Upgrade - No migration</option>
                     <option value="EngineMigration">Migration and Upgrade - Engines Only</option>
                     <option value="DBMigration">Migration and Upgrade - DB and Engines</option>
                     <option value="Training">Training Only</option>

@@ -477,8 +477,20 @@ function day1Bits() {
                             $html .= "<li>Activation of licenses on new server(s)</li></ul>";
                             $html .= "<h3>SolarWinds Software Upgrades</h3>\n\n";
                             $html .= $modules;
-                            
+                        
+                        case "Upgrade":
+                            $html .= "<p><b class=\"impact\">Please note:</b> Typically, an upgrade will take less than one day. If the upgrades go as planned with no issues, there should be left over time.  This time should be used as seen fit by the client and the Loop1 engineer. Example tasks include alerts, reporting, views, account management, Polling Engine balancing, cleanup of excess or unknown elements, and any other SolarWinds - related tasks the client and Engineer may agree upon. Extra time is allocated to account for unforeseen software issues during the upgrade process.</p>";
+                            $html .= "<h2>" . dayHeader($Day1Bits, "Platform Validation | Software Upgrades") . "</h2>\n";
+                            $html .= "<h3>Validation of server platforms</h3>\n";
+                            $html .= $servers; //add in the "Validation & configuration..." bits from before
+                           
+                            $html .= "<h3>Pre-Upgrade Tasks</h3>\n<ul>\n";
+                            $html .= "<li>Backup of the SolarWinds MS SQL database</li>\n";
+                            $html .= "<li>Snapshot of SolarWinds VMs if applicable</li></ul>\n";
+                            $html .= "<h3>SolarWinds Software Upgrades</h3>\n\n";
+                            $html .= $modules;
                             break;
+                        
                     }
 } //end function
 ?>

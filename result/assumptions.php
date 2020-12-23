@@ -57,7 +57,7 @@ $html .="</table>\n";
 $html .="<p>&nbsp;</p>\n";
 
 }
-if ($EngagementType == 'NewBuild' || $EngagementType == 'Rebuild' ) 
+if ($EngagementType == 'NewBuild' || $EngagementType == 'Rebuild' || $EngagementType == 'Upgrade') 
 {
     include_once ("result/assumptions/install_upgrade.php");
 }
@@ -259,74 +259,76 @@ $html .="</tbody>\n";
 $html .="</table>\n";
 $html .="<p>&nbsp;</p>\n";
 
-if ($hasNPM == 1) {
-    include_once ("result/assumptions/npm.php");
-}
-if ($hasNTA == 1) {
-    include_once ("result/assumptions/nta.php");
-}
-if ($hasNCM == 1) {
-    include_once ("result/assumptions/ncm.php");
-}
-if ($hasSAM == 1) {
-    include_once ("result/assumptions/sam.php");
-}
-if ($hasIPAM == true) {
-    include_once ("result/assumptions/ipam.php");
-}
-if ($hasUDT == true) {
-    include_once ("result/assumptions/udt.php");
-}
-if ($hasVNQM == true) {
-    include_once ("result/assumptions/vnqm.php");
-}
-if ($hasWPM == true) {
-    include_once ("result/assumptions/wpm.php");
-}
-if ($hasVMAN == true) {
-    include_once ("result/assumptions/vman.php");
-}
-if ($hasSRM == true) {
-    include_once ("result/assumptions/srm.php");
-}
-if ($hasSCM == true) {
-    include_once ("result/assumptions/scm.php");
-}
-if ($hasHA == true) {
-    include_once ("result/assumptions/ha.php");
-}
-if ($hasSEM == true) {
-    include_once ("result/assumptions/sem.php");
-}
-if ($hasDPA == true) {
-    include_once ("result/assumptions/dpa.php");
-}
+if ($EngagementType != 'Upgrade'){
+    if ($hasNPM == 1) {
+        include_once ("result/assumptions/npm.php");
+    }
+    if ($hasNTA == 1) {
+        include_once ("result/assumptions/nta.php");
+    }
+    if ($hasNCM == 1) {
+        include_once ("result/assumptions/ncm.php");
+    }
+    if ($hasSAM == 1) {
+        include_once ("result/assumptions/sam.php");
+    }
+    if ($hasIPAM == true) {
+        include_once ("result/assumptions/ipam.php");
+    }
+    if ($hasUDT == true) {
+        include_once ("result/assumptions/udt.php");
+    }
+    if ($hasVNQM == true) {
+        include_once ("result/assumptions/vnqm.php");
+    }
+    if ($hasWPM == true) {
+        include_once ("result/assumptions/wpm.php");
+    }
+    if ($hasVMAN == true) {
+        include_once ("result/assumptions/vman.php");
+    }
+    if ($hasSRM == true) {
+        include_once ("result/assumptions/srm.php");
+    }
+    if ($hasSCM == true) {
+        include_once ("result/assumptions/scm.php");
+    }
+    if ($hasHA == true) {
+        include_once ("result/assumptions/ha.php");
+    }
+    if ($hasSEM == true) {
+        include_once ("result/assumptions/sem.php");
+    }
+    if ($hasDPA == true) {
+        include_once ("result/assumptions/dpa.php");
+    }
 
-if ($hasWHD == true) {
-    include_once ("result/assumptions/whd.php");
-}
-if ($hasPM == true) {
-    include_once ("result/assumptions/pman.php");
-}
+    if ($hasWHD == true) {
+        include_once ("result/assumptions/whd.php");
+    }
+    if ($hasPM == true) {
+        include_once ("result/assumptions/pman.php");
+    }
 
-if ($hasARM == true) {
-    include_once ("result/assumptions/arm.php");
-}
+    if ($hasARM == true) {
+        include_once ("result/assumptions/arm.php");
+    }
 
-if ($hasNTM == true) {
-    include_once ("result/assumptions/ntm.php");
-}
+    if ($hasNTM == true) {
+        include_once ("result/assumptions/ntm.php");
+    }
 
-if ($hasKiwi == true) {
-    include_once ("result/assumptions/kiwi.php");
-}
+    if ($hasKiwi == true) {
+        include_once ("result/assumptions/kiwi.php");
+    }
 
-if ($hasDW == true) {
-    include_once ("result/assumptions/dw.php");
-    
-}
+    if ($hasDW == true) {
+        include_once ("result/assumptions/dw.php");
+        
+    }
 
-if ($hasEOC == true) {
-    include_once ("result/assumptions/eoc.php");
+    if ($hasEOC == true) {
+        include_once ("result/assumptions/eoc.php");
+    }
 }
 ?>

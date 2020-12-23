@@ -72,6 +72,15 @@ function introPara()
                 $DBMigration = false;
                 $GLOBALS['NeedsSpecs'] = true;
                 break;
+            case "Upgrade":
+                $return .= "<p>The primary objective of this engagement is upgrade the client’s SolarWinds environment. This process will include hands-on training and knowledge transfer for the client’s SolarWinds administrators.</p>\n";
+
+                $return .= "<p>The client <b class=\"impact\">must have access</b> to their SolarWinds Customer Portal for obtaining license activation keys and downloading the SolarWinds product binaries. Downloading the product binaries prior to the start of the engagement will save valuable consultation time and is <b class=\"impact\">strongly encouraged.</b></p>\n";
+
+                $return .= "<p>Loop1 Systems encourages client participation whenever possible during the configuration of the environment as it will provide valuable hands-on experience to the client’s SolarWinds administrators.</p>\n";
+                $DBMigration = false;
+                $GLOBALS['NeedsSpecs'] = false;
+                break;
             case "HC":
                 $return .= "<p>The primary objective of this engagement is to perform a comprehensive Health Check of the client’s environment.</p>\n";
                 $GLOBALS['NeedsSpecs'] = 0;
