@@ -48,7 +48,7 @@ function validateForm() {
     }
     //user filled in day counts but didn't provide a license size for an engagement type that makes server specs
     
-    if ($EngagementType == "Rebuild" || $EngagementType == "Migration and Upgrade - Engines Only" || $EngagementType == "Migration and Upgrade - DB and Engines" || $EngagementType == "NewBuild" )
+    if ($EngagementType == "Rebuild" || $EngagementType == "Migration and Upgrade - Engines Only" || $EngagementType == "Migration and Upgrade - DB and Engines" || $EngagementType == "NewBuild" || $EngagementType == "Upgrade")
     {
         if ($NPMSize == "None" && ($chkIncludeNPM == 1 || $NPMDays > 0 || $NPMTrainDays > 0))
         {
