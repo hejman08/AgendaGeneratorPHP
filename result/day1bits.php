@@ -53,13 +53,13 @@ function day1Bits() {
     }
     if ($HCReviewDays > 0)
     {
-        $html .= "<h2>". dayHeader($HCReviewDays, "Health Check Document Review & Project Planning Session") . "</h2>\n";
+        $html .= "<h2>". dayHeader($HCReviewDays, "Health Check Document Review & Task Review Session") . "</h2>\n";
         $html .= "<h3>Health Check Documentation Review</h3>\n";
         $html .= "<ul>\n<li>Health Check Documentation review</li>\n";
         $html .= "<ul>\n<li>Performance</li>\n";
         $html .= "<li>Best practices</li>\n";
         $html .= "<li>Recommendations</li>\n</ul>\n</ul>";
-        $html .= "<h3>Project Planning Session</h3>\n";
+        $html .= "<h3>Task Review Session</h3>\n";
         $html .= "<ul>\n<li>Monitoring goals</li>\n<ul>\n";
         if ($hasNetworkModules == true)
         {
@@ -147,7 +147,7 @@ function day1Bits() {
                             $html .= "<h2>" . dayHeader($Day1Bits, "Platform Validation | Planning | SolarWinds Software Install") . "</h2>\n";
                             $html .= "<h3>Validation & Configuration of server platforms</h3>\n";
                             $html .= $servers; //add in the "Validation & configuration..." bits from before
-                            $html .= "\n<h3>Project Planning Session</h3>\n";
+                            $html .= "\n<h3>Task Review Session</h3>\n";
                             $html .= "<ul>\n<li>Monitoring goals</li>\n<ul>\n";
                             if ($hasNetworkModules == true)
                             {
@@ -318,7 +318,7 @@ function day1Bits() {
                             $html .= "<h2>" . dayHeader($Day1Bits, "Platform Validation | Planning | SolarWinds Software Install") . "</h2>\n";
                             $html .= "<h3>Validation & Configuration of server platforms</h3>\n";
                             $html .= $servers; //add in the "Validation & configuration..." bits from before
-                            $html .= "\n<h3>Project Planning Session</h3>\n";
+                            $html .= "\n<h3>Task Review Session</h3>\n";
                             $html .= "<ul>\n<li>Monitoring goals</li>\n<ul>\n";
                             if ($hasNetworkModules == true)
                             {
