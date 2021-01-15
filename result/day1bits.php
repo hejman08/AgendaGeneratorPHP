@@ -144,7 +144,7 @@ function day1Bits() {
                             break;
 
                         case "Rebuild":
-                            $html .= "<h2>" . dayHeader($Day1Bits, "Platform Validation | Planning | SolarWinds Software Install") . "</h2>\n";
+                            $html .= "<h2>" . dayHeader($Day1Bits, "Platform Validation | Task Review | SolarWinds Software Install") . "</h2>\n";
                             $html .= "<h3>Validation & Configuration of server platforms</h3>\n";
                             $html .= $servers; //add in the "Validation & configuration..." bits from before
                             $html .= "\n<h3>Task Review Session</h3>\n";
@@ -315,7 +315,7 @@ function day1Bits() {
 
                             break;
                         case "NewBuild":
-                            $html .= "<h2>" . dayHeader($Day1Bits, "Platform Validation | Planning | SolarWinds Software Install") . "</h2>\n";
+                            $html .= "<h2>" . dayHeader($Day1Bits, "Platform Validation | Task Review | SolarWinds Software Install") . "</h2>\n";
                             $html .= "<h3>Validation & Configuration of server platforms</h3>\n";
                             $html .= $servers; //add in the "Validation & configuration..." bits from before
                             $html .= "\n<h3>Task Review Session</h3>\n";
@@ -402,7 +402,7 @@ function day1Bits() {
                             break;
 
                         case "ExistingRemediation":
-                            $html .= "<h2>" . dayHeader($Day1Bits, "Environment Assessment | Recommendations | Planning | Remediation") . "</h2>\n";
+                            $html .= "<h2>" . dayHeader($Day1Bits, "Environment Assessment | Recommendations | Task Review | Remediation") . "</h2>\n";
                             $html .= "<h3>Validation of server platforms</h3>\n";
                             $html .= $servers; //add in the "Validation & configuration..." bits from before
                             $html .= "<h3>Performance Evaluation</h3>\n";
