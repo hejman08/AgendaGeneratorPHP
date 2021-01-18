@@ -191,7 +191,7 @@ function day1Bits() {
                             if ($hasSEM == true)
                             {
                                 $html .= "<li>Supported data sources to monitor (SEM)</li>\n";
-                                $html .= "<ul>\n<li><a href=\"http://www.solarwinds.com/log-event-manager/data-sources\">SEM Supported Data Sources</a></li>\n</ul>\n";
+                                $html .= "<ul>\n<li><a href=\"https://documentation.solarwinds.com/en/Success_Center/SEM/Content/Connectors/sem-connectors.htm\">SEM Supported Data Sources</a></li>\n</ul>\n";
                                 $html .= "<li>Security requirements (SEM)</li>\n";
                                 $html .= "<ul>\n<li>Industry compliance - HIPAA, PCI, SOX, etc.</li>\n";
                                 $html .= "<li>Internal policies</li>\n</ul>\n";
@@ -362,7 +362,7 @@ function day1Bits() {
                             if ($hasSEM == true)
                             {
                                 $html .= "<li>Supported data sources to monitor (SEM)</li>\n";
-                                $html .= "<ul>\n<li><a href=\"http://www.solarwinds.com/log-event-manager/data-sources\">SEM Supported Data Sources</a></li>\n</ul>\n";
+                                $html .= "<ul>\n<li><a href=\"https://documentation.solarwinds.com/en/Success_Center/SEM/Content/Connectors/sem-connectors.htm\">SEM Supported Data Sources</a></li>\n</ul>\n";
                                 $html .= "<li>Security requirements (SEM)</li>\n";
                                 $html .= "<ul>\n<li>Industry compliance - HIPAA, PCI, SOX, etc.</li>\n";
                                 $html .= "<li>Internal policies</li>\n</ul>\n";
