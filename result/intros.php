@@ -11,12 +11,12 @@ function introPara()
                 $GLOBALS['NeedsSpecs'] = true;
             break;
             case "Rebuild":
-                $return .= "<p>The primary objective of this engagement is to rebuild the client’s SolarWinds environment on new servers. This process will include the implementation of best practices configuration for all products included in the SolarWinds Software List, hands - on training, and knowledge transfer for the client’s SolarWinds administrators.</p>\n";
+                $return .= "<p>The primary objective of this engagement is to rebuild the client’s SolarWinds environment on new servers. This process will include the implementation of best practices configuration for all products included in the SolarWinds Software List and knowledge transfer for the client’s SolarWinds administrators.</p>\n";
 
                 $return .= "<p>The rebuild process will include the preservation of monitored elements and custom configurations from the client’s existing SolarWinds deployment. Historical statistic data will not be preserved.</p>\n";
                 if ($isOrionEng = true)
                 {
-                    $return .= "<p>The client is responsible for providing – fully patched (OS & MS SQL) application server(s) and database server for the deployment. In addition, the client must have access to their SolarWinds Customer Portal for the purpose of obtaining license activation keys and downloading the SolarWinds product binaries. Downloading the product binaries prior to the start of the engagement will save valuable consultation time and is strongly encouraged.</p>\n";
+                    $return .= "<p>The client is responsible for providing fully patched (OS & MS SQL) application server(s) and database server for the deployment. In addition, the client must have access to their SolarWinds Customer Portal for the purpose of obtaining license activation keys and downloading the SolarWinds product binaries. Downloading the product binaries prior to the start of the engagement will save valuable consultation time and is strongly encouraged.</p>\n";
                     $GLOBALS['NeedsSpecs'] = true;
                 }
                 if ($isAPMEng == true)
@@ -24,14 +24,11 @@ function introPara()
                     //not sure if we need anything here, placeholder.
                 }
 
-                $return .= "<p>Loop1 Systems encourages client participation whenever possible during the configuration of the environment as it will provide valuable hands - on experience to the client’s SolarWinds administrators.</p>\n";
+                $return .= "<p>Loop1 Systems encourages client participation whenever possible during the configuration of the environment as it will provide valuable hands-on experience to the client’s SolarWinds administrators.</p>\n";
 
-
-                $return .= "<p>The final product delivered will be a highly functional enterprise level monitoring solution providing both a view into the performance and status of your environment in addition to a proactive system of monitoring, alerting, and reporting to keep users informed of any potential and current problems.</p>\n";
-            
                 break;
             case "NewBuild":
-                $return .= "<p>The primary objective of this engagement is to build the client’s SolarWinds environment. This process will include the implementation of best practices configuration for all products included in the SolarWinds Software list, hands - on training, and knowledge transfer for the client’s SolarWinds administrators.</p>\n";
+                $return .= "<p>The primary objective of this engagement is to build the client’s SolarWinds environment. This process will include the implementation of best practices configuration for all products included in the SolarWinds Software list and knowledge transfer for the client’s SolarWinds administrators.</p>\n";
                 if ($isOrionEng == true)
                 {
                     $return .= "<p>The client is responsible for providing – fully patched (OS & MS SQL) application server(s) and database server for the deployment. In addition, the client must have access to their SolarWinds Customer Portal for the purpose of obtaining license activation keys and downloading the SolarWinds product binaries. Downloading the product binaries prior to the start of the engagement will save valuable consultation time and is strongly encouraged.</p>\n";
@@ -44,12 +41,10 @@ function introPara()
 
                 $return .= "<p>Loop1 Systems encourages client participation whenever possible during the configuration of the environment as it will provide valuable hands - on experience to the client’s SolarWinds administrators.</p>\n";
 
-
-                $return .= "<p>The final product delivered will be a highly functional enterprise level monitoring solution providing both a view into the performance and status of your environment in addition to a proactive system of monitoring, alerting, and reporting to keep users informed of any potential and current problems.</p>\n";
                 $GLOBALS['NeedsSpecs'] = true;
                 break;
             case "DBMigration":
-                $return .= "<p>The primary objectives of this engagement are to migrate and upgrade the client’s SolarWinds environment. This process will include hands-on training and knowledge transfer for the client’s SolarWinds administrators.</p>\n";
+                $return .= "<p>The primary objectives of this engagement are to migrate and upgrade the client’s SolarWinds environment. This process will include knowledge transfer for the client’s SolarWinds administrators.</p>\n";
 
                 $return .= "<p>The client is responsible for providing – fully patched (OS & MS SQL) application servers and database server for the deployment. In addition, the client <b class=\"impact\">must have access</b> to their SolarWinds Customer Portal for obtaining license activation keys and downloading the SolarWinds product binaries. Downloading the product binaries prior to the start of the engagement will save valuable consultation time and is <b class=\"impact\">strongly encouraged.</b></p>\n";
 
@@ -61,7 +56,7 @@ function introPara()
                 $GLOBALS['NeedsSpecs'] = true;
                 break;
             case "EngineMigration":
-                $return .= "<p>The primary objectives of this engagement are to migrate and upgrade the client’s SolarWinds environment. This process will include hands-on training and knowledge transfer for the client’s SolarWinds administrators.</p>\n";
+                $return .= "<p>The primary objectives of this engagement are to migrate and upgrade the client’s SolarWinds environment. This process will include knowledge transfer for the client’s SolarWinds administrators.</p>\n";
 
                 $return .= "<p>The client is responsible for providing – fully patched application server(s) for the deployment. In addition, the client <b class=\"impact\">must have access</b> to their SolarWinds Customer Portal for obtaining license activation keys and downloading the SolarWinds product binaries. Downloading the product binaries prior to the start of the engagement will save valuable consultation time and is <b class=\"impact\">strongly encouraged.</b></p>\n";
 
@@ -73,7 +68,7 @@ function introPara()
                 $GLOBALS['NeedsSpecs'] = true;
                 break;
             case "Upgrade":
-                $return .= "<p>The primary objective of this engagement is upgrade the client’s SolarWinds environment. This process will include hands-on training and knowledge transfer for the client’s SolarWinds administrators.</p>\n";
+                $return .= "<p>The primary objective of this engagement is upgrade the client’s SolarWinds environment. This process will include knowledge transfer for the client’s SolarWinds administrators.</p>\n";
 
                 $return .= "<p>The client <b class=\"impact\">must have access</b> to their SolarWinds Customer Portal for obtaining license activation keys and downloading the SolarWinds product binaries. Downloading the product binaries prior to the start of the engagement will save valuable consultation time and is <b class=\"impact\">strongly encouraged.</b></p>\n";
 

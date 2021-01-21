@@ -21,10 +21,6 @@ if ($PMDays > 0)
         $html .= "<li>Reporting</li></ul>\n";
         $html .= "<li>Testing & Validation</li>\n";
         $html .= "<li>Configuration of compliance reporting</li>\n";
-        $html .= "<li>Integration with NPM (if present)</li>\n";
-        $html .= "<ul><li>Dashboards</li>\n";
-        $html .= "<li>Alerting</li>\n";
-        $html .= "<li>Report configuration</li></ul>\n";
         $html .= "</ul>";
     }
 ?>
