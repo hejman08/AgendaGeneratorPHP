@@ -2,7 +2,7 @@
 $html .="<table width='100%'>\n";
 $html .="<tbody>\n";
 $html .="<tr id='TitleRow'>\n";
-$html .="<td colspan='2'>\n";
+$html .="<td colspan='3'>\n";
 $html .="Orion IP Address Manager (IPAM)\n";
 $html .="</td>\n";
 $html .="</tr>\n";
@@ -61,6 +61,8 @@ $html .="<tr>\n";
 $html .="<td>\n";
 $html .="<p>Escalation Procedures - Orion provides for alert escalation. If this is a desired feature, please have these available prior to the engagement.</p>\n";
 $html .="</td>\n";
+$html .="<td>\n";
+$html .="</td>\n";
 $html .="</tr>\n";
 $html .="<tr>\n";
 $html .="<td>\n";
@@ -68,8 +70,7 @@ $html .="<p>Email distribution group addresses for personnel receiving alerts an
 $html .="</td>\n";
 $html .="<td>\n";
 $html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
+
 $html .="</tr>\n";
 $html .="</tbody>\n";
 $html .="</table>\n";
