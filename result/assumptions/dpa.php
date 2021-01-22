@@ -3,7 +3,7 @@ $html .="<table width='100%'>\n";
 $html .="<tbody>\n";
 $html .="<tr id='TitleRow'>\n";
 $html .="<td colspan='3' width='100%'>\n";
-$html .="Database Performance Analyser (DPA)\n";
+$html .="Database Performance Analyzer (DPA)\n";
 $html .="</td>\n";
 $html .="</tr>\n";
 $html .="<tr>\n";
