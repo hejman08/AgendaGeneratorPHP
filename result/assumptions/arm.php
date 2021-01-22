@@ -2,7 +2,7 @@
 $html .="<table width='100%'>\n";
 $html .="<tbody>\n";
 $html .="<tr id='TitleRow'>\n";
-$html .="<td colspan='2'>\n";
+$html .="<td colspan='3'>\n";
 $html .="Access Rights Manager (ARM)\n";
 $html .="</td>\n";
 $html .="</tr>\n";
@@ -12,6 +12,9 @@ $html .="<h3>Task</h3>\n";
 $html .="</td>\n";
 $html .="<td>\n";
 $html .="<h3>Assumptions &amp; Dependencies</h3>\n";
+$html .="</td>\n";
+$html .="<td>\n";
+$html .="<h3>Completed by\n";
 $html .="</td>\n";
 $html .="</tr>\n";
 $html .="<tr>\n";
