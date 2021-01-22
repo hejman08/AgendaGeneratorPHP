@@ -2,7 +2,7 @@
 $html .="<table width='100%'\n";
 $html .="<tbody>\n";
 $html .="<tr id='TitleRow'>\n";
-$html .="<td colspan='2'>\n";
+$html .="<td colspan='3'>\n";
 $html .="Patch Manager (PM)\n";
 $html .="</td>\n";
 $html .="</tr>\n";
