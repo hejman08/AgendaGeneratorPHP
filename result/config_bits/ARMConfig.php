@@ -2,7 +2,7 @@
 global $ARMDays;
 if ($ARMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($ARMDays, "ARM Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($ARMDays, "ARM Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>ARM Configuration Tasks</h3>\n";
         $html .= "<ul><li>Configuration of Active Directory service components</li>";
         $html .= "<li>SQL Server Database Maintenance</li>";

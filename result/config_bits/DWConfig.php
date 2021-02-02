@@ -2,7 +2,7 @@
 global $DWDays;
 if ($DWDays > 0)
     {
-        $html .= "<h2>" . dayHeader($DWDays, "DW Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($DWDays, "DW Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>DW Configuration Tasks</h3>\n";
         $html .= "<ul><li>Configuration - Microsoft Windows Network browser</li>\n";
         $html .= "<ul><li>Global Host List</li>\n";

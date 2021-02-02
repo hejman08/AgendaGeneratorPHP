@@ -2,10 +2,9 @@
 global $AdminKTDays, $isOrionEng, $modules, $KTModules;
 if ($AdminKTDays > 0)
     {
-        $html .= "<h2>" . dayHeader($AdminKTDays, "Admin Training & Knowledge Transfer") . "</h2>\n";
-        $html .= "<h3>Admin Role Training</h3>\n";
-        $html .= "<ul><li>SolarWinds software administrative tasks</li>\n";
-                        $html .= "<li>User access control</li>\n";
+        $html .= "<h2>" . dayHeader($AdminKTDays, "Verbal Knowledge Transfer") . "</h2>\n";
+        $html .= "<h3>SolarWinds Administrative Tasks</h3>\n";
+                        $html .= "<ul><li>User access control</li>\n";
                         $html .= "<li>Upgrades/Patching</li>\n";
                         $html .= "<li>Application security</li>\n";
                         $html .= "<li>SolarWinds software troubleshooting</li>\n";
@@ -18,13 +17,9 @@ if ($AdminKTDays > 0)
                             $html .= "<li>Database structure (Core modules)</li>\n";
                             $html .= "<li>Database best practices</li>\n";
                         }
-                        $html .= "<li>Enterprise monitoring best practices</li>\n";
-                        $html .= "<li>Where to get help!</li>\n";
-                        $html .= "<ul><li>Thwack</li>\n";
-                        $html .= "<li>SolarWinds KB</li>\n";
-                        $html .= "<li>Loop1 Systems Managed Services Team</li></ul>\n";
-                        $html .= "</ul>";
-                        $html .= "<h3>Knowledge Transfer</h3>\n";
+                        $html .= "<li>Enterprise monitoring best practices</li></ul>\n";
+                     
+                        $html .= "<h3>Verbal Knowledge Transfer</h3>\n";
                         $html .= "<ul><li>Review of key configurations implemented by Loop1 Systems during the engagement";
                         
                         if ($isOrionEng == true)

@@ -2,7 +2,7 @@
 global $AWSDays;
 if ($AWSDays > 0)
     {
-        $html .= "<h2>" . dayHeader($AWSDays, "AWS Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($AWSDays, "AWS Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>APE Configuration Tasks</h3>\n";
         $html .= "<ul><li>Validation of install</li>\n";
         $html .= "<li>Configuration of SSL if desired</li></ul>\n";

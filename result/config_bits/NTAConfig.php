@@ -2,7 +2,7 @@
 global $NTADays;
 if ($NTADays > 0)
     {
-        $html .= "<h2>" . dayHeader($NTADays, "NTA Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($NTADays, "NTA Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>NTA Configuration Tasks</h3>\n";
         $html .= "<ul><li>NTA Deployment strategy</li>\n";
         $html .= "<li>Validation of sources </li>\n";

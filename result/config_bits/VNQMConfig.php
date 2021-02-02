@@ -2,7 +2,7 @@
 global $VNQMDays;
 if ($VNQMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($VNQMDays, "VNQM Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($VNQMDays, "VNQM Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>VNQM Configuration Tasks</h3>\n";
         $html .= "<ul><li>Validation of VoIP infrastructure nodes</li>\n";
         $html .= "<ul><li>Import/Configuration of devices</li>\n";

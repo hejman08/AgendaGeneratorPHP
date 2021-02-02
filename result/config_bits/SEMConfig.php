@@ -2,7 +2,7 @@
 global $SEMDays;
 if ($SEMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($SEMDays, "SEM Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($SEMDays, "SEM Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>SEM Configuration Tasks</h3>\n";
         $html .= "<ul><li>Import/Validation of Nodes</li>\n";
         $html .= "<ul><li>Syslog configuration</li>\n";

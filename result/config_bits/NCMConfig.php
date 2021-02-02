@@ -2,7 +2,7 @@
 global $NCMDays;
 if ($NCMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($NCMDays, "NCM Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($NCMDays, "NCM Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>NCM Configuration Tasks</h3>\n";
         $html .= "<ul><li>Connection profile creation</li>\n";
         $html .= "<li>Job configuration – backups, change reports, archive, maintenance, etc. </li>\n";

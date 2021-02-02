@@ -2,7 +2,7 @@
 global $NTMDays;
 if ($NTMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($NTMDays, "NTM Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($NTMDays, "NTM Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>NPM/NTM Configuration Tasks</h3>\n";
         $html .= "<ul><li>Core Orion – Worldwide Map</li>\n";
         $html .= "<ul><li>Worldwide Map configuration</li>\n";

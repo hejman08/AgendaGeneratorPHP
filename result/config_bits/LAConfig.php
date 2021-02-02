@@ -2,7 +2,7 @@
 global $LADays;
 if ($LADays > 0)
     {
-        $html .= "<h2>" . dayHeader($LADays, "LA Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($LADays, "LA Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>LA Configuration Tasks</h3>\n";
         $html .= "<ul><li>Addition/removal of LA managed nodes</li>\n";
         $html .= "<li>Deployment of Orion agents for server nodes</li>\n";

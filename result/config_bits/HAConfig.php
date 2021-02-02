@@ -3,7 +3,7 @@ global $HADays;
 global $numAPEs;
 if ($HADays > 0)
     {
-        $html .= "<h2>" . dayHeader($HADays, "HA Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($HADays, "HA Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>HA Configuration Tasks</h3>\n";
         $html .= "<ul><li>Pre-install validation checks</li>\n";
         $html .= "<ul><li>Server configuration</li>\n";

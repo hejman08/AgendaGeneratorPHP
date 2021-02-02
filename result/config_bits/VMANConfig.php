@@ -2,7 +2,7 @@
 global $VMANDays;
 if ($VMANDays > 0)
     {
-        $html .= "<h2>" . dayHeader($VMANDays, "VMAN Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($VMANDays, "VMAN Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>VMAN Configuration Tasks</h3>\n";
         $html .= "<ul><li>Validation/Configuration of credentials </li>\n";
         $html .= "<li>Import of vCenter(s)/ESX hosts</li>\n";

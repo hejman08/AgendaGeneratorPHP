@@ -2,7 +2,7 @@
 global $APMDays;
 if ($APMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($APMDays, "APM Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($APMDays, "APM Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>APM Configuration Tasks</h3>\n";
         $html .= "<ul><li>Deployment of Host agents</li>\n";
         $html .= "<ul><li>Host Agent Plugins</li>\n";

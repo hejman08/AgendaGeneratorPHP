@@ -2,7 +2,7 @@
 global $IPAMDays;
 if ($IPAMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($IPAMDays, "IPAM Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($IPAMDays, "IPAM Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>IPAM Configuration Tasks</h3>\n";
         $html .= "<ul>";
         $html .= "<li>Import/Discovery of subnets</li>\n";

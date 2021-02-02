@@ -2,7 +2,7 @@
 global $PMDays;
 if ($PMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($PMDays, "PM Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($PMDays, "PM Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>Configuration of Server platforms</h3>\n";
         $html .= "<ul><li>PM Automation Role server(s) (if needed)</li>\n";
         $html .= "</ul>";

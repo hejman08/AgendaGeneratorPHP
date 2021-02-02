@@ -2,7 +2,7 @@
 global $SCMDays;
 if ($SCMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($SCMDays, "SCM Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($SCMDays, "SCM Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>SCM Configuration Tasks</h3>\n";
         $html .= "<ul>";
         $html .= "<li>Adding nodes to SCM</li>\n";

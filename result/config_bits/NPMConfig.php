@@ -2,7 +2,7 @@
 global $NPMDays;
 if ($NPMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($NPMDays, "NPM Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($NPMDays, "NPM Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>NPM Configuration Tasks</h3>\n";
         $html .= "<ul><li>Validation of credentials / community strings </li>";
         $html .= "<ul><li>Validation of network access</li></ul>";

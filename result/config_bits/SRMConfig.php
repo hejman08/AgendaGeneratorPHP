@@ -2,7 +2,7 @@
 global $SRMDays;
 if ($SRMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($SRMDays, "SRM Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($SRMDays, "SRM Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>SRM Configuration Tasks</h3>\n";
         if ($chkSRMProfiler == true) {
             $html .= "<ul><li>Configuration of SRM software (as needed)</li>\n";

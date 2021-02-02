@@ -2,7 +2,7 @@
 global $ServUDays;
 if ($ServUDays > 0)
     {
-        $html .= "<h2>" . dayHeader($ServUDays, "Serv-U Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($ServUDays, "Serv-U Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>Serv-U Configuration Tasks</h3>\n";
         $html .= "<ul><li>Installation of Serv-U servers</li>\n";
         $html .= "<ul><li>Serv-U Gateway</li>\n";

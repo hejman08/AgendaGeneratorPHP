@@ -2,7 +2,7 @@
 global $SAMDays;
 if ($SAMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($SAMDays, "SAM Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($SAMDays, "SAM Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>SAM Configuration Tasks</h3>\n";
         $html .= "<ul>";
         $html .= "<li>Credential library configuration / validation</li>\n";

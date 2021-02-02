@@ -2,7 +2,7 @@
 global $DPADays;
 if ($DPADays > 0)
     {
-        $html .= "<h2>" . dayHeader($DPADays, "DPA Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($DPADays, "DPA Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>DPA Configuration Tasks</h3>\n";
         $html .= "<ul><li>Credential configuration</li>\n";
         $html .= "<li>Import of target database instances</li>\n";

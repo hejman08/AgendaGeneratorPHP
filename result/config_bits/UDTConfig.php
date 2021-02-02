@@ -2,7 +2,7 @@
 global $UDTDays;
 if ($UDTDays > 0)
     {
-        $html .= "<h2>" . dayHeader($UDTDays, "UDT Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($UDTDays, "UDT Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>UDT Configuration Tasks</h3>\n";
         $html .= "<ul><li>Importation/Configuration of Active Directory server(s) </li>\n";
         $html .= "<li>Device compatibility checker </li>\n";

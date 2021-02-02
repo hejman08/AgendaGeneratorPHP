@@ -2,7 +2,7 @@
 global $WPMDays;
 if ($WPMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($WPMDays, "WPM Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($WPMDays, "WPM Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>WPM Configuration Tasks</h3>\n";
         $html .= "<ul><li>Configuration of main application</li>\n";
         $html .= "<li>Configuration of player(s)</li>\n";

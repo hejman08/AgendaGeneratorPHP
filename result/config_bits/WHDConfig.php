@@ -2,7 +2,7 @@
 global $WHDDays;
 if ($WHDDays > 0)
     {
-        $html .= "<h2>" . dayHeader($WHDDays, "WHD Best Practices Configuration & Hands-On Training") . "</h2>\n";
+        $html .= "<h2>" . dayHeader($WHDDays, "WHD Best Practices Configuration") . "</h2>\n";
         $html .= "<h3>WHD Configuaration Tasks</h3>\n";
         $html .= "<ul><li>General setup options </li>\n";
         $html .= "<ul><li>AD/LDAP Integration</li>\n";
