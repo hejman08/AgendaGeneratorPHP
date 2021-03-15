@@ -398,7 +398,7 @@ function day1Bits() {
                                 . "<li>Mapping requirements</li>\n";
                             }
                             $html .= "</ul>\n</ul>\n<h3>Installation Tasks</h3>\n"
-                            . "<ul>\n<li>Software Installs</li>\n\n";
+                            . "<ul>\n<li>Software Installs</li>\n\n"
                             . $modules
                             . "</ul>\n</ul>\n"; //end of software install
 
