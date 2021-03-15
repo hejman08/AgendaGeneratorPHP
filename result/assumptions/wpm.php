@@ -1,77 +1,77 @@
 <?php
-$html .="<table width='100%'\n";
-$html .="<tbody>\n";
-$html .="<tr id='TitleRow'>\n";
-$html .="<td colspan='3'>\n";
-$html .="Orion Web Performance Monitor (WPM)\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td width='25%'>\n";
-$html .="<h3>Task</h3>\n";
-$html .="</td>\n";
-$html .="<td width='60%'>\n";
-$html .="<h3>Assumptions &amp; Dependencies</h3>\n";
-$html .="</td>\n";
-$html .="<td width='15%'>\n";
-$html .="<h3>Completed by</h3>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Install Web Performance Monitor Player</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Client provides server locations or Cloud based server to install the WPM player(s).</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Produce sample recording and import to Orion NPM for monitoring</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Client provides web site and instruction on valid recording. Sites to be monitored must comply with any requirements for WPM functionality.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Customize Dashboard and Menu Bars</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Custom menu bar links and dashboard views have been identified as part of the requirements phase.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td rowspan='3'>\n";
-$html .="<p><strong>Generate Alerts</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Alert Recipients - know what individuals or Distribution Lists alerts will go to.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p>Escalation Procedures - Orion provides for alert escalation. If this is a desired feature, please have these available prior to the engagement.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p>Email distribution group addresses for personnel receiving alerts and SMTP server settings have been provided.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="</tbody>\n";
-$html .="</table>\n";
-$html .="<p>&nbsp;</p>\n";
+$html .="<table width='100%'\n"
+. "<tbody>\n"
+. "<tr id='TitleRow'>\n"
+. "<td colspan='3'>\n"
+. "Orion Web Performance Monitor (WPM)\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td width='25%'>\n"
+. "<h3>Task</h3>\n"
+. "</td>\n"
+. "<td width='60%'>\n"
+. "<h3>Assumptions &amp; Dependencies</h3>\n"
+. "</td>\n"
+. "<td width='15%'>\n"
+. "<h3>Completed by</h3>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Install Web Performance Monitor Player</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Client provides server locations or Cloud based server to install the WPM player(s).</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Produce sample recording and import to Orion NPM for monitoring</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Client provides web site and instruction on valid recording. Sites to be monitored must comply with any requirements for WPM functionality.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Customize Dashboard and Menu Bars</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Custom menu bar links and dashboard views have been identified as part of the requirements phase.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td rowspan='3'>\n"
+. "<p><strong>Generate Alerts</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Alert Recipients - know what individuals or Distribution Lists alerts will go to.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p>Escalation Procedures - Orion provides for alert escalation. If this is a desired feature, please have these available prior to the engagement.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p>Email distribution group addresses for personnel receiving alerts and SMTP server settings have been provided.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "</tbody>\n"
+. "</table>\n"
+. "<p>&nbsp;</p>\n";
 ?>

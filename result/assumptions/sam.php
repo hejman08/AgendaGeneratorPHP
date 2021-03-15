@@ -1,148 +1,153 @@
 <?php
 global $html, $hasSAM;
-$html .="<table>\n";
-$html .="<tbody>\n";
-$html .="<tr id='TitleRow'>\n";
-$html .="<td colspan='3'>\n";
-$html .="Orion Server and Application Monitor (SAM)\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td width='25%'>\n";
-$html .="<h3>Task</h3>\n";
-$html .="</td>\n";
-$html .="<td width='60%'>\n";
-$html .="<h3>Assumptions &amp; Dependencies</h3>\n";
-$html .="</td>\n";
-$html .="<td width='15%'>\n";
-$html .="<h3>Completed by</h3>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Creating Custom Templates</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Desired applications to be monitored have been identified as part of requirements phase.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Deployment of SAM agents</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Target servers have been identified, and a service account with adequate permissions for installation has been provided. Agent installation requires remote access to target servers; please refer to the SAM Admin Guide in the <a href='https://documentation.solarwinds.com/en/success_center/sam/Content/sam_Administrator_Guide.htm'>SolarWinds Success Center.</a></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Assignment of SAM templates</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Necessary administrative credentials have been created for use by SAM job engine in performing data collection (Windows and/or Unix / Linux).</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Define Application Thresholds</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Define thresholds for metrics such as CPU, Memory and/or Statistics related to monitored applications.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configure Server Hardware Health collection</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Necessary vendor SNMP or WBEM agents have been installed (Dell OpenManage, HP Insight, IBM Director)</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td rowspan='3'>\n";
-$html .="<p><strong>Generate Alerts</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Alert Recipients - know what individuals or Distribution Lists alerts will go to.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p>Escalation Procedures - Orion provides for alert escalation. If this is a desired feature, please have these available prior to the engagement.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p>Email distribution group addresses for personnel receiving alerts and SMTP server settings have been provided.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Generate Reports, Configure Report Scheduler</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Reporting requirements have been established during the requirements phase. Email distribution groups or addresses have been provided for Report Scheduler, and SMTP server settings have been provided.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Generate and populate custom properties</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>A list of desired custom property values has been created or determined during the review phase.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Create Users and Account Limitations</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>A list of Orion Administrators and Users has been provided; user roles and desired view limitations have been captured in the requirements phase.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>AppInsight Applications</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>A list of MS SQL, MS IIS, and MS Exchange Mailbox servers and appropriate credentials have been provided.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Cloud instance monitoring</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Appropriate credentials have been provided for each instance. Please refer to <a href='https://support.solarwinds.com/SuccessCenter/s/article/Orion-2017-3-feature-Cloud-Infrastructure-Monitoring'>this link</a> for supported instance types and credential requirements.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="</tbody>\n";
-$html .="</table>\n";
-$html .="<p>&nbsp;</p>\n";
+$html .= "<table>\n"
+. "<tbody>\n"
+. "<tr id='TitleRow'>\n"
+. "<td colspan='3'>\n"
+. "Orion Server and Application Monitor (SAM)\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td width='25%'>\n"
+. "<h3>Task</h3>\n"
+. "</td>\n"
+. "<td width='60%'>\n"
+. "<h3>Assumptions &amp; Dependencies</h3>\n"
+. "</td>\n"
+. "<td width='15%'>\n"
+. "<h3>Completed by</h3>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Creating Custom Templates</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Desired applications to be monitored have been identified as part of requirements phase.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Deployment of SAM agents</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Target servers have been identified, and a service account with adequate permissions for installation has been provided. Agent installation "
+. "requires remote access to target servers; please refer to the SAM Admin Guide in the "
+. "<a href='https://documentation.solarwinds.com/en/success_center/sam/Content/sam_Administrator_Guide.htm'>SolarWinds Success Center.</a></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Assignment of SAM templates</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Necessary administrative credentials have been created for use by SAM job engine in performing data collection (Windows and/or Unix / Linux).</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Define Application Thresholds</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Define thresholds for metrics such as CPU, Memory and/or Statistics related to monitored applications.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configure Server Hardware Health collection</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Necessary vendor SNMP or WBEM agents have been installed (Dell OpenManage, HP Insight, IBM Director)</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td rowspan='3'>\n"
+. "<p><strong>Generate Alerts</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Alert Recipients - know what individuals or Distribution Lists alerts will go to.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p>Escalation Procedures - Orion provides for alert escalation. If this is a desired feature, please have these available prior to the engagement.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p>Email distribution group addresses for personnel receiving alerts and SMTP server settings have been provided.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Generate Reports, Configure Report Scheduler</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Reporting requirements have been established during the requirements phase. Email distribution groups or addresses have been provided "
+. "for Report Scheduler, and SMTP server settings have been provided.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Generate and populate custom properties</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>A list of desired custom property values has been created or determined during the review phase.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Create Users and Account Limitations</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>A list of Orion Administrators and Users has been provided; user roles and desired view limitations have been captured in the requirements phase.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>AppInsight Applications</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>A list of MS SQL, MS IIS, and MS Exchange Mailbox servers and appropriate credentials have been provided.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Cloud instance monitoring</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Appropriate credentials have been provided for each instance. Please refer to "
+. "<a href='https://support.solarwinds.com/SuccessCenter/s/article/Orion-2017-3-feature-Cloud-Infrastructure-Monitoring'>"
+. "this link</a> for supported instance types and credential requirements.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "</tbody>\n"
+. "</table>\n"
+. "<p>&nbsp;</p>\n";
 ?>

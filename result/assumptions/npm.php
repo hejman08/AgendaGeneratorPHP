@@ -1,169 +1,176 @@
 <?php
 
-$html .="<table>\n";
-$html .="<tbody>\n";
-$html .="<tr id='TitleRow'>\n";
-$html .="<td colspan='3'>\n";
-$html .="Orion Network Performance Monitor (NPM)\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td width='25%'>\n";
-$html .="<h3>Task</h3>\n";
-$html .="</td>\n";
-$html .="<td width='60%'>\n";
-$html .="<h3>Assumptions &amp; Dependencies</h3>\n";
-$html .="</td>\n";
-$html .="<td width='15%'>\n";
-$html .="<h3>Completed by</h3>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Generate and populate custom properties</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>A list of desired custom property values has been created or determined during the review phase.</p>\n";
-$html .="<p>Suggestion - use custom properties that match client CMDB (location, infrastructure details/labels, etc.)</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Create Users and Account Limitations</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>A list of Orion Administrators and Users has been provided; user roles and desired view limitations have been captured in the requirements phase.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Customize Dashboard and Menu Bars</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Custom menu bar links and dashboard views have been identified as part of the requirements phase.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Generate Maps</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Current Visio drawings and/or geographic information for building maps is provided or alternate desired map views have been identified during the requirements phase.&nbsp; Additionally, if World Map is desired, latitude and longitude for each site will be required.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td rowspan='3'>\n";
-$html .="<p><strong>Generate Alerts</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Email distribution group addresses for personnel receiving alerts and SMTP server settings have been provided.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p>Alert Recipients - know what individuals or Distribution Lists alerts will go to</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p>Escalation Procedures - Orion provides for alert escalation. If this is a desired feature, please have these available prior to the engagement.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Generate Reports, Configure Report Scheduler</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Reporting requirements have been established during the requirements phase.&nbsp; Email distribution groups or addresses have been provided for Report Scheduler, and SMTP server settings have been provided.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Generate Custom MIB Pollers</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Custom polling requirements have been established; the target device has been added to Orion and is accessible for verification of polled values.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Generate Pass-through Authentication with Active Directory</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Domain and user information is provided (should the Client require pass-through authentication with Active Directory).</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Create Groups</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Define the desired groups to be created and/or grouping hierarchy to be established.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Create Dependencies</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Necessary node and/or group relationships have been defined.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Quality of Experience</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Packet capture location(s) and/or network ports have been identified.<br /> Please refer to <a href='https://documentation.solarwinds.com/en/success_center/orionplatform/Content/Core-Common-Packet-Analysis-Sensor-Deployment-Scenarios-sw3242.htm'>this link</a> for deployment considerations for QOE.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>NetPath services</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>NetPath probe locations and path definitions have been identified.&nbsp; Please refer to<a href='https://documentation.solarwinds.com/en/success_center/NPM/Content/NPM-NetPath-requirements.htm'> this link</a> for NetPath probe deployment requirements.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configure F5 iControl</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>A local account with F5 iControl API access as well as SNMP have been configured on F5 BIG-IP devices running TMOS version 11.6 and later. Please note that TACACS / Active Directory accounts are <strong>not</strong> supported.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="</tbody>\n";
-$html .="</table>\n";
-$html .="<p>&nbsp;</p>\n";
+$html .= "<table>\n"
+. "<tbody>\n"
+. "<tr id='TitleRow'>\n"
+. "<td colspan='3'>\n"
+. "Orion Network Performance Monitor (NPM)\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td width='25%'>\n"
+. "<h3>Task</h3>\n"
+. "</td>\n"
+. "<td width='60%'>\n"
+. "<h3>Assumptions &amp; Dependencies</h3>\n"
+. "</td>\n"
+. "<td width='15%'>\n"
+. "<h3>Completed by</h3>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Generate and populate custom properties</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>A list of desired custom property values has been created or determined during the review phase.</p>\n"
+. "<p>Suggestion - use custom properties that match client CMDB (location, infrastructure details/labels, etc.)</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Create Users and Account Limitations</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>A list of Orion Administrators and Users has been provided; user roles and desired view limitations have been captured in the requirements phase.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Customize Dashboard and Menu Bars</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Custom menu bar links and dashboard views have been identified as part of the requirements phase.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Generate Maps</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Current Visio drawings and/or geographic information for building maps is provided or alternate desired map views have been identified during the "
+. "requirements phase.&nbsp; Additionally, if World Map is desired, latitude and longitude for each site will be required.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td rowspan='3'>\n"
+. "<p><strong>Generate Alerts</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Email distribution group addresses for personnel receiving alerts and SMTP server settings have been provided.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p>Alert Recipients - know what individuals or Distribution Lists alerts will go to</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p>Escalation Procedures - Orion provides for alert escalation. If this is a desired feature, please have these available prior to the engagement.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Generate Reports, Configure Report Scheduler</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Reporting requirements have been established during the requirements phase.&nbsp; Email distribution groups or addresses have been provided for "
+. "Report Scheduler, and SMTP server settings have been provided.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Generate Custom MIB Pollers</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Custom polling requirements have been established; the target device has been added to Orion and is accessible for verification of polled values.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Generate Pass-through Authentication with Active Directory</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Domain and user information is provided (should the Client require pass-through authentication with Active Directory).</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Create Groups</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Define the desired groups to be created and/or grouping hierarchy to be established.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Create Dependencies</strong></p>\n";
+. "</td>\n"
+. "<td>\n"
+. "<p>Necessary node and/or group relationships have been defined.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Quality of Experience</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Packet capture location(s) and/or network ports have been identified.<br /> Please refer to "
+. "<a href='https://documentation.solarwinds.com/en/success_center/orionplatform/Content/Core-Common-Packet-Analysis-Sensor-Deployment-Scenarios-sw3242.htm'>"
+. "this link</a> for deployment considerations for QOE.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>NetPath services</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>NetPath probe locations and path definitions have been identified.&nbsp; Please refer to"
+. "<a href='https://documentation.solarwinds.com/en/success_center/NPM/Content/NPM-NetPath-requirements.htm'> "
+. "this link</a> for NetPath probe deployment requirements.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configure F5 iControl</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>A local account with F5 iControl API access as well as SNMP have been configured on F5 BIG-IP devices running TMOS version 11.6 and later. "
+. "Please note that TACACS / Active Directory accounts are <strong>not</strong> supported.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "</tbody>\n"
+. "</table>\n"
+. "<p>&nbsp;</p>\n";
 ?>

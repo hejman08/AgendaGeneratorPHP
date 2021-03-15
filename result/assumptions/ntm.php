@@ -1,28 +1,28 @@
 <?php
-$html .="<table width='100%'>\n";
-$html .="<tbody>\n";
-$html .="<tr id='TitleRow'>\n";
-$html .="<td colspan='2'>\n";
-$html .="Network Topology Mapper (NTM)\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<h3>Task</h3>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<h3>Assumptions &amp; Dependencies</h3>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Create Network Maps</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>A list of subnets with SNMP community Strings has been provided.</p>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="</tbody>\n";
-$html .="</table>\n";
-$html .="<p>&nbsp;</p>\n";
+$html .="<table width='100%'>\n"
+. "<tbody>\n"
+. "<tr id='TitleRow'>\n"
+. "<td colspan='2'>\n"
+. "Network Topology Mapper (NTM)\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<h3>Task</h3>\n"
+. "</td>\n"
+. "<td>\n"
+. "<h3>Assumptions &amp; Dependencies</h3>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><string>Create Network Maps</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>A list of subnets with SNMP community Strings has been provided.</p>\n"
+. "</td>\n"
+. "</tr>\n"
+. "</tbody>\n"
+. "</table>\n"
+. "<p>&nbsp;</p>\n";
 ?>

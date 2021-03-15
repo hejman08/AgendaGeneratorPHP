@@ -266,8 +266,14 @@ $ModuleCount = 12; //start with max # of modules and remove from each blank size
             //actually build the specs for the Orion Core servers and DB's
             $ReturnStr = "<h1>Server Recommendations</h1>\n";
             $ReturnStr .= "<H2>Disclaimer</h2>\n";
-            $ReturnStr .= "<p>These are <b class='impact'>base recommendations</b> for your SolarWinds platform. Resources may need to be increased over time depending on the actual workload placed on the environment. Please note that these recommendations are also based on the average of many environments of the prescribed size, and therefore it is also possible that the client’s environment may require less resources in some cases as well. It is advised to start with the below recommended amounts of resources, monitor the usage across all servers over time, and add or remove resources as needed to maintain reasonable usage without over/under-provisioning.</p>\n";
-            $ReturnStr .= "<p>Specifications below are written under the assumption the deployment will be on-premise. Loop1 recommends virtual servers for all deployments where possible. For deployments in Amazon Web Services or Microsoft Azure, <a href='https://documentation.solarwinds.com/en/Success_Center/orionplatform/Content/Core-Multi-Module-System-Guidelines.htm'>please see this link.</a></p>";
+            $ReturnStr .= "<p>These are <b class='impact'>base recommendations</b> for your SolarWinds platform. Resources may need "
+            . "to be increased over time depending on the actual workload placed on the environment. Please note that these recommendations are also based "
+            . "on the average of many environments of the prescribed size, and therefore it is also possible that the client’s environment may require less resources in "
+            . "some cases as well. It is advised to start with the below recommended amounts of resources, monitor the usage across all servers over time, and add or "
+            . "remove resources as needed to maintain reasonable usage without over/under-provisioning.</p>\n";
+            $ReturnStr .= "<p>Specifications below are written under the assumption the deployment will be on-premise. Loop1 recommends virtual servers for all "
+            . "deployments where possible. For deployments in Amazon Web Services or Microsoft Azure, "
+            . "<a href='https://documentation.solarwinds.com/en/Success_Center/orionplatform/Content/Core-Multi-Module-System-Guidelines.htm'>please see this link.</a></p>";
             if ($isOrionEng == true)
             {
                 //build Orion App server regardless of type (as long as it's an Orion deployment at all)
@@ -496,8 +502,11 @@ $ModuleCount = 12; //start with max # of modules and remove from each blank size
                     }
                     break;
             }
-            $ReturnStr .= "<p><b class='impact'>Note:</b> The speed of the data and log drives for the MS SQL back-end is extremely important for a healthy and optimally performing Orion environment. If the database is located on a physical server using local storage, SSD drives or 15KRPM drives in a RAID 10 configuration are strongly recommended.</p>";
-            $ReturnStr .= "<p><a href = 'https://support.solarwinds.com/SuccessCenter/s/article/MS-SQL-Server-Replication-in-SolarWinds-Orion-Database'>*If using a MS SQL clustering please see this KB article regarding supported MS SQL replication options</a></p>";
+            $ReturnStr .= "<p><b class='impact'>Note:</b> The speed of the data and log drives for the MS SQL back-end is extremely important for a healthy "
+            . "and optimally performing Orion environment. If the database is located on a physical server using local storage, SSD drives or 15KRPM drives "
+            . "in a RAID 10 configuration are strongly recommended.</p>";
+            $ReturnStr .= "<p><a href = 'https://support.solarwinds.com/SuccessCenter/s/article/MS-SQL-Server-Replication-in-SolarWinds-Orion-Database'>*If using "
+            . "a MS SQL clustering please see this KB article regarding supported MS SQL replication options</a></p>";
 
 
             
@@ -567,7 +576,8 @@ $ModuleCount = 12; //start with max # of modules and remove from each blank size
                 $ReturnStr .= "<h2>DPA Repository Database Server</h2>\n";
                 $ReturnStr .= "<ul>";
                 $ReturnStr .= "<li>OS - Server 2016 or 2019</li>\n";
-                $ReturnStr .= "<li>Database – SQL Server 2014 SP2, 2016 SP1, or SQL Server 2017 Standard or Enterprise OR Oracle 11.2 / 12.1 / 12.2 Standard or Enterprise(single tenant & multitenant) </li>";
+                $ReturnStr .= "<li>Database – SQL Server 2014 SP2, 2016 SP1, or SQL Server 2017 Standard or Enterprise OR Oracle 11.2 / 12.1 / 12.2 "
+                . "Standard or Enterprise(single tenant & multitenant) </li>";
                 $ReturnStr .= "<li>CPU - " . $DPARepCPU . " Cores or better (Expandable for growth)</li>\n";
                 $ReturnStr .= "<li>RAM - " . $DPARepRAM . "GB or better (Expandable for growth)</li>\n";
                 $ReturnStr .= "<li>Drives:</li><ul>\n";
@@ -717,7 +727,8 @@ $ModuleCount = 12; //start with max # of modules and remove from each blank size
                 $ReturnStr .= "<li>Drives:</li><ul>\n";
                 $ReturnStr .= "<li>80GB Standard OS Drive (C:)</li>\n";
                 $ReturnStr .= "<li>150GB MS SQL Data storage (E:) (Expandable for growth)</li>\n</ul>\n</ul>\n";
-                $ReturnStr .="<p>*Note that SQL Express limits data storage to 10GB and will also impact performance in larger environments due to maximum RAM and CPU limitations. It is not recommended to use SQL express in environments with over 1000 users.</p>\n";
+                $ReturnStr .="<p>*Note that SQL Express limits data storage to 10GB and will also impact performance in larger environments "
+                . "due to maximum RAM and CPU limitations. It is not recommended to use SQL express in environments with over 1000 users.</p>\n";
                 
 
 

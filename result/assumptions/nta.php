@@ -1,93 +1,95 @@
 <?php
-$html .="<table width='100%'\n";
-$html .="<tbody>\n";
-$html .="<tr id = 'TitleRow'>\n";
-$html .="<td colspan='3'>\n";
-$html .="NetFlow Traffic Analyzer Module for Orion NPM (NTA)\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td width='25%'>\n";
-$html .="<h3>Task</h3>\n";
-$html .="</td>\n";
-$html .="<td width='60%'>\n";
-$html .="<h3>Assumptions &amp; Dependencies</h3>\n";
-$html .="</td>\n";
-$html .="<td width='15%'>\n";
-$html .="<h3>Completed by</h3>\n";
-$html .="</td>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>NetFlow Settings</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Data retention and reporting needs have been identified as part of requirements phase.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Verify Active Flows</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Flow exporters have been configured on source devices, or a list of device models and code versions provided to Loop1 if the scope of work includes Loop1 configuring the devices to export flows.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Define IP Address Groups</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Desired subnets have been identified during requirements phase.</p>\n";
-$html .="<p>Know IP Addresses of internal resources and groups (e.g. Exchange Servers, SQL Servers, etc.)</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Define Custom Applications</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Desired applications have been identified.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Generate Custom Views</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Desired views have been identified.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>NTA Flow Storage Database (NTA version 4.2.3 or earlier only)</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Additional server that meets system requirements has been provided.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>NTA database (NTA version 4.4 or later)</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Additional resources have been allocated to the Orion SQL database server in order to support the additional NetFlow storage database. NTA 4.4 and later require SQL 2016 SP1 or newer.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="</tbody>\n";
-$html .="</table>\n";
-$html .="<p>&nbsp;</p>\n";
+$html .= "<table width='100%'\n"
+. "<tbody>\n"
+. "<tr id = 'TitleRow'>\n"
+. "<td colspan='3'>\n"
+. "NetFlow Traffic Analyzer Module for Orion NPM (NTA)\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td width='25%'>\n"
+. "<h3>Task</h3>\n"
+. "</td>\n"
+. "<td width='60%'>\n"
+. "<h3>Assumptions &amp; Dependencies</h3>\n"
+. "</td>\n"
+. "<td width='15%'>\n"
+. "<h3>Completed by</h3>\n"
+. "</td>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>NetFlow Settings</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Data retention and reporting needs have been identified as part of requirements phase.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Verify Active Flows</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Flow exporters have been configured on source devices, or a list of device models and code versions provided to Loop1 if the scope of "
+. "work includes Loop1 configuring the devices to export flows.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Define IP Address Groups</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Desired subnets have been identified during requirements phase.</p>\n"
+. "<p>Know IP Addresses of internal resources and groups (e.g. Exchange Servers, SQL Servers, etc.)</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Define Custom Applications</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Desired applications have been identified.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Generate Custom Views</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Desired views have been identified.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>NTA Flow Storage Database (NTA version 4.2.3 or earlier only)</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Additional server that meets system requirements has been provided.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>NTA database (NTA version 4.4 or later)</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Additional resources have been allocated to the Orion SQL database server in order to support the additional NetFlow storage database. NTA 4.4 and "
+. "later require SQL 2016 SP1 or newer.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "</tbody>\n"
+. "</table>\n"
+. "<p>&nbsp;</p>\n";
 ?>

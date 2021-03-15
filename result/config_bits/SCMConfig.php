@@ -2,29 +2,29 @@
 global $SCMDays;
 if ($SCMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($SCMDays, "SCM Best Practices Configuration") . "</h2>\n";
-        $html .= "<h3>SCM Configuration Tasks</h3>\n";
-        $html .= "<ul>";
-        $html .= "<li>Adding nodes to SCM</li>\n";
-        $html .= "<ul><li>Orion Agent deployment</li></ul>\n";
-        $html .= "<li>Configuration profile Assignment</li>\n";
-        $html .= "<ul><li>Out-of-the-box templates</li><ul>\n";
-        $html .= "<li>IIS configuration</li>\n";
-        $html .= "<li>HW inventory</li>\n";
-        $html .= "<li>SW inventory</li></ul>\n";
-        $html .= "<li>User-defined templates</li>\n";
-        $html .= "<ul><li>File changes</li>\n";
-        $html .= "<li>Registry changes</li></ul></ul>\n";
-        $html .= "<li>Baseline Configuration Profile creation</li>\n";
-        $html .= "<li>PerfStack integration</li>\n";
-        $html .= "<li>Reporting</li>\n";
-        $html .= "<ul><li>Report creation</li>\n";
-        $html .= "<li>Automation scheduling</li></ul>\n";
-        $html .= "<li>Advanced alert creation</li>\n";
-        $html .= "<ul><li>Noise reduction</li>\n";
-        $html .= "<li>Notification</li>\n";
-        $html .= "<li>Escalation</li>\n";
-        $html .= "<li>Severity</li></ul>\n";
-        $html .= "</ul>";
+        $html .= "<h2>" . dayHeader($SCMDays, "SCM Best Practices Configuration") . "</h2>\n"
+        . "<h3>SCM Configuration Tasks</h3>\n"
+        . "<ul>"
+        . "<li>Adding nodes to SCM</li>\n"
+        . "<ul><li>Orion Agent deployment</li></ul>\n"
+        . "<li>Configuration profile Assignment</li>\n"
+        . "<ul><li>Out-of-the-box templates</li><ul>\n"
+        . "<li>IIS configuration</li>\n"
+        . "<li>HW inventory</li>\n"
+        . "<li>SW inventory</li></ul>\n"
+        . "<li>User-defined templates</li>\n"
+        . "<ul><li>File changes</li>\n"
+        . "<li>Registry changes</li></ul></ul>\n"
+        . "<li>Baseline Configuration Profile creation</li>\n"
+        . "<li>PerfStack integration</li>\n"
+        . "<li>Reporting</li>\n"
+        . "<ul><li>Report creation</li>\n"
+        . "<li>Automation scheduling</li></ul>\n"
+        . "<li>Advanced alert creation</li>\n"
+        . "<ul><li>Noise reduction</li>\n"
+        . "<li>Notification</li>\n"
+        . "<li>Escalation</li>\n"
+        . "<li>Severity</li></ul>\n"
+        . "</ul>";
     }
 ?>

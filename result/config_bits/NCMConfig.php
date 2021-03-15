@@ -2,25 +2,25 @@
 global $NCMDays;
 if ($NCMDays > 0)
     {
-        $html .= "<h2>" . dayHeader($NCMDays, "NCM Best Practices Configuration") . "</h2>\n";
-        $html .= "<h3>NCM Configuration Tasks</h3>\n";
-        $html .= "<ul><li>Connection profile creation</li>\n";
-        $html .= "<li>Job configuration – backups, change reports, archive, maintenance, etc. </li>\n";
-        $html .= "<li>Weekly Config Change report automation</li>\n";
-        $html .= "<li>Device connectivity troubleshooting </li>\n";
-        $html .= "<li>Policy report creation</li>\n";
-        $html .= "<li>Real Time Change Detection configuration</li>\n";
-        $html .= "<li>Config change template configuration</li>\n";
-        $html .= "<li>Custom Device Templates</li>\n";
-        $html .= "<li>Firmware Upgrade Operations</li>\n";
-        $html .= "<li>Cisco Smart Advisor integration</li>\n";
-        $html .= "<li>End of Support/Sale overview</li>\n";
-        $html .= "<li>Reporting</li>\n";
-        $html .= "<ul><li>Report creation</li>\n";
-        $html .= "<li>Automation scheduling</li></ul>\n";
-        $html .= "<li>Advanced alert creation</li>\n";
-        $html .= "<ul><li>Notification</li>\n";
-        $html .= "<li>Escalation</li></ul>\n";
-        $html .= "</ul>";
+        $html .= "<h2>" . dayHeader($NCMDays, "NCM Best Practices Configuration") . "</h2>\n"
+        . "<h3>NCM Configuration Tasks</h3>\n"
+        . "<ul><li>Connection profile creation</li>\n"
+        . "<li>Job configuration – backups, change reports, archive, maintenance, etc. </li>\n"
+        . "<li>Weekly Config Change report automation</li>\n"
+        . "<li>Device connectivity troubleshooting </li>\n"
+        . "<li>Policy report creation</li>\n"
+        . "<li>Real Time Change Detection configuration</li>\n"
+        . "<li>Config change template configuration</li>\n"
+        . "<li>Custom Device Templates</li>\n"
+        . "<li>Firmware Upgrade Operations</li>\n"
+        . "<li>Cisco Smart Advisor integration</li>\n"
+        . "<li>End of Support/Sale overview</li>\n"
+        . "<li>Reporting</li>\n"
+        . "<ul><li>Report creation</li>\n"
+        . "<li>Automation scheduling</li></ul>\n"
+        . "<li>Advanced alert creation</li>\n"
+        . "<ul><li>Notification</li>\n"
+        . "<li>Escalation</li></ul>\n"
+        . "</ul>";
     }
 ?>

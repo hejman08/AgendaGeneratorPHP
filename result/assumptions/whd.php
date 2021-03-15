@@ -1,152 +1,156 @@
 <?php
-$html .="<table width='100%'>\n";
-$html .="<tbody>\n";
-$html .="<tr id='TitleRow'>\n";
-$html .="<td colspan='3'>\n";
-$html .="Web Helpdesk (WHD)\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td width='25%'>\n";
-$html .="<h3>Task</h3>\n";
-$html .="</td>\n";
-$html .="<td width='60%'>\n";
-$html .="<h3>Assumptions &amp; Dependencies</h3>\n";
-$html .="</td>\n";
-$html .="<td width='15%'>\n";
-$html .="<h3>Completed by</h3>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Integration with LDAP/Active Directory Service</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Client provides any necessary service accounts and identifies any account properties that will be carried over to WHD&nbsp;client accounts (such as contact information or title). For Hosted deployment ensure the necessary firewall rules are in place to allow the WHD source addresses through to the LDAP server. Web Help Desk will connect to your LDAP server from one of the following IPs:&nbsp;<br /> 64.62.138.188, 64.62.138.186, 72.13.84.171</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configure Web Helpdesk Email Options</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Client provides email account for Web Helpdesk.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Create Technician Users and Client Accounts</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>A list of WHD users has been provided; Tech user roles and desired limitations have been captured in the requirements phase. The client has identified Client (non-tech WHD users) administrators/approvers for any necessary approval processes.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configure Request Types</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>A list of desired Request Type values has been provided prior to or during the review phase.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configure Priority Types</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Client identifies any Priority Types that would be needed beyond the out-of-the-box configuration.&nbsp;</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configure Status Types</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Client identifies any Status Types that would be needed beyond the out-of-the-box configuration.&nbsp;</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Status Alerts</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Client identifies any alert criteria prior to or during implementation.&nbsp;</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configure Processes for approval or automated action rules</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Client identifies any status types that require approval processes, or special action rules.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configure Location, Company, and/or Department</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Client has identified any necessary company, location, or department designations.&nbsp;</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Create Tech Groups</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Define the desired groups to be created and/ or grouping hierarchy to be established.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Surveys</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Client has identified any surveys that should be created during implementation.&nbsp;</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Assets, Parts, and Billing</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Client has identified any compatible asset management software and will provide service account or other necessary access OR has provided a list of assets in supported format. For the hosted instance Web Help Desk will connect to your endpoint from one of the following IPs:&nbsp;<br /> 64.62.138.188, 64.62.138.186, 72.13.84.171</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Reports</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Client has identified any reports that should be created during implementation.&nbsp;</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="</tbody>\n";
-$html .="</table>\n";
-$html .="<p>&nbsp;</p>\n";
+$html .= "<table width='100%'>\n"
+. "<tbody>\n"
+. "<tr id='TitleRow'>\n"
+. "<td colspan='3'>\n"
+. "Web Helpdesk (WHD)\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td width='25%'>\n"
+. "<h3>Task</h3>\n"
+. "</td>\n"
+. "<td width='60%'>\n"
+. "<h3>Assumptions &amp; Dependencies</h3>\n"
+. "</td>\n"
+. "<td width='15%'>\n"
+. "<h3>Completed by</h3>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<td>\n"
+. "<p><strong>Integration with LDAP/Active Directory Service</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Client provides any necessary service accounts and identifies any account properties that will be carried over to WHD&nbsp;client accounts "
+. "(such as contact information or title). For Hosted deployment ensure the necessary firewall rules are in place to allow the WHD source addresses through to the LDAP server. Web Help Desk will connect to your LDAP server from one of the following IPs:&nbsp;<br /> 64.62.138.188, 64.62.138.186, 72.13.84.171</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configure Web Helpdesk Email Options</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Client provides email account for Web Helpdesk.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Create Technician Users and Client Accounts</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>A list of WHD users has been provided; Tech user roles and desired limitations have been captured in the requirements phase. "
+. "The client has identified Client (non-tech WHD users) administrators/approvers for any necessary approval processes.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configure Request Types</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>A list of desired Request Type values has been provided prior to or during the review phase.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configure Priority Types</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Client identifies any Priority Types that would be needed beyond the out-of-the-box configuration.&nbsp;</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configure Status Types</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Client identifies any Status Types that would be needed beyond the out-of-the-box configuration.&nbsp;</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Status Alerts</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Client identifies any alert criteria prior to or during implementation.&nbsp;</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configure Processes for approval or automated action rules</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Client identifies any status types that require approval processes, or special action rules.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configure Location, Company, and/or Department</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Client has identified any necessary company, location, or department designations.&nbsp;</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Create Tech Groups</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Define the desired groups to be created and/ or grouping hierarchy to be established.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Surveys</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Client has identified any surveys that should be created during implementation.&nbsp;</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Assets, Parts, and Billing</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Client has identified any compatible asset management software and will provide service account or other necessary access "
+. "OR has provided a list of assets in supported format. For the hosted instance Web Help Desk will connect to your "
+. "endpoint from one of the following IPs:&nbsp;<br /> 64.62.138.188, 64.62.138.186, 72.13.84.171</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Reports</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Client has identified any reports that should be created during implementation.&nbsp;</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "</tbody>\n"
+. "</table>\n"
+. "<p>&nbsp;</p>\n";
 ?>

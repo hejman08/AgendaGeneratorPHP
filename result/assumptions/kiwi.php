@@ -1,63 +1,63 @@
 <?php
-$html .="<table width='100%'>\n";
-$html .="<tbody>\n";
-$html .="<tr id='TitleRow'>\n";
-$html .="<td colspan='3' width='100%'>\n";
-$html .="Kiwi Syslog\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td width='25%'>\n";
-$html .="<h3>Task</h3>\n";
-$html .="</td>\n";
-$html .="<td width='60%'>\n";
-$html .="<h3>Assumptions &amp; Dependencies</h3>\n";
-$html .="</td>\n";
-$html .="<td width='15%'>\n";
-$html .="<h3>Completed by</h3>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Provision syslog data to Kiwi Syslog server</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Configure Sources to forward syslog data to Kiwi Syslog server as desired.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configure Log Management</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Desired log management policies for splitting, archiving and/or forwarding are defined.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configure Log Monitor Views/ Filters</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Desired log filtering views are defined.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configure Log Alerts</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Desired alerts are defined.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="</tbody>\n";
-$html .="</table>\n";
-$html .="<p>&nbsp;</p>\n";
+$html .= "<table width='100%'>\n"
+. "<tbody>\n"
+. "<tr id='TitleRow'>\n"
+. "<td colspan='3' width='100%'>\n"
+. "Kiwi Syslog\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td width='25%'>\n"
+. "<h3>Task</h3>\n"
+. "</td>\n"
+. "<td width='60%'>\n"
+. "<h3>Assumptions &amp; Dependencies</h3>\n"
+. "</td>\n"
+. "<td width='15%'>\n"
+. "<h3>Completed by</h3>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Provision syslog data to Kiwi Syslog server</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Configure Sources to forward syslog data to Kiwi Syslog server as desired.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configure Log Management</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Desired log management policies for splitting, archiving and/or forwarding are defined.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configure Log Monitor Views/ Filters</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Desired log filtering views are defined.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configure Log Alerts</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Desired alerts are defined.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "</tbody>\n"
+. "</table>\n"
+. "<p>&nbsp;</p>\n";
 ?>

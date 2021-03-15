@@ -1,60 +1,62 @@
 <?php
-$html .="<table width='100%'>\n";
-$html .="<tbody>\n";
-$html .="<tr id='TitleRow'>\n";
-$html .="<td colspan='3'>\n";
-$html .="Orion Virtualization Manager (VMAN)\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td width='25%'>\n";
-$html .="<h3>Task</h3>\n";
-$html .="</td>\n";
-$html .="<td width='60%'>\n";
-$html .="<h3>Assumptions &amp; Dependencies</h3>\n";
-$html .="</td>\n";
-$html .="<td width='15%'>\n";
-$html .="<h3>Completed by</h3>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Add vCenter to Virtualization Manager</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>For VMware environments, no agents are needed at all. vCenter administrative credentials are required and a vCenter service account dedicated to Profiler VMware data collection will be needed.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td rowspan='2'>\n";
-$html .="<p><strong>Generate Alerts</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Email distribution group addresses for personnel receiving alerts and SMTP server settings have been provided.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p>Alert recipients - know what Individuals or Distribution Lists alerts will go to.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>vCenter Credentials</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Ensure the availability of credentials to allow for deployment of the virtual appliance via VMware vSphere or Microsoft Hyper-V. These credentials should allow for deployment of an OVF Template (VMware) or Importing Virtual Machine (Hyper-V).</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="</tbody>\n";
-$html .="</table>\n";
-$html .="<p>&nbsp;</p>\n";
+$html .="<table width='100%'>\n"
+."<tbody>\n"
+."<tr id='TitleRow'>\n"
+."<td colspan='3'>\n"
+."Orion Virtualization Manager (VMAN)\n"
+."</td>\n"
+."</tr>\n"
+."<tr>\n"
+."<td width='25%'>\n"
+."<h3>Task</h3>\n"
+."</td>\n"
+."<td width='60%'>\n"
+."<h3>Assumptions &amp; Dependencies</h3>\n"
+."</td>\n"
+."<td width='15%'>\n"
+."<h3>Completed by</h3>\n"
+."</td>\n"
+."</tr>\n"
+."<tr>\n"
+."<td>\n"
+."<p><strong>Add vCenter to Virtualization Manager</strong></p>\n"
+."</td>\n"
+."<td>\n"
+."<p>For VMware environments, no agents are needed at all. vCenter administrative credentials are required and a vCenter service account dedicated to "
+. "Profiler VMware data collection will be needed.</p>\n"
+."</td>\n"
+."<td>\n"
+."</td>\n"
+."</tr>\n"
+."<tr>\n"
+."<td rowspan='2'>\n"
+."<p><strong>Generate Alerts</strong></p>\n"
+."</td>\n"
+."<td>\n"
+."<p>Email distribution group addresses for personnel receiving alerts and SMTP server settings have been provided.</p>\n"
+."</td>\n"
+."<td>\n"
+."</td>\n"
+."</tr>\n"
+."<tr>\n"
+."<td>\n"
+."<p>Alert recipients - know what Individuals or Distribution Lists alerts will go to.</p>\n"
+."</td>\n"
+."<td>\n"
+."</td>\n"
+."</tr>\n"
+."<tr>\n"
+."<td>\n"
+."<p><strong>vCenter Credentials</strong></p>\n"
+."</td>\n"
+."<td>\n"
+."<p>Ensure the availability of credentials to allow for deployment of the virtual appliance via VMware vSphere or Microsoft Hyper-V. These "
+. "credentials should allow for deployment of an OVF Template (VMware) or Importing Virtual Machine (Hyper-V).</p>\n"
+."</td>\n"
+."<td>\n"
+."</td>\n"
+."</tr>\n"
+."</tbody>\n"
+."</table>\n"
+."<p>&nbsp;</p>\n";
 ?>

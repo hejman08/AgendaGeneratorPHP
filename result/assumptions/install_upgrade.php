@@ -37,67 +37,67 @@ global $hasAPM;
 global $IncludeMSEBlurb;
 
 
-$html .="<table width='100%'>\n";
-$html .="<tbody>\n";
-$html .="<tr id='TitleRow'>\n";
-$html .="<td colspan='3' width='100%'>\n";
-$html .="Software Installation/Upgrades\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td width='25%'>\n";
-$html .="<h3>Task</h3>\n";
-$html .="</td>\n";
-$html .="<td width='60%'>\n";
-$html .="<h3>Assumptions &amp; Dependencies</h3>\n";
-$html .="</td>\n";
-$html .="<td width='15%'>\n";
-$html .="<h3>Completed by</h3>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Product License Size Change</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>No outage will occur for License SIZE upgrades or changes.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Product Release/Version Change</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>With version upgrade, there will be an outage period during the version change.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Download SolarWinds product binaries</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Please download all SolarWinds product binaries prior to the engagement in the interest of saving valuable time for more critical tasks. If downloading any Orion module version at or later than 2018.4, only one binary download is needed and will contain needed files/flags for any Orion module. The Customer Portal will contain versions for 'Online' and 'Offline' installers - please download Offline version if there is a slow or absent connection from the Orion server(s) to the Internet. The Online version will download the needed products during install.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Software upgrades &ndash; Core modules</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Ensure there is adequate storage for the database and TempDB.&nbsp; Database size can temporarily grow 25-50% during the upgrade process.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="</tbody>\n";
-$html .="</table>\n";
-$html .="<p>&nbsp;</p>\n";
+$html .= "<table width='100%'>\n"
+. "<tbody>\n"
+. "<tr id='TitleRow'>\n"
+. "<td colspan='3' width='100%'>\n"
+. "Software Installation/Upgrades\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td width='25%'>\n"
+. "<h3>Task</h3>\n"
+. "</td>\n"
+. "<td width='60%'>\n"
+. "<h3>Assumptions &amp; Dependencies</h3>\n"
+. "</td>\n"
+. "<td width='15%'>\n"
+. "<h3>Completed by</h3>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Product License Size Change</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>No outage will occur for License SIZE upgrades or changes.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Product Release/Version Change</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>With version upgrade, there will be an outage period during the version change.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Download SolarWinds product binaries</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Please download all SolarWinds product binaries prior to the engagement in the interest of saving valuable time for more critical tasks. If downloading any Orion module version at or later than 2018.4, only one binary download is needed and will contain needed files/flags for any Orion module. The Customer Portal will contain versions for 'Online' and 'Offline' installers - please download Offline version if there is a slow or absent connection from the Orion server(s) to the Internet. The Online version will download the needed products during install.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Software upgrades &ndash; Core modules</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Ensure there is adequate storage for the database and TempDB.&nbsp; Database size can temporarily grow 25-50% during the upgrade process.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "</tbody>\n"
+. "</table>\n"
+. "<p>&nbsp;</p>\n";
 
 
 ?>

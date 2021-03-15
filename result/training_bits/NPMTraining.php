@@ -2,47 +2,47 @@
 global $NPMTrainDays;
 if ($NPMTrainDays > 0)
     {
-        $html .= "<h2>" . dayHeader($NPMTrainDays, "NPM User Training") . "</h2>\n";
-        $html .= "<h3>NPM Training Topics</h3>\n";
-        $html .= "<ul><li>Orion platform architecture </li>\n";
-        $html .= "<ul><li>Application server requirements</li>\n";
-        $html .= "<li>SQL server requirements</li>\n";
-        $html .= "<li>Core components overview</li>\n";
-        $html .= "<li>Orion network sonar discovery</li>\n";
-        $html .= "<li>Orion basic polling methods</li>\n";
-        $html .= "<ul><li>ICMP</li>\n";
-        $html .= "<li>SNMP</li>\n";
-        $html .= "<li>WMI</li>\n";
-        $html .= "<li>Optional Windows & Linux agents</li></ul></ul>\n";
-        $html .= "<li>High Availability features</li>\n";
-        $html .= "<li>User accounts</li>\n";
-        $html .= "<li>Custom properties</li>\n";
-        $html .= "<li>Orion groups</li>\n";
-        $html .= "<li>Orion dependencies</li>\n";
-        $html .= "<li>Building dashboards</li>\n";
-        $html .= "<li>Integrated virtual infrastructure</li>\n";
-        $html .= "<ul><li>IVIM</li></ul>\n";
-        $html .= "<li>Netpath overview</li>\n";
-        $html .= "<li>PerfStack overview</li>\n";
-        $html .= "<li>Network Insight Overview</li>\n";
-        $html .= "<ul><li>F5 BIG-IP</li>\n";
-        $html .= "<li>Cisco ASA</li>\n";
-        $html .= "<li>Cisco Nexus</li>\n";
-        $html .= "<li>Palo Alto Firewalls</li></ul>\n";
-        $html .= "<li>Wireless monitoring</li>\n";
-        $html .= "<li>Cisco UCS API integration</li>\n";
-        $html .= "<li>Cisco switch stack monitoring</li>\n";
-        $html .= "<li>Universal device pollers</li>\n";
-        $html .= "<li>NPM polling settings and data retention</li>\n";
-        $html .= "<li>Mapping overview</li>\n";
-        $html .= "<ul>\n";
-        $html .= "<li>Worldwide Map</li>\n";
-        $html .= "<li>Orion Mapping</li></ul>\n";
-        $html .= "<li>Working with Syslog</li>\n";
-        $html .= "<li>Working with SNMP Traps</li>\n";
-        $html .= "<li>Alerting overview</li>\n";
-        $html .= "<li>Reporting overview</li>\n";
+        $html .= "<h2>" . dayHeader($NPMTrainDays, "NPM User Training") . "</h2>\n"
+        . "<h3>NPM Training Topics</h3>\n"
+        . "<ul><li>Orion platform architecture </li>\n"
+        . "<ul><li>Application server requirements</li>\n"
+        . "<li>SQL server requirements</li>\n"
+        . "<li>Core components overview</li>\n"
+        . "<li>Orion network sonar discovery</li>\n"
+        . "<li>Orion basic polling methods</li>\n"
+        . "<ul><li>ICMP</li>\n"
+        . "<li>SNMP</li>\n"
+        . "<li>WMI</li>\n"
+        . "<li>Optional Windows & Linux agents</li></ul></ul>\n"
+        . "<li>High Availability features</li>\n"
+        . "<li>User accounts</li>\n"
+        . "<li>Custom properties</li>\n"
+        . "<li>Orion groups</li>\n"
+        . "<li>Orion dependencies</li>\n"
+        . "<li>Building dashboards</li>\n"
+        . "<li>Integrated virtual infrastructure</li>\n"
+        . "<ul><li>IVIM</li></ul>\n"
+        . "<li>Netpath overview</li>\n"
+        . "<li>PerfStack overview</li>\n"
+        . "<li>Network Insight Overview</li>\n"
+        . "<ul><li>F5 BIG-IP</li>\n"
+        . "<li>Cisco ASA</li>\n"
+        . "<li>Cisco Nexus</li>\n"
+        . "<li>Palo Alto Firewalls</li></ul>\n"
+        . "<li>Wireless monitoring</li>\n"
+        . "<li>Cisco UCS API integration</li>\n"
+        . "<li>Cisco switch stack monitoring</li>\n"
+        . "<li>Universal device pollers</li>\n"
+        . "<li>NPM polling settings and data retention</li>\n"
+        . "<li>Mapping overview</li>\n"
+        . "<ul>\n"
+        . "<li>Worldwide Map</li>\n"
+        . "<li>Orion Mapping</li></ul>\n"
+        . "<li>Working with Syslog</li>\n"
+        . "<li>Working with SNMP Traps</li>\n"
+        . "<li>Alerting overview</li>\n"
+        . "<li>Reporting overview</li>\n"
 
-        $html .= "</ul>";
+        . "</ul>";
     }
 ?>

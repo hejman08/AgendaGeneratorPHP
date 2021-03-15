@@ -1,107 +1,111 @@
 <?php
-$html .="<table>\n";
-$html .="<tbody>\n";
-$html .="<tr id = 'TitleRow'>\n";
-$html .="<td colspan='3'>\n";
-$html .="Orion Server Configuration Manager (SCM)\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td width='25%'>\n";
-$html .="<h3>Task</h3>\n";
-$html .="</td>\n";
-$html .="<td width='60%'>\n";
-$html .="<h3>Assumptions &amp; Dependencies</h3>\n";
-$html .="</td>\n";
-$html .="<td width='15%'>\n";
-$html .="<h3>Completed by</h3>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Populate inventory from Orion</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Orion Database is fully populated with desired nodes for import or will be as part of the configuration of SCM.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Deployment of Orion agents</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Target servers have been identified, and a service account with adequate permissions for installation has been provided.&nbsp; Agent installation requires remote access to target servers; please refer to the SCM Admin Guide in the <a href='https://support.solarwinds.com/Success_Center/Server_Configuration_Monitor_SCM/SCM_Documentation/SCM_Administrator_Guide'>SolarWinds Success Center</a>.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td rowspan='3'>\n";
-$html .="<p><strong>Generate Alerts</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Alert Recipients - know what individuals or Distribution Lists alerts will go to.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p>Escalation Procedures - Orion provides for alert escalation. If this is a desired feature, please have these available prior to the engagement.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p>Email distribution group addresses for personnel receiving alerts and SMTP server settings have been provided.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Generate Reports, Configure Report Scheduler</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Reporting requirements have been established during the requirements phase.&nbsp; Email distribution groups or addresses have been provided for Report Scheduler, and SMTP server settings have been provided.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Generate and populate custom properties</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>A list of desired custom property values has been created or determined during the review phase.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Create Users and Account Limitations</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>A list of Orion Administrators and Users has been provided; user roles and desired view limitations have been captured in the requirements phase.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Build Custom Configuration Profiles</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Target servers and files/registry entries that need to be monitored using custom profiles have been identified. Orion Agents are installed on these servers or will be as part of configuration of SCM.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="</tbody>\n";
-$html .="</table>\n";
-$html .="<p>&nbsp;</p>\n";
+$html .= "<table>\n"
+. "<tbody>\n"
+. "<tr id = 'TitleRow'>\n"
+. "<td colspan='3'>\n"
+. "Orion Server Configuration Manager (SCM)\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td width='25%'>\n"
+. "<h3>Task</h3>\n"
+. "</td>\n"
+. "<td width='60%'>\n"
+. "<h3>Assumptions &amp; Dependencies</h3>\n"
+. "</td>\n"
+. "<td width='15%'>\n"
+. "<h3>Completed by</h3>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Populate inventory from Orion</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Orion Database is fully populated with desired nodes for import or will be as part of the configuration of SCM.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Deployment of Orion agents</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Target servers have been identified, and a service account with adequate permissions for installation has been provided.&nbsp; "
+. "Agent installation requires remote access to target servers; please refer to the SCM Admin Guide in the "
+. "<a href='https://support.solarwinds.com/Success_Center/Server_Configuration_Monitor_SCM/SCM_Documentation/SCM_Administrator_Guide'>SolarWinds Success Center</a>.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td rowspan='3'>\n"
+. "<p><strong>Generate Alerts</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Alert Recipients - know what individuals or Distribution Lists alerts will go to.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p>Escalation Procedures - Orion provides for alert escalation. If this is a desired feature, please have these available prior to the engagement.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p>Email distribution group addresses for personnel receiving alerts and SMTP server settings have been provided.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Generate Reports, Configure Report Scheduler</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Reporting requirements have been established during the requirements phase.&nbsp; Email distribution groups or addresses have been "
+. "provided for Report Scheduler, and SMTP server settings have been provided.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Generate and populate custom properties</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>A list of desired custom property values has been created or determined during the review phase.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Create Users and Account Limitations</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>A list of Orion Administrators and Users has been provided; user roles and desired view limitations have been captured in the requirements phase.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Build Custom Configuration Profiles</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Target servers and files/registry entries that need to be monitored using custom profiles have been identified. Orion Agents are installed "
+. "on these servers or will be as part of configuration of SCM.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "</tbody>\n"
+. "</table>\n"
+. "<p>&nbsp;</p>\n";
 ?>

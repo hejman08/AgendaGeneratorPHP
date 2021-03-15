@@ -1,78 +1,79 @@
 <?php
-$html .="<table width='100%'>\n";
-$html .="<tbody>\n";
-$html .="<tr id='TitleRow'>\n";
-$html .="<td colspan='3'>\n";
-$html .="Orion IP Address Manager (IPAM)\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td width='25%'>\n";
-$html .="<h3>Task</h3>\n";
-$html .="</td>\n";
-$html .="<td width='60%'>\n";
-$html .="<h3>Assumptions &amp; Dependencies</h3>\n";
-$html .="</td>\n";
-$html .="<td width='15%'>\n";
-$html .="<h3>Completed by</h3>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Add MS, Cisco, or ISC DHCP Servers and Scopes</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Credentials with adequate permissions have been created for use by IPAM to connect to target DHCP servers.&nbsp; For ISC DHCP servers please see the following <a href='https://documentation.solarwinds.com/en/Success_Center/IPAM/Content/IPAM-ISC-DHCP.htm'>link</a>.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Import IP Addresses </strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>A list of IP addresses with groups of subnets or supernets have been provided.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Add DNS Servers</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Provide DNS administrator credentials to DNS servers</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td rowspan='3'>\n";
-$html .="<p><strong>Generate Alerts</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Alert Recipients - know what individuals or Distribution Lists alerts will go to</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p>Escalation Procedures - Orion provides for alert escalation. If this is a desired feature, please have these available prior to the engagement.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p>Email distribution group addresses for personnel receiving alerts and SMTP server settings have been provided.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
+$html .= "<table width='100%'>\n";
+. "<tbody>\n"
+. "<tr id='TitleRow'>\n"
+. "<td colspan='3'>\n"
+. "Orion IP Address Manager (IPAM)\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td width='25%'>\n"
+. "<h3>Task</h3>\n"
+. "</td>\n"
+. "<td width='60%'>\n"
+. "<h3>Assumptions &amp; Dependencies</h3>\n"
+. "</td>\n"
+. "<td width='15%'>\n"
+. "<h3>Completed by</h3>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Add MS, Cisco, or ISC DHCP Servers and Scopes</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Credentials with adequate permissions have been created for use by IPAM to connect to target DHCP servers.&nbsp; For ISC DHCP servers please see the following "
+. "<a href='https://documentation.solarwinds.com/en/Success_Center/IPAM/Content/IPAM-ISC-DHCP.htm'>link</a>.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Import IP Addresses </strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>A list of IP addresses with groups of subnets or supernets have been provided.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Add DNS Servers</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Provide DNS administrator credentials to DNS servers</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td rowspan='3'>\n"
+. "<p><strong>Generate Alerts</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Alert Recipients - know what individuals or Distribution Lists alerts will go to</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p>Escalation Procedures - Orion provides for alert escalation. If this is a desired feature, please have these available prior to the engagement.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p>Email distribution group addresses for personnel receiving alerts and SMTP server settings have been provided.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
 
-$html .="</tr>\n";
-$html .="</tbody>\n";
-$html .="</table>\n";
-$html .="<p>&nbsp;</p>\n";
+. "</tr>\n"
+. "</tbody>\n"
+. "</table>\n"
+. "<p>&nbsp;</p>\n";
 ?>

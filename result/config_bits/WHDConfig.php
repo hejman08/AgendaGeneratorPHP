@@ -2,68 +2,68 @@
 global $WHDDays;
 if ($WHDDays > 0)
     {
-        $html .= "<h2>" . dayHeader($WHDDays, "WHD Best Practices Configuration") . "</h2>\n";
-        $html .= "<h3>WHD Configuaration Tasks</h3>\n";
-        $html .= "<ul><li>General setup options </li>\n";
-        $html .= "<ul><li>AD/LDAP Integration</li>\n";
-        $html .= "<li>SSO configuration</li>\n";
-        $html .= "<li>SSL configuration</li></ul>\n";
-        $html .= "<li>Email settings</li>\n";
-        $html .= "<li>Locations & companies</li>\n";
-        $html .= "<ul><li>Site names</li>\n";
-        $html .= "<li>Departments</li>\n";
-        $html .= "<li>Buildings, etc.</li></ul>\n";
-        $html .= "<li>Technicians</li>\n";
-        $html .= "<ul><li>Import/Adds</li>\n";
-        $html .= "<li>Permissions</li></ul>\n";
-        $html .= "<li>Technician groups</li>\n";
-        $html .= "<li>Request types – TBD during planning discussion, examples provided below</li>\n";
-        $html .= "<ul><li>Hardware request</li>\n";
-        $html .= "<li>Hardware issue</li>\n";
-        $html .= "<li>Software request</li>\n";
-        $html .= "<li>Software issue</li>\n";
-        $html .= "<li>Network issue</li>\n";
-        $html .= "<li>User access request</li></ul>\n";
-        $html .= "<li>Request type customization</li>\n";
-        $html .= "<ul><li>Custom fields</li>\n";
-        $html .= "<li>Priority types</li>\n";
-        $html .= "<li>Alerts</li>\n";
-        $html .= "<li>Status types</li>\n";
-        $html .= "<li>Tasks</li></ul>\n";
-        $html .= "<li>Clients </li>\n";
-        $html .= "<ul><li>Import/Adds</li>\n";
-        $html .= "<li>Roles</li>\n";
-        $html .= "<li>Custom properties</li></ul>\n";
-        $html .= "<li>Assets</li>\n";
-        $html .= "<ul><li>Review and discussion of asset management practices</li>\n";
-        $html .= "<li>Asset discovery connections</li>\n";
-        $html .= "<li>Custom fields</li></ul>\n";
-        $html .= "<li>Parts/Billing</li>\n";
-        $html .= "<ul><li>Import</li>\n";
-        $html .= "<li>Custom fields</li>\n";
-        $html .= "<li>Inventory alerts</li></ul>\n";
-        $html .= "<li>Change management</li>\n";
-        $html .= "<ul><li>Change Advisory Boards (CAB)</li>\n";
-        $html .= "<li>Approver roles</li>\n";
-        $html .= "<ul><li>Define approval process</li></ul>\n";
-        $html .= "<li>Approvers</li>\n";
-        $html .= "<li>Processes</li></ul>\n";
-        $html .= "<li>Action rules (TBD during planning discussion, examples provided below)</li>\n";
-        $html .= "<ul><li>Automated workflows</li>\n";
-        $html .= "<ul><li>Employee on-boarding</li>\n";
-        $html .= "<li>Employee termination</li></ul></ul>\n";
-        $html .= "<li>FAQS </li>\n";
-        $html .= "<ul><li>Configuration of FAQ items</li>\n";
-        $html .= "<li>Technician vs Client based FAQ’s</li>\n";
-        $html .= "<li>FAQ linking within tickets</li>\n";
-        $html .= "<li>Generating FAQs</li></ul>\n";
-        $html .= "<li>Surveys</li>\n";
-        $html .= "<ul><li>Build basic survey</li>\n";
-        $html .= "<li>Reporting </li>\n";
-        $html .= "<ul><li>Report configuration</li>\n";
-        $html .= "<li>Report scheduling</li></ul></ul>\n";
-        $html .= "<li>Integration with Core SolarWinds platform (if present)</li>\n";
-        $html .= "<li>Dashboard customization</li>\n";
-        $html .= "</ul>\n";
+        $html .= "<h2>" . dayHeader($WHDDays, "WHD Best Practices Configuration") . "</h2>\n"
+        . "<h3>WHD Configuaration Tasks</h3>\n"
+        . "<ul><li>General setup options </li>\n"
+        . "<ul><li>AD/LDAP Integration</li>\n"
+        . "<li>SSO configuration</li>\n"
+        . "<li>SSL configuration</li></ul>\n"
+        . "<li>Email settings</li>\n"
+        . "<li>Locations & companies</li>\n"
+        . "<ul><li>Site names</li>\n"
+        . "<li>Departments</li>\n"
+        . "<li>Buildings, etc.</li></ul>\n"
+        . "<li>Technicians</li>\n"
+        . "<ul><li>Import/Adds</li>\n"
+        . "<li>Permissions</li></ul>\n"
+        . "<li>Technician groups</li>\n"
+        . "<li>Request types – TBD during planning discussion, examples provided below</li>\n"
+        . "<ul><li>Hardware request</li>\n"
+        . "<li>Hardware issue</li>\n"
+        . "<li>Software request</li>\n"
+        . "<li>Software issue</li>\n"
+        . "<li>Network issue</li>\n"
+        . "<li>User access request</li></ul>\n"
+        . "<li>Request type customization</li>\n"
+        . "<ul><li>Custom fields</li>\n"
+        . "<li>Priority types</li>\n"
+        . "<li>Alerts</li>\n"
+        . "<li>Status types</li>\n"
+        . "<li>Tasks</li></ul>\n"
+        . "<li>Clients </li>\n"
+        . "<ul><li>Import/Adds</li>\n"
+        . "<li>Roles</li>\n"
+        . "<li>Custom properties</li></ul>\n"
+        . "<li>Assets</li>\n"
+        . "<ul><li>Review and discussion of asset management practices</li>\n"
+        . "<li>Asset discovery connections</li>\n"
+        . "<li>Custom fields</li></ul>\n"
+        . "<li>Parts/Billing</li>\n"
+        . "<ul><li>Import</li>\n"
+        . "<li>Custom fields</li>\n"
+        . "<li>Inventory alerts</li></ul>\n"
+        . "<li>Change management</li>\n"
+        . "<ul><li>Change Advisory Boards (CAB)</li>\n"
+        . "<li>Approver roles</li>\n"
+        . "<ul><li>Define approval process</li></ul>\n"
+        . "<li>Approvers</li>\n"
+        . "<li>Processes</li></ul>\n"
+        . "<li>Action rules (TBD during planning discussion, examples provided below)</li>\n"
+        . "<ul><li>Automated workflows</li>\n"
+        . "<ul><li>Employee on-boarding</li>\n"
+        . "<li>Employee termination</li></ul></ul>\n"
+        . "<li>FAQS </li>\n"
+        . "<ul><li>Configuration of FAQ items</li>\n"
+        . "<li>Technician vs Client based FAQ’s</li>\n"
+        . "<li>FAQ linking within tickets</li>\n"
+        . "<li>Generating FAQs</li></ul>\n"
+        . "<li>Surveys</li>\n"
+        . "<ul><li>Build basic survey</li>\n"
+        . "<li>Reporting </li>\n"
+        . "<ul><li>Report configuration</li>\n"
+        . "<li>Report scheduling</li></ul></ul>\n"
+        . "<li>Integration with Core SolarWinds platform (if present)</li>\n"
+        . "<li>Dashboard customization</li>\n"
+        . "</ul>\n";
     }
 ?>

@@ -1,83 +1,83 @@
 <?php
-$html .="<table width='100%'>\n";
-$html .="<tbody>\n";
-$html .="<tr id='TitleRow'>\n";
-$html .="<td colspan='3' width='100%'>\n";
-$html .="Database Performance Analyzer (DPA)\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td width='25%'>\n";
-$html .="<h3>Task</h3>\n";
-$html .="</td>\n";
-$html .="<td width='60%'>\n";
-$html .="<h3>Assumptions &amp; Dependencies</h3>\n";
-$html .="</td>\n";
-$html .="<td width='15%'>\n";
-$html .="<h3>Completed By</h3>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Install of DPA application</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>Local administrator access on the DPA server and SA rights on the DPA Repository server.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configuration of DPA user accounts</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>AD or LDAP access.&nbsp; Desired user permissions list.&nbsp; SSO can be configured--requires AD / LDAP authentication must be enabled first.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configuration of monitored database credentials</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>List of credentials for DPA to use to poll monitored databases</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Import/configuration of monitored database instances</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>List of databases and credentials are required.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configuration of reports and report scheduling</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>List of desired reports and distribution list / schedule for report automation.&nbsp; A valid SMTP server will be required.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="<tr>\n";
-$html .="<td>\n";
-$html .="<p><strong>Configuration of alerts</strong></p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="<p>List of desired alerts and thresholds.&nbsp; In addition, for notification / escalation purposes a list of contacts will be required.</p>\n";
-$html .="</td>\n";
-$html .="<td>\n";
-$html .="</td>\n";
-$html .="</tr>\n";
-$html .="</tbody>\n";
-$html .="</table>\n";
-$html .="<p>&nbsp;</p>\n";
+$html.= "<table width='100%'>\n"
+. "<tbody>\n"
+. "<tr id='TitleRow'>\n"
+. "<td colspan='3' width='100%'>\n"
+. "Database Performance Analyzer (DPA)\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td width='25%'>\n"
+. "<h3>Task</h3>\n"
+. "</td>\n"
+. "<td width='60%'>\n"
+. "<h3>Assumptions &amp; Dependencies</h3>\n"
+. "</td>\n"
+. "<td width='15%'>\n"
+. "<h3>Completed By</h3>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Install of DPA application</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>Local administrator access on the DPA server and SA rights on the DPA Repository server.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configuration of DPA user accounts</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>AD or LDAP access.&nbsp Desired user permissions list.&nbsp SSO can be configured--requires AD / LDAP authentication must be enabled first.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configuration of monitored database credentials</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>List of credentials for DPA to use to poll monitored databases</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Import/configuration of monitored database instances</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>List of databases and credentials are required.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configuration of reports and report scheduling</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>List of desired reports and distribution list / schedule for report automation.&nbsp A valid SMTP server will be required.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "<tr>\n"
+. "<td>\n"
+. "<p><strong>Configuration of alerts</strong></p>\n"
+. "</td>\n"
+. "<td>\n"
+. "<p>List of desired alerts and thresholds.&nbsp In addition, for notification / escalation purposes a list of contacts will be required.</p>\n"
+. "</td>\n"
+. "<td>\n"
+. "</td>\n"
+. "</tr>\n"
+. "</tbody>\n"
+. "</table>\n"
+. "<p>&nbsp</p>\n";
 ?>
