@@ -23,7 +23,7 @@ global $hasEOC;
 global $hasIPAM;
 global $EngagementType;
 
-$html .= "<h1>Assumptions & Dependencies</h1>\n"
+$html .= "<h1>Assumptions & Dependencies</h1>\n";
 if ($EngagementType == 'NewBuild' || $EngagementType == 'Rebuild' || $EngagementType == 'DBMigration' || $EngagementType == 'EngineMigration'){
     $html .="<table width='100%'>\n"
     . "<tbody>\n"
