@@ -101,7 +101,7 @@ function introPara()
                 . "for the client’s SolarWinds administrators.</p>\n";
 
                 $return .= "<p>The client <b class=\"impact\">must have access</b> to their SolarWinds Customer Portal for obtaining license activation keys "
-                ". and downloading the SolarWinds product binaries. Downloading the product binaries prior to the start of the engagement will save valuable "
+                . "and downloading the SolarWinds product binaries. Downloading the product binaries prior to the start of the engagement will save valuable "
                 . "consultation time and is <b class=\"impact\">strongly encouraged.</b></p>\n";
 
                 $return .= "<p>Loop1 Systems encourages client participation whenever possible during the configuration of the environment as it will "
