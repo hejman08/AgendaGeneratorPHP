@@ -1,5 +1,5 @@
 <?php
-$html .= "<table width='100%'>\n";
+$html .= "<table width='100%'>\n"
 . "<tbody>\n"
 . "<tr id='TitleRow'>\n"
 . "<td colspan='3'>\n"
