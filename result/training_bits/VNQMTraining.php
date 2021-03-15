@@ -23,6 +23,6 @@ if ($VNQMTrainDays > 0)
         . "<li>Working with VNQM alerts</li>\n"
         . "<li>Working with VNQM in reports</li>\n";
 
-        . "</ul>"
+        . "</ul>";
     }
 ?>
