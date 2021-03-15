@@ -291,7 +291,7 @@ function day1Bits() {
                                 . "<li>Custom reports</li>\n"
                                 . "<li>Connector Profiles</li>\n</ul>\n";
                             }
-                            . "</ul>\n"
+                            $html .= "</ul>\n";
                             if ($isOrionEng == true)
                             {
                                 $html .= "<li>Custom Property Strategy</li>\n"
