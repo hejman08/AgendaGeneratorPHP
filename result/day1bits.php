@@ -12,7 +12,7 @@ function day1Bits() {
     global $DBMigration;
     global $hasNTA, $hasVNQM, $hasSRM, $hasVMAN, $hasSAM, $hasWPM, $hasDPA, $hasAPM, $hasPMAN, $hasSEM, $isOrionEng;
     global $hasKiwi, $hasMA, $hasNPM, $hasNCM, $hasIPAM, $hasUDT;
-    $servers = listServers()
+    $servers = listServers();
     $html .= "<h1>Engagement Objectives</h1>\n";
 
     //. listServers()
