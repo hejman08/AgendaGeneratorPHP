@@ -21,7 +21,7 @@ if ($VNQMTrainDays > 0)
         . "<li>Leveraging VNQM statistics in Orion Mapping</li>\n"
         . "<ul><li>Using VNQM data in maps</li></ul>\n"
         . "<li>Working with VNQM alerts</li>\n"
-        . "<li>Working with VNQM in reports</li>\n";
+        . "<li>Working with VNQM in reports</li>\n"
 
         . "</ul>";
     }
