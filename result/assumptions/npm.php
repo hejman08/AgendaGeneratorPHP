@@ -127,7 +127,7 @@ $html .= "<table>\n"
 . "</tr>\n"
 . "<tr>\n"
 . "<td>\n"
-. "<p><strong>Create Dependencies</strong></p>\n";
+. "<p><strong>Create Dependencies</strong></p>\n"
 . "</td>\n"
 . "<td>\n"
 . "<p>Necessary node and/or group relationships have been defined.</p>\n"
