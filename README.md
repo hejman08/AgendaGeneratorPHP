@@ -28,12 +28,13 @@ Requires PHP and some kind of web hosting to run this (I just used XAMPP when co
         DocumentRoot /var/www/AgendaGenerator
         ErrorLog ${APACHE_LOG_DIR}/error.log
         CustomLog ${APACHE_LOG_DIR}/access.log combined
-    </VirtualHost>```
+    </VirtualHost>
+    ```
   - Enable the site and restart it
       - `a2ensite agenda.conf`
       - `sudo systemctl reload apache2`
   
 
 To update:
-- `cd /opt/AgendaGenerator`
+- `cd /var/www/AgendaGenerator`
 - `git pull`
