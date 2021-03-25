@@ -21,7 +21,7 @@ function validateForm() {
     global $PMDays, $PMTrainDays, $PMSize, $chkIncludePM;
     global $ARMDays, $ARMTrainDays, $ARMSize, $chkIncludeARM;
     global $DPADays, $DPATrainDays, $numDPA, $chkIncludeDPA;
-    global $numAPEs, $chkIncludeAPEs, $chkIncludeAWSs, $APEDays, $AWSDays, $numAWSs;
+    global $numAPEsInstalled, $numAPEsToInstall, $chkIncludeAPEs, $chkIncludeAWSs, $APEDays, $AWSDays, $numAWSs;
 
     global $ErrorMsg;
 
@@ -135,7 +135,7 @@ function validateForm() {
             $ErrorMsg .= "<li>WHD missing a count of instances for " . $EngagementType . " engagement</li>";
             $validated = 0;
         }
-        if ($numAPEs < 1 && ($chkIncludeAPEs == 1 || $APEDays > 0))
+        if ($numAPEsInstalled < 1 && $numAPEsToInstall < 1 && ($chkIncludeAPEs == 1 || $APEDays > 0))
         {
             $ErrorMsg .= "<li>Number of APEs missing for " . $EngagementType . " engagement</li>";
             $validated = 0;

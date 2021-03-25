@@ -18,7 +18,6 @@ include_once ("result/serverspecs.php"); //contains PHP function for generating 
 include_once ("result/intros.php"); //contains intro paragraphs for different engagement types
 include_once ("result/day1bits.php");
 include_once ("result/listservers.php");
-
 $formValidated = validateForm();
 
 if ($formValidated == 1) {
@@ -26,8 +25,18 @@ if ($formValidated == 1) {
     {     
             $html = "<h1>Project Overview</h1>";
             $html .= introPara();
-            $html .= "<h1>SolarWinds Software List & Acronyms</h1>";
+            $html .= "<h1>SolarWinds Acronyms</h1>";
             $html .= $acronyms;
+            if($modulesInstalled != "<ul></ul>") {
+                $html .= "<h1>Currently Installed Software</h1>";
+                $html .= $modulesInstalled;
+            }   
+            if($modulesToBeInstalled != "<ul></ul>") {
+                $html .= "<h1>Software To Be Installed</h1>";
+                $html .= $modulesToBeInstalled;
+            }   
+                     
+        
             if ($GLOBALS['NeedsSpecs'] == 1) {
                 $html .= serverSpecs();
             }

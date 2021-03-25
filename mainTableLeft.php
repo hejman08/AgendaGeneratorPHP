@@ -5,7 +5,8 @@
         <th>Include in HC?</th>
         <th>Config Days</th>
         <th>Training Days</th>
-        <th>Size (for Server Specs)</th>
+        <th>License Size</th>
+        <th>Currently Installed?</th>
     </tr>
     <tr>
         <td><strong>NPM</strong></td>
@@ -22,6 +23,7 @@
                 <option value="SLX">SLX</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkNPMInstalled"></td>
     </tr>
     <tr>
         <td><strong>NTA</strong></td>
@@ -34,6 +36,7 @@
                 <option value="Yes">Yes</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkNTAInstalled"></td>
     </tr>
     <tr>
         <td><strong>NCM</strong></td>
@@ -52,6 +55,7 @@
                 <option value="DLX">DLX</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkNCMInstalled"></td>
     </tr>
     <tr>
         <td><strong>SAM</strong></td>
@@ -78,6 +82,7 @@
                 <option value="SAM400">SAM400+</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkSAMInstalled"></td>
     </tr>
     <tr>
         <td><strong>IPAM</strong></td>
@@ -93,6 +98,7 @@
                 <option value="IPX">IPX</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkIPAMInstalled"></td>
     </tr>
     <tr>
         <td><strong>UDT</strong></td>
@@ -110,6 +116,7 @@
                 <option value="UTX">UTX</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkUDTInstalled"></td>
     </tr>
     <tr>
         <td><strong>VNQM</strong></td>
@@ -123,9 +130,9 @@
                 <option value="SLA25">SLA25</option>
                 <option value="SLA50">SLA50</option>
                 <option value="SLAX">SLAX</option>
-
             </select>
         </td>
+        <td><input type="checkbox" name="chkVNQMInstalled"></td>
     </tr>
     <tr>
         <td><strong>WPM</strong></td>
@@ -144,6 +151,7 @@
                 <option value="WPX">WPX</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkWPMInstalled"></td>
     </tr> 
     <tr>
         <td><strong>VMAN</strong></td>
@@ -164,6 +172,7 @@
                 <option value="VM640">VM640</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkVMANInstalled"></td>
     </tr>
     <tr>
         <td><strong>SRM</strong></td>
@@ -186,6 +195,7 @@
             </select>
             <input type="checkbox" name="chkSRMProfiler"> SRM is Profiler
         </td>
+        <td><input type="checkbox" name="chkSRMInstalled"></td>
     </tr>    
     <tr>
         <td><strong>LA</strong></td>
@@ -204,6 +214,7 @@
                 <option value="LA1000">LA1000</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkLAInstalled"></td>
     </tr>
     <tr>
         <td><strong>SCM</strong></td>
@@ -222,6 +233,7 @@
                 <option value="SCM1000">SCM1000</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkSCMInstalled"></td>
     </tr>
     <tr>
         <td><strong>SEM</strong></td>
@@ -242,6 +254,8 @@
                 <option value="215M">215M</option>
 
             </select>
+            
+        <td><input type="checkbox" name="chkSEMInstalled"></td>
         </td>
     </tr>
     <tr>
@@ -252,6 +266,7 @@
         <td>
         <input type="number" name="numDPA" step="1" min="0" max="500"> Instances
         </td>
+        <td><input type="checkbox" name="chkDPAInstalled"></td>
     </tr>
     <tr>
         <td><strong>WHD</strong></td>
@@ -261,6 +276,7 @@
         <td>
         <input type="number" name="numWHD" step="1" min="0" max="500"> Seats
         </td>
+        <td><input type="checkbox" name="chkWHDInstalled"></td>
     </tr>
     <tr>
         <td><strong>PM</strong></td>
@@ -270,10 +286,21 @@
         <td>
             <select name="PMSize">
                 <option value="None"></option>
-                <option value="No">No</option>
-                <option value="Yes">Yes</option>
+                <option value="PM250">PM250</option>
+                <option value="PM500">PM500</option>
+                <option value="PM1000">PM1000</option>
+                <option value="PM2000">PM2000</option>
+                <option value="PM4000">PM4000</option>
+                <option value="PM8000">PM8000</option>
+                <option value="PM14000">PM14000</option>
+                <option value="PM20000">PM20000</option>
+                <option value="PM30000">PM30000</option>
+                <option value="PM40000">PM40000</option>
+                <option value="PM60000">PM60000</option>
             </select>
         </td>
+        
+        <td><input type="checkbox" name="chkPMInstalled"></td>
     </tr>
     <tr>
         <td><strong>ARM</strong></td>
@@ -288,5 +315,7 @@
                 <option value="10000">10000+</option>
             </select> Users
         </td>
+        
+        <td><input type="checkbox" name="chkARMInstalled"></td>
     </tr>
 </table>
