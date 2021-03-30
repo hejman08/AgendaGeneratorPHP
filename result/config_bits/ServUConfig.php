@@ -3,7 +3,7 @@ global $ServUDays;
 if ($ServUDays > 0)
     {
         $html .= "<h2>" . dayHeader($ServUDays, "Serv-U Best Practices Configuration") . "</h2>\n"
-        . "<h3>Serv-U Configuration Tasks</h3>\n"
+        . "<h3>Serv-U Standard Configuration Tasks</h3>\n"
         . "<ul><li>Installation of Serv-U servers</li>\n"
         . "<ul><li>Serv-U Gateway</li>\n"
         . "<li>Serv-U MFT Server</li></ul>\n"

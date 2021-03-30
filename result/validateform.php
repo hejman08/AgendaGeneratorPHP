@@ -21,7 +21,7 @@ function validateForm() {
     global $PMDays, $PMTrainDays, $PMSize, $chkIncludePM;
     global $ARMDays, $ARMTrainDays, $ARMSize, $chkIncludeARM;
     global $DPADays, $DPATrainDays, $numDPA, $chkIncludeDPA;
-    global $numAPEsInstalled, $numAPEsToInstall, $chkIncludeAPEs, $chkIncludeAWSs, $APEDays, $AWSDays, $numAWSs;
+    global $numAPEsInstalled, $numAPEsToInstall, $chkIncludeAPEs, $chkIncludeAWSs, $APEDays, $AWSDays, $numAWSsInstalled,$numAWSsToInstall;
 
     global $ErrorMsg;
 
@@ -140,7 +140,7 @@ function validateForm() {
             $ErrorMsg .= "<li>Number of APEs missing for " . $EngagementType . " engagement</li>";
             $validated = 0;
         }
-        if ($numAWSs < 1 && ($chkIncludeAWSs == 1 || $AWSDays > 0))
+        if ($numAWSsInstalled < 1 && $numAWSsToInstall < 1 && ($chkIncludeAWSs == 1 || $AWSDays > 0))
         {
             $ErrorMsg .= "<li>Number of AWS missing for " . $EngagementType . " engagement</li>";
             $validated = 0;

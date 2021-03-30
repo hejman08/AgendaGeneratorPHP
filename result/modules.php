@@ -197,9 +197,9 @@ if ($WHDDays >  0 || $WHDTrainDays > 0 || $chkIncludeWHD == 1 || $numWHD > 0)
 	$hasWHD = true;
 	$acronyms .= "<li><strong>WHD</strong> - Web Help Desk</li>\n";
 	if ($chkWHDInstalled == 1) {
-		$modulesInstalled .= "<li>WHD - " . $WHDSize . " Instances</li>";
+		$modulesInstalled .= "<li>WHD - " . $numWHD . " Seats</li>";
 	} else {
-		$modulesToBeInstalled .= "<li>WHD - " . $WHDSize . " Instances</li>";
+		$modulesToBeInstalled .= "<li>WHD - " . $numWHD . " Seats</li>";
 	}
 }	
 if ($PMDays >  0 || $PMTrainDays > 0 || $chkIncludePM == 1 || $PMSize != "None")	
