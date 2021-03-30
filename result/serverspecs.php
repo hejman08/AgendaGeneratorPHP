@@ -697,12 +697,12 @@ $ModuleCount = 12; //start with max # of modules and remove from each blank size
 
                         $ARMCPU = 4;
                         $ARMRAM = 12;
-                        $SEMDisk = "60GB";
+                        $ARMDisk = "60GB";
                         break;
-                    case "10000+":
+                    case "10000":
                         $ARMCPU = 4;
                         $ARMRAM = 16;
-                        $SEMDisk = "60GB";
+                        $ARMDisk = "60GB";
                         break;
                     
                 }
