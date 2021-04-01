@@ -32,7 +32,7 @@ if ($formValidated == 1) {
                 $html .= $modulesInstalled;
             }   
             if($modulesToBeInstalled != "<ul></ul>") {
-                $html .= "<h1>Software To Be Installed</h1>";
+                $html .= "<h1>Software to Be Installed</h1>";
                 $html .= $modulesToBeInstalled;
             }   
                      
