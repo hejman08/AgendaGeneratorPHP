@@ -3,9 +3,20 @@ function serverSpecs() {
     
 //figure out what size category each module falls into
 global $NPMSize, $NCMSize, $NTASize, $SAMSize, $SCMSize, $IPAMSize, $UDTSize, $VNQMSize, $WPMSize, $LASize, $SEMSize, $DPASize, $WHDSize, $PMSize, $ARMSize, $SRMSize, $VMANSize;
-global $numAPEs, $numAWSss, $hasHA, $hasKiwi, $hasDW, $hasEOC, $hasAPM, $numDPA, $numWHD;
-global $numAWSs, $hasDPA, $hasPM, $hasSEM, $hasNTA, $hasLA, $hasARM;
+global $numAPEsInstalled, $numAPEsToInstall, $hasHA, $hasKiwi, $hasDW, $hasEOC, $hasAPM, $numDPA, $numWHD;
+global $numAWSsInstalled, $numAWSsToInstall, $hasDPA, $hasPM, $hasSEM, $hasNTA, $hasLA, $hasARM;
 global $isOrionEng;
+
+//calculate total of installed & new APEs & AWSs
+$numAPEs = 0;
+$numAWSs = 0;
+if ($numAPEsInstalled != '') {
+    $numAPEs += $numAPEsInstalled;
+}
+if ($numAPEsToInstall != '') {
+    $numAPEs += $numAPEsInstalled;
+}
+
 $ModuleCount = 12; //start with max # of modules and remove from each blank sized module in Orion
 
     //Weight Orion modules based on size selected
