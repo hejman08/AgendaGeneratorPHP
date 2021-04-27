@@ -4,7 +4,7 @@ global $numAPEs;
 if ($HADays > 0)
     {
         $html .= "<h2>" . dayHeader($HADays, "HA Best Practices Configuration") . "</h2>\n"
-        . "<h3>HA Configuration Tasks</h3>\n"
+        . "<h3>HA Standard Configuration Tasks</h3>\n"
         . "<ul><li>Pre-install validation checks</li>\n"
         . "<ul><li>Server configuration</li>\n"
         . "<li>Network configuration</li>\n"

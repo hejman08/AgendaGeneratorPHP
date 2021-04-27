@@ -3,7 +3,7 @@ global $AdminKTDays, $isOrionEng, $modules, $KTModules;
 if ($AdminKTDays > 0)
     {
         $html .= "<h2>" . dayHeader($AdminKTDays, "Verbal Knowledge Transfer") . "</h2>\n"
-             . "<h3>SolarWinds Administrative Tasks</h3>\n"
+             //. "<h3>SolarWinds Administrative Tasks</h3>\n"
                        # $html .= "<ul><li>User access control</li>\n";
                        # $html .= "<li>Upgrades/Patching</li>\n";
                        # $html .= "<li>Application security</li>\n";

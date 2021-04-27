@@ -7,6 +7,7 @@ function day1Bits() {
     global $HCRemediationDays;
     global $servers;
     global $hasNetworkModules;
+    global $modulesToBeInstalled, $modulesInstalled;
     global $Day1Bits;
     global $EngagementType;
     global $DBMigration;
@@ -310,11 +311,13 @@ function day1Bits() {
                                 $html .= "<li>Dashboard requirements</li>\n"
                                 . "<li>Mapping requirements</li>\n";
                             }
-                            $html .= "</ul>"
-                            . "<h3>Installation Tasks</h3>\n"
+                            $html .= "</ul>";
+                            if ($modulesToBeInstalled != "<ul></ul>"){
+                            $html .= "<h3>Installation Tasks</h3>\n"
                             . "<ul>\n<li>Software Installs</li>\n"
-                            . $modules
+                            . $modulesToBeInstalled
                             . "</ul>\n"; //end of software install
+                            }
 
                             break;
                         case "NewBuild":
@@ -397,10 +400,13 @@ function day1Bits() {
                                 $html .= "<li>Dashboard requirements</li>\n"
                                 . "<li>Mapping requirements</li>\n";
                             }
-                            $html .= "</ul>\n</ul>\n<h3>Installation Tasks</h3>\n"
-                            . "<ul>\n<li>Software Installs</li>\n\n"
-                            . $modules
-                            . "</ul>\n</ul>\n"; //end of software install
+                            $html .= "</ul>";
+                            if ($modulesToBeInstalled != "<ul></ul>"){
+                                $html .= "<h3>Installation Tasks</h3>\n"
+                                . "<ul>\n<li>Software Installs</li>\n"
+                                . $modulesToBeInstalled
+                                . "</ul>\n"; //end of software install
+                                }
 
                             break;
 

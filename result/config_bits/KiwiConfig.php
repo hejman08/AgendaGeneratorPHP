@@ -3,7 +3,7 @@ global $KiwiDays;
 if ($KiwiDays > 0)
     {
         $html .= "<h2>" . dayHeader($KiwiDays, "Kiwi Syslog Server Best Practices Configuration") . "</h2>\n"
-        . "<h3>Kiwi Syslog Configuration Tasks</h3>\n"
+        . "<h3>Kiwi Syslog Standard Configuration Tasks</h3>\n"
         . "<ul><li>Web Access</li>\n"
         . "<ul><li>User access</li>\n"
         . "<ul><li>Pass-through authentication</li>\n"

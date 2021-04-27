@@ -3,15 +3,18 @@
     <tr>    
         <th></th>
         <th>Include in HC?</th>
-        <th>Config Days</th>
-        <th>Training Days</th>
-        <th>Size (for Server Specs)</th>
+        <th>Config</th>
+        <th>User Training</th>
+        <th>Admin Training</th>
+        <th>License Size</th>
+        <th>Currently Installed?</th>
     </tr>
     <tr>
         <td><strong>NPM</strong></td>
         <td><input type="checkbox" name="chkIncludeNPM"></td>
         <td><input type="number" name="NPMDays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="NPMTrainDays" step="0.5" min="0" max="100"></td>
+        <td><input type="number" name="NPM100" step="0.5" min="0" max="100"></td>
+        <td><input type="number" name="NPM200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="NPMSize">
                 <option value="None"></option>
@@ -22,24 +25,28 @@
                 <option value="SLX">SLX</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkNPMInstalled"></td>
     </tr>
     <tr>
         <td><strong>NTA</strong></td>
         <td><input type="checkbox" name="chkIncludeNTA"></td>
         <td><input type="number" name="NTADays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="NTATrainDays" step="0.5" min="0" max="100"></td>
+        <td><!--<input type="number" name="NTA100" step="0.5" min="0" max="100">--></td>
+        <td><input type="number" name="NTA200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="NTASize">
                 <option value="None"></option>
                 <option value="Yes">Yes</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkNTAInstalled"></td>
     </tr>
     <tr>
         <td><strong>NCM</strong></td>
         <td><input type="checkbox" name="chkIncludeNCM"></td>
         <td><input type="number" name="NCMDays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="NCMTrainDays" step="0.5" min="0" max="100"></td>
+        <td><input type="number" name="NCM100" step="0.5" min="0" max="100"></td>
+        <td><input type="number" name="NCM200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="NCMSize">
                 <option value="None"></option>
@@ -52,12 +59,14 @@
                 <option value="DLX">DLX</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkNCMInstalled"></td>
     </tr>
     <tr>
         <td><strong>SAM</strong></td>
         <td><input type="checkbox" name="chkIncludeSAM"></td>
         <td><input type="number" name="SAMDays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="SAMTrainDays" step="0.5" min="0" max="100"></td>
+        <td><input type="number" name="SAM100" step="0.5" min="0" max="100"></td>
+        <td><input type="number" name="SAM200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="SAMSize">
                 <option value="None"></option>
@@ -78,12 +87,14 @@
                 <option value="SAM400">SAM400+</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkSAMInstalled"></td>
     </tr>
     <tr>
         <td><strong>IPAM</strong></td>
         <td><input type="checkbox" name="chkIncludeIPAM"></td>
         <td><input type="number" name="IPAMDays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="IPAMTrainDays" step="0.5" min="0" max="100"></td>
+        <td><!--<input type="number" name="IPAM100" step="0.5" min="0" max="100">--></td>
+        <td><input type="number" name="IPAM200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="IPAMSize">
                 <option value="None"></option>
@@ -93,12 +104,14 @@
                 <option value="IPX">IPX</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkIPAMInstalled"></td>
     </tr>
     <tr>
         <td><strong>UDT</strong></td>
         <td><input type="checkbox" name="chkIncludeUDT"></td>
         <td><input type="number" name="UDTDays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="UDTTrainDays" step="0.5" min="0" max="100"></td>
+        <td><!--<input type="number" name="UDT100" step="0.5" min="0" max="100">--></td>
+        <td><input type="number" name="UDT200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="UDTSize">
                 <option value="None"></option>
@@ -110,12 +123,14 @@
                 <option value="UTX">UTX</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkUDTInstalled"></td>
     </tr>
     <tr>
         <td><strong>VNQM</strong></td>
         <td><input type="checkbox" name="chkIncludeVNQM"></td>
         <td><input type="number" name="VNQMDays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="VNQMTrainDays" step="0.5" min="0" max="100"></td>
+        <td><!--<input type="number" name="VNQM100" step="0.5" min="0" max="100">--></td>
+        <td><input type="number" name="VNQM200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="VNQMSize">
                 <option value="None"></option>
@@ -123,15 +138,16 @@
                 <option value="SLA25">SLA25</option>
                 <option value="SLA50">SLA50</option>
                 <option value="SLAX">SLAX</option>
-
             </select>
         </td>
+        <td><input type="checkbox" name="chkVNQMInstalled"></td>
     </tr>
     <tr>
         <td><strong>WPM</strong></td>
         <td><input type="checkbox" name="chkIncludeWPM"></td>
         <td><input type="number" name="WPMDays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="WPMTrainDays" step="0.5" min="0" max="100"></td>
+        <td><!--<input type="number" name="WPM100" step="0.5" min="0" max="100">--></td>
+        <td><input type="number" name="WPM200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="WPMSize">
                 <option value="None"></option>
@@ -144,12 +160,14 @@
                 <option value="WPX">WPX</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkWPMInstalled"></td>
     </tr> 
     <tr>
         <td><strong>VMAN</strong></td>
         <td><input type="checkbox" name="chkIncludeVMAN"></td>
         <td><input type="number" name="VMANDays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="VMANTrainDays" step="0.5" min="0" max="100"></td>
+        <td><!--<input type="number" name="VMAN100" step="0.5" min="0" max="100">--></td>
+        <td><input type="number" name="VMAN200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="VMANSize">
                 <option value="None"></option>
@@ -164,12 +182,14 @@
                 <option value="VM640">VM640</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkVMANInstalled"></td>
     </tr>
     <tr>
         <td><strong>SRM</strong></td>
         <td><input type="checkbox" name="chkIncludeSRM"></td>
         <td><input type="number" name="SRMDays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="SRMTrainDays" step="0.5" min="0" max="100"></td>
+        <td><!--<input type="number" name="SRM100" step="0.5" min="0" max="100">--></td>
+        <td><input type="number" name="SRM200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="SRMSize">
                 <option value="None"></option>
@@ -186,12 +206,14 @@
             </select>
             <input type="checkbox" name="chkSRMProfiler"> SRM is Profiler
         </td>
+        <td><input type="checkbox" name="chkSRMInstalled"></td>
     </tr>    
     <tr>
         <td><strong>LA</strong></td>
         <td><input type="checkbox" name="chkIncludeLA"></td>
         <td><input type="number" name="LADays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="LATrainDays" step="0.5" min="0" max="100"></td>
+        <td><!--<input type="number" name="LA100" step="0.5" min="0" max="100">--></td>
+        <td><input type="number" name="LA200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="LASize">
                 <option value="None"></option>
@@ -204,12 +226,14 @@
                 <option value="LA1000">LA1000</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkLAInstalled"></td>
     </tr>
     <tr>
         <td><strong>SCM</strong></td>
         <td><input type="checkbox" name="chkIncludeSCM"></td>
         <td><input type="number" name="SCMDays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="SCMTrainDays" step="0.5" min="0" max="100"></td>
+        <td><!--<input type="number" name="SCM100" step="0.5" min="0" max="100">--></td>
+        <td><input type="number" name="SCM200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="SCMSize">
                 <option value="None"></option>
@@ -222,12 +246,14 @@
                 <option value="SCM1000">SCM1000</option>
             </select>
         </td>
+        <td><input type="checkbox" name="chkSCMInstalled"></td>
     </tr>
     <tr>
         <td><strong>SEM</strong></td>
         <td><input type="checkbox" name="chkIncludeSEM"></td>
         <td><input type="number" name="SEMDays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="SEMTrainDays" step="0.5" min="0" max="100"></td>
+        <td><!--<input type="number" name="SEM200" step="0.5" min="0" max="100">--></td>
+        <td><input type="number" name="SEM200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="SEMSize">
                 <option value="None"># of Events/Day</option>
@@ -242,44 +268,63 @@
                 <option value="215M">215M</option>
 
             </select>
+            
+        <td><input type="checkbox" name="chkSEMInstalled"></td>
         </td>
     </tr>
     <tr>
         <td><strong>DPA</strong></td>
         <td><input type="checkbox" name="chkIncludeDPA"></td>
         <td><input type="number" name="DPADays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="DPATrainDays" step="0.5" min="0" max="100"></td>
+        <td><!--<input type="number" name="DPA100" step="0.5" min="0" max="100">--></td>
+        <td><input type="number" name="DPA200" step="0.5" min="0" max="100"></td>
         <td>
         <input type="number" name="numDPA" step="1" min="0" max="500"> Instances
         </td>
+        <td><input type="checkbox" name="chkDPAInstalled"></td>
     </tr>
     <tr>
         <td><strong>WHD</strong></td>
         <td><input type="checkbox" name="chkIncludeWHD"></td>
         <td><input type="number" name="WHDDays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="WHDTrainDays" step="0.5" min="0" max="100"></td>
+        <td><!--<input type="number" name="WHD100" step="0.5" min="0" max="100">--></td>
+        <td><input type="number" name="WHD200" step="0.5" min="0" max="100"></td>
         <td>
         <input type="number" name="numWHD" step="1" min="0" max="500"> Seats
         </td>
+        <td><input type="checkbox" name="chkWHDInstalled"></td>
     </tr>
     <tr>
         <td><strong>PM</strong></td>
         <td><input type="checkbox" name="chkIncludePM"></td>
         <td><input type="number" name="PMDays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="PMTrainDays" step="0.5" min="0" max="100"></td>
+        <td><!--<input type="number" name="PM100" step="0.5" min="0" max="100">--></td>
+        <td><input type="number" name="PM200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="PMSize">
                 <option value="None"></option>
-                <option value="No">No</option>
-                <option value="Yes">Yes</option>
+                <option value="PM250">PM250</option>
+                <option value="PM500">PM500</option>
+                <option value="PM1000">PM1000</option>
+                <option value="PM2000">PM2000</option>
+                <option value="PM4000">PM4000</option>
+                <option value="PM8000">PM8000</option>
+                <option value="PM14000">PM14000</option>
+                <option value="PM20000">PM20000</option>
+                <option value="PM30000">PM30000</option>
+                <option value="PM40000">PM40000</option>
+                <option value="PM60000">PM60000</option>
             </select>
         </td>
+        
+        <td><input type="checkbox" name="chkPMInstalled"></td>
     </tr>
     <tr>
         <td><strong>ARM</strong></td>
         <td><input type="checkbox" name="chkIncludeARM"></td>
         <td><input type="number" name="ARMDays" step="0.5" min="0" max="100"></td>
-        <td><input type="number" name="ARMTrainDays" step="0.5" min="0" max="100"></td>
+        <td><!--<input type="number" name="ARM100" step="0.5" min="0" max="100">--></td>
+        <td><input type="number" name="ARM200" step="0.5" min="0" max="100"></td>
         <td>
             <select name="ARMSize">
                 <option value="None"></option>
@@ -288,5 +333,7 @@
                 <option value="10000">10000+</option>
             </select> Users
         </td>
+        
+        <td><input type="checkbox" name="chkARMInstalled"></td>
     </tr>
 </table>

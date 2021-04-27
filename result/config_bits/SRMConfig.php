@@ -22,13 +22,28 @@ if ($SRMDays > 0)
             . "<li>SRM Profiler integration (if Profiler is in use)</li></ul></ul>\n"
             . "</ul>";
         } else {
-            $html .= "<ul><li>Configuration of credentials</li>\n"
+            $html .= "<h3>SRM Standard Configuration Tasks</h3>\n"
+            . "<ul>\n"
+            . "<li>Configuration of credentials</li>\n"
             . "<li>Validation/Import of storage arrays</li>\n"
+            . "<li>Advanced alert configuration</li>\n"
+            . "<ul>\n"
+            . "<li>Noise Reduction</li>\n"
+            . "<li>Notification</li>\n"
+            . "<li>Escalation</li>\n"
+            . "<li>Severity</li>\n"
+            . "</ul>\n"
+            . "</ul>\n"
+            . "<h3>SRM Optional Configuration Tasks</h3>\n"
+            . "<ul>\n"
             . "<li>Configuration of groups</li>\n"
-            . "<li>Configuration of alerts</li>\n"
-            . "<li>Configuration of reports/schedules</li>\n"
-            . "<li>AppStack Overview</li>\n"
-            . "</ul>";
+            . "<li>Reporting</li>\n"
+            . "<ul>\n"
+            . "<li>Report creation</li>\n"
+            . "<li>Automation scheduling</li>\n"
+            . "</ul>\n"
+            . "</ul>\n";
+            
         }
     }
 ?>

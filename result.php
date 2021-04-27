@@ -18,7 +18,6 @@ include_once ("result/serverspecs.php"); //contains PHP function for generating 
 include_once ("result/intros.php"); //contains intro paragraphs for different engagement types
 include_once ("result/day1bits.php");
 include_once ("result/listservers.php");
-
 $formValidated = validateForm();
 
 if ($formValidated == 1) {
@@ -26,8 +25,18 @@ if ($formValidated == 1) {
     {     
             $html = "<h1>Project Overview</h1>";
             $html .= introPara();
-            $html .= "<h1>SolarWinds Software List & Acronyms</h1>";
+            $html .= "<h1>SolarWinds Acronyms</h1>";
             $html .= $acronyms;
+            if($modulesInstalled != "<ul></ul>") {
+                $html .= "<h1>Currently Installed Software</h1>";
+                $html .= $modulesInstalled;
+            }   
+            if($modulesToBeInstalled != "<ul></ul>") {
+                $html .= "<h1>Software to Be Installed</h1>";
+                $html .= $modulesToBeInstalled;
+            }   
+                     
+        
             if ($GLOBALS['NeedsSpecs'] == 1) {
                 $html .= serverSpecs();
             }
@@ -58,25 +67,30 @@ if ($formValidated == 1) {
             include_once ("result/config_bits/WHDConfig.php");
             include_once ("result/config_bits/ARMConfig.php");
             include_once ("result/config_bits/APMConfig.php");
-            include_once ("result/training_bits/NPMTraining.php");
-            include_once ("result/training_bits/NCMTraining.php");
-            include_once ("result/training_bits/NTATraining.php");
-            include_once ("result/training_bits/SAMTraining.php");
-            include_once ("result/training_bits/SCMTraining.php");
-            include_once ("result/training_bits/IPAMTraining.php");
-            include_once ("result/training_bits/UDTTraining.php");
-            include_once ("result/training_bits/VNQMTraining.php");
-            include_once ("result/training_bits/WPMTraining.php");
-            include_once ("result/training_bits/SRMTraining.php");
-            include_once ("result/training_bits/VMANTraining.php");
-            include_once ("result/training_bits/LATraining.php");
-            include_once ("result/training_bits/DPATraining.php");
-            include_once ("result/training_bits/SEMTraining.php");
-            include_once ("result/training_bits/PMTraining.php");
+            include_once ("result/training_bits/NPM100.php");
+            include_once ("result/training_bits/NPM200.php");
+            include_once ("result/training_bits/NCM100.php");
+            include_once ("result/training_bits/NCM200.php");
+            include_once ("result/training_bits/NTA200.php");
+            include_once ("result/training_bits/SAM100.php");
+            include_once ("result/training_bits/SAM200.php");
+            include_once ("result/training_bits/SCM200.php");
+            include_once ("result/training_bits/IPAM200.php");
+            include_once ("result/training_bits/UDT200.php");
+            include_once ("result/training_bits/VNQM200.php");
+            include_once ("result/training_bits/WPM200.php");
+            include_once ("result/training_bits/SRM200.php");
+            include_once ("result/training_bits/VMAN200.php");
+            include_once ("result/training_bits/LA200.php");
+            include_once ("result/training_bits/DPA200.php");
+            include_once ("result/training_bits/SEM200.php");
+            include_once ("result/training_bits/PM200.php");
             include_once ("result/training_bits/APITraining.php");
             include_once ("result/config_bits/AsBuilt.php");
+            include_once ("result/config_bits/runbook.php");
             include_once ("result/config_bits/AdminKT.php");
             include_once ("result/config_bits/MSEBlurb.php");
+            
             include_once ("result/assumptions.php");
     }
     elseif ($GLOBALS['EngagementType'] == "SpecsOnly")  {

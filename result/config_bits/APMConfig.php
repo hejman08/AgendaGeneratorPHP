@@ -3,7 +3,7 @@ global $APMDays;
 if ($APMDays > 0)
     {
         $html .=  "<h2>" . dayHeader($APMDays, "APM Best Practices Configuration") . "</h2>\n"
-        .  "<h3>APM Configuration Tasks</h3>\n"
+        .  "<h3>APM Standard Configuration Tasks</h3>\n"
         .  "<ul><li>Deployment of Host agents</li>\n"
         .  "<ul><li>Host Agent Plugins</li>\n"
         .  "<ul><li>Apache</li>\n"
