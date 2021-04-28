@@ -1,8 +1,8 @@
 <?php 
-global $SEMTrainDays;
-if ($SEMTrainDays > 0)
+global $SEM200;
+if ($SEM200 > 0)
     {
-        $html .= "<h2>" . dayHeader($SEMTrainDays, "SEM User Training") . "</h2>\n"
+        $html .= "<h2>" . dayHeader($SEM200, "SEM Admin Training") . "</h2>\n"
         . "<h3>SEM Training Topics</h3>\n"
         . "<ul><li>Understanding SEM Deployment</li>\n"
         . "<ul><li>SEM Appliance Considerations</li>\n"

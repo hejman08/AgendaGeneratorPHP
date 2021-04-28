@@ -3,7 +3,7 @@ global $NPM100;
 if ($NPM100 > 0)
     {
         $html .= "<h2>" . dayHeader($NPM100, "NPM User Training") . "</h2>\n"
-        . "<h3>Orion Training Topics</h3>\n"
+        . "<h3>NPM Training Topics</h3>\n"
         . "<ul>\n"
         . "<li>Using the Orion NPM Web Console</li>\n"
         . "<li>Populating the Orion NPM Node Database\n"

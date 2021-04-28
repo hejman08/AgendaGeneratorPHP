@@ -1,8 +1,8 @@
 <?php 
-global $PMTrainDays;
-if ($PMTrainDays > 0)
+global $PM200;
+if ($PM200 > 0)
     {
-        $html .= "<h2>" . dayHeader($PMTrainDays, "PM User Training") . "</h2>\n"
+        $html .= "<h2>" . dayHeader($PM200, "PM Admin Training") . "</h2>\n"
         . "<h3>PM Training Topics</h3>\n"
         . "<ul><li>Configuring managed clients</li>\n"
         . "<ul><li>Via group policy</li></ul>\n"

@@ -1,28 +1,36 @@
 <?php 
-global $VNQMTrainDays;
-if ($VNQMTrainDays > 0)
+global $VNQM200;
+if ($VNQM200 > 0)
     {
-        $html .= "<h2>" . dayHeader($VNQMTrainDays, "VNQM User Training") . "</h2>\n"
+        $html .= "<h2>" . dayHeader($VNQM200, "VNQM Admin Training") . "</h2>\n"
         . "<h3>VNQM Training Topics</h3>\n"
-        . "<ul><li>VNQM Compatible Sources</li>\n"
-        . "<ul><li>Cisco IPSLA compatible devices</li>\n"
-        . "<li>Cisco Call managers</li>\n"
-        . "<li>Avaya Call managers</li></ul>\n"
+        . "<ul>\n"
+        . "<li>Understanding VNQM Prerequisites<br />\n"
+        . "<ul>\n"
+        . "<li>Orion NPM &amp; Service Packs</li>\n"
+        . "<li>VNQM Capable Sources</li>\n"
+        . "</ul>\n"
+        . "</li>\n"
+        . "<li>Using the VNQM Web Console<br />\n"
+        . "<ul>\n"
         . "<li>Adding VNQM Devices</li>\n"
-        . "<li>Defining IPSLA operations</li>\n"
-        . "<ul><li>Understanding IPSLA operation types</li>\n"
-        . "<li>Working with IPSLA thresholds</li>\n"
-        . "<li>Configuring new IPSLA operations</li>\n"
-        . "<li>Adding existing (pre-configured) IPSLA operations</li></ul>\n"
-        . "<li>Configuring Call Manager Nodes</li>\n"
-        . "<ul><li>Configuring Call Manager server access</li>\n"
-        . "<li>Configuring CDR/CMR FTP settings</li></ul>\n"
-        . "<li>Understanding call detail records</li>\n"
-        . "<li>Leveraging VNQM statistics in Orion Mapping</li>\n"
-        . "<ul><li>Using VNQM data in maps</li></ul>\n"
-        . "<li>Working with VNQM alerts</li>\n"
-        . "<li>Working with VNQM in reports</li>\n"
-
-        . "</ul>";
+        . "<li>Defining VNQM Operations<br />\n"
+        . "<ul>\n"
+        . "<li>Understanding VNQM Operation Types</li>\n"
+        . "<li>IPSLA Operations</li>\n"
+        . "<li>Call Managers</li>\n"
+        . "</ul>\n"
+        . "</li>\n"
+        . "</ul>\n"
+        . "</li>\n"
+        . "<li>Leveraging VNQM Statistics in Network Atlas<br />\n"
+        . "<ul>\n"
+        . "<li>Using VNQM Data in Maps</li>\n"
+        . "</ul>\n"
+        . "</li>\n"
+        . "<li>Working with VNQM Alerts</li>\n"
+        . "<li>Working with VNQM Reports and Groups</li>\n"
+        . "</ul>\n";
+        
     }
 ?>

@@ -1,8 +1,8 @@
 <?php 
-global $VMANTrainDays;
-if ($VMANTrainDays > 0)
+global $VMAN200;
+if ($VMAN200 > 0)
     {
-        $html .= "<h2>" . dayHeader($VMANTrainDays, "VMAN User Training") . "</h2>\n"
+        $html .= "<h2>" . dayHeader($VMAN200, "VMAN Admin Training") . "</h2>\n"
         . "<h3>VMAN Training Topics</h3>\n"
         . "<ul><li>Import of vCenter(s)/ESX hosts</li>\n"
         . "<li>Import of Hyper-V hosts</li>\n"

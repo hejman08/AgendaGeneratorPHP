@@ -2,7 +2,7 @@
 <table class="w3-table-all">
     <tr>    
         <th></th>
-        <th>Include in HC?</th>
+        <!--<th>Include in HC?</th>-->
         <th>Config</th>
         <th>User Training</th>
         <th>Admin Training</th>
@@ -11,7 +11,7 @@
     </tr>
     <tr>
         <td><strong>NPM</strong></td>
-        <td><input type="checkbox" name="chkIncludeNPM"></td>
+        <!--<td><input type="checkbox" name="chkIncludeNPM"></td>-->
         <td><input type="number" name="NPMDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="NPM100" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="NPM200" step="0.5" min="0" max="100"></td>
@@ -29,7 +29,7 @@
     </tr>
     <tr>
         <td><strong>NTA</strong></td>
-        <td><input type="checkbox" name="chkIncludeNTA"></td>
+        <!--<td><input type="checkbox" name="chkIncludeNTA"></td>-->
         <td><input type="number" name="NTADays" step="0.5" min="0" max="100"></td>
         <td><!--<input type="number" name="NTA100" step="0.5" min="0" max="100">--></td>
         <td><input type="number" name="NTA200" step="0.5" min="0" max="100"></td>
@@ -43,7 +43,7 @@
     </tr>
     <tr>
         <td><strong>NCM</strong></td>
-        <td><input type="checkbox" name="chkIncludeNCM"></td>
+        <!--<td><input type="checkbox" name="chkIncludeNCM"></td>-->
         <td><input type="number" name="NCMDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="NCM100" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="NCM200" step="0.5" min="0" max="100"></td>
@@ -63,7 +63,7 @@
     </tr>
     <tr>
         <td><strong>SAM</strong></td>
-        <td><input type="checkbox" name="chkIncludeSAM"></td>
+        <!--<td><input type="checkbox" name="chkIncludeSAM"></td>-->
         <td><input type="number" name="SAMDays" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="SAM100" step="0.5" min="0" max="100"></td>
         <td><input type="number" name="SAM200" step="0.5" min="0" max="100"></td>
@@ -91,7 +91,7 @@
     </tr>
     <tr>
         <td><strong>IPAM</strong></td>
-        <td><input type="checkbox" name="chkIncludeIPAM"></td>
+        <!--<td><input type="checkbox" name="chkIncludeIPAM"></td>-->
         <td><input type="number" name="IPAMDays" step="0.5" min="0" max="100"></td>
         <td><!--<input type="number" name="IPAM100" step="0.5" min="0" max="100">--></td>
         <td><input type="number" name="IPAM200" step="0.5" min="0" max="100"></td>
@@ -108,7 +108,7 @@
     </tr>
     <tr>
         <td><strong>UDT</strong></td>
-        <td><input type="checkbox" name="chkIncludeUDT"></td>
+        <!--<td><input type="checkbox" name="chkIncludeUDT"></td>-->
         <td><input type="number" name="UDTDays" step="0.5" min="0" max="100"></td>
         <td><!--<input type="number" name="UDT100" step="0.5" min="0" max="100">--></td>
         <td><input type="number" name="UDT200" step="0.5" min="0" max="100"></td>
@@ -127,7 +127,7 @@
     </tr>
     <tr>
         <td><strong>VNQM</strong></td>
-        <td><input type="checkbox" name="chkIncludeVNQM"></td>
+        <!--<td><input type="checkbox" name="chkIncludeVNQM"></td>-->
         <td><input type="number" name="VNQMDays" step="0.5" min="0" max="100"></td>
         <td><!--<input type="number" name="VNQM100" step="0.5" min="0" max="100">--></td>
         <td><input type="number" name="VNQM200" step="0.5" min="0" max="100"></td>
@@ -144,7 +144,7 @@
     </tr>
     <tr>
         <td><strong>WPM</strong></td>
-        <td><input type="checkbox" name="chkIncludeWPM"></td>
+        <!--<td><input type="checkbox" name="chkIncludeWPM"></td>-->
         <td><input type="number" name="WPMDays" step="0.5" min="0" max="100"></td>
         <td><!--<input type="number" name="WPM100" step="0.5" min="0" max="100">--></td>
         <td><input type="number" name="WPM200" step="0.5" min="0" max="100"></td>
@@ -164,7 +164,7 @@
     </tr> 
     <tr>
         <td><strong>VMAN</strong></td>
-        <td><input type="checkbox" name="chkIncludeVMAN"></td>
+        <!--<td><input type="checkbox" name="chkIncludeVMAN"></td>-->
         <td><input type="number" name="VMANDays" step="0.5" min="0" max="100"></td>
         <td><!--<input type="number" name="VMAN100" step="0.5" min="0" max="100">--></td>
         <td><input type="number" name="VMAN200" step="0.5" min="0" max="100"></td>
@@ -186,7 +186,7 @@
     </tr>
     <tr>
         <td><strong>SRM</strong></td>
-        <td><input type="checkbox" name="chkIncludeSRM"></td>
+        <!--<td><input type="checkbox" name="chkIncludeSRM"></td>-->
         <td><input type="number" name="SRMDays" step="0.5" min="0" max="100"></td>
         <td><!--<input type="number" name="SRM100" step="0.5" min="0" max="100">--></td>
         <td><input type="number" name="SRM200" step="0.5" min="0" max="100"></td>
@@ -210,7 +210,7 @@
     </tr>    
     <tr>
         <td><strong>LA</strong></td>
-        <td><input type="checkbox" name="chkIncludeLA"></td>
+        <!--<td><input type="checkbox" name="chkIncludeLA"></td>-->
         <td><input type="number" name="LADays" step="0.5" min="0" max="100"></td>
         <td><!--<input type="number" name="LA100" step="0.5" min="0" max="100">--></td>
         <td><input type="number" name="LA200" step="0.5" min="0" max="100"></td>
@@ -230,7 +230,7 @@
     </tr>
     <tr>
         <td><strong>SCM</strong></td>
-        <td><input type="checkbox" name="chkIncludeSCM"></td>
+        <!--<td><input type="checkbox" name="chkIncludeSCM"></td>-->
         <td><input type="number" name="SCMDays" step="0.5" min="0" max="100"></td>
         <td><!--<input type="number" name="SCM100" step="0.5" min="0" max="100">--></td>
         <td><input type="number" name="SCM200" step="0.5" min="0" max="100"></td>
@@ -250,7 +250,7 @@
     </tr>
     <tr>
         <td><strong>SEM</strong></td>
-        <td><input type="checkbox" name="chkIncludeSEM"></td>
+       <!-- <td><input type="checkbox" name="chkIncludeSEM"></td>-->
         <td><input type="number" name="SEMDays" step="0.5" min="0" max="100"></td>
         <td><!--<input type="number" name="SEM200" step="0.5" min="0" max="100">--></td>
         <td><input type="number" name="SEM200" step="0.5" min="0" max="100"></td>
@@ -274,7 +274,7 @@
     </tr>
     <tr>
         <td><strong>DPA</strong></td>
-        <td><input type="checkbox" name="chkIncludeDPA"></td>
+        <!--<td><input type="checkbox" name="chkIncludeDPA"></td>-->
         <td><input type="number" name="DPADays" step="0.5" min="0" max="100"></td>
         <td><!--<input type="number" name="DPA100" step="0.5" min="0" max="100">--></td>
         <td><input type="number" name="DPA200" step="0.5" min="0" max="100"></td>
@@ -285,10 +285,10 @@
     </tr>
     <tr>
         <td><strong>WHD</strong></td>
-        <td><input type="checkbox" name="chkIncludeWHD"></td>
+       <!-- <td><input type="checkbox" name="chkIncludeWHD"></td>-->
         <td><input type="number" name="WHDDays" step="0.5" min="0" max="100"></td>
         <td><!--<input type="number" name="WHD100" step="0.5" min="0" max="100">--></td>
-        <td><input type="number" name="WHD200" step="0.5" min="0" max="100"></td>
+        <td><input type="number" name="WHD200" step="0.5" min="0" max="100" disabled></td>
         <td>
         <input type="number" name="numWHD" step="1" min="0" max="500"> Seats
         </td>
@@ -296,7 +296,7 @@
     </tr>
     <tr>
         <td><strong>PM</strong></td>
-        <td><input type="checkbox" name="chkIncludePM"></td>
+        <!--<td><input type="checkbox" name="chkIncludePM"></td>-->
         <td><input type="number" name="PMDays" step="0.5" min="0" max="100"></td>
         <td><!--<input type="number" name="PM100" step="0.5" min="0" max="100">--></td>
         <td><input type="number" name="PM200" step="0.5" min="0" max="100"></td>
@@ -321,10 +321,10 @@
     </tr>
     <tr>
         <td><strong>ARM</strong></td>
-        <td><input type="checkbox" name="chkIncludeARM"></td>
+       <!-- <td><input type="checkbox" name="chkIncludeARM"></td>-->
         <td><input type="number" name="ARMDays" step="0.5" min="0" max="100"></td>
         <td><!--<input type="number" name="ARM100" step="0.5" min="0" max="100">--></td>
-        <td><input type="number" name="ARM200" step="0.5" min="0" max="100"></td>
+        <td><input type="number" name="ARM200" step="0.5" min="0" max="100" disabled></td>
         <td>
             <select name="ARMSize">
                 <option value="None"></option>

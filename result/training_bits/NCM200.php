@@ -1,21 +1,25 @@
 <?php 
-global $NCMTrainDays;
-if ($NCMTrainDays > 0)
+global $NCM200;
+if ($NCM200 > 0)
     {
-        $html .= "<h2>" . dayHeader($NCMTrainDays, "NCM User Training") . "</h2>\n"
+        $html .= "<h2>" . dayHeader($NCM200, "NCM Admin Training") . "</h2>\n"
         . "<h3>NCM Training Topics</h3>\n"
-        . "<ul><li>NCM user permissions</li>\n"
-        . "<li>Adding nodes to NCM</li>\n"
-        . "<ul><li>NCM connection profiles</li>\n"
-        . "<li>NCM device templates</li></ul>\n"
-        . "<li>NCM jobs and scheduling backups</li>\n"
-        . "<li>Network Insight for Cisco ASA</li>\n"
-        . "<li>Executing scripts and bulk changes</li>\n"
-        . "<li>Real-time configuration change detection</li>\n"
-        . "<li>Compliance policy reports</li>\n"
-        . "<li>End of sales/end of support reporting</li>\n"
-        . "<li>Cisco & Juniper firmware vulnerabilities reporting</li>\n"
-        . "<li>Introduction to configuration change templates</li>\n"
-        . "</ul>";
+        . "<ul>\n"
+        . "<li>\n"
+        . "<div>Configuration of NCM</div>\n"
+        . "<ul>\n"
+        . "<li>Creating and Managing Users</li>\n"
+        . "<li>Creating Customized Device Templates</li>\n"
+        . "<li>\n"
+        . "<div>Creating Customized Configuration Change Templates</div>\n"
+        . "</li>\n"
+        . "</ul>\n"
+        . "</li>\n"
+        . "<li>Working with and Understanding Compliance Policy Reports</li>\n"
+        . "<li>Overview of Change Approval Process\n"
+        . "<div>&nbsp;</div>\n"
+        . "</li>\n"
+        . "</ul>\n";
+        
     }
 ?>

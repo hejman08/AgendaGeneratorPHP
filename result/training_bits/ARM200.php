@@ -1,9 +1,9 @@
 <?php 
-global $LA200;
-if ($LA200 > 0)
+global $ARM200;
+if ($ARM200 > 0)
     {
-        $html .= "<h2>" . dayHeader($LA200, "LA Admin Training") . "</h2>\n"
-        . "<h3>LA Training Topics</h3>\n"
+        $html .= "<h2>" . dayHeader($ARM200, "ARM Admin Training") . "</h2>\n"
+        . "<h3>ARM Training Topics</h3>\n"
         . "<ul><li>Addition/removal of LA managed nodes</li>\n"
         . "<li>Deployment of Orion agents for server nodes</li>\n"
         . "<li>Configuration of retention settings</li>\n"

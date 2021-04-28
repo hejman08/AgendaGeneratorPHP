@@ -1,8 +1,8 @@
 <?php 
-global $WPMTrainDays;
-if ($WPMTrainDays > 0)
+global $WPM200;
+if ($WPM200 > 0)
     {
-        $html .= "<h2>" . dayHeader($WPMTrainDays, "WPM User Training") . "</h2>\n"
+        $html .= "<h2>" . dayHeader($WPM200, "WPM Admin Training") . "</h2>\n"
         . "<h3>WPM Training Topics</h3>\n"
         . "<ul><li>Licensing considerations</li>\n"
         . "<li>Permissions needed</li>\n"

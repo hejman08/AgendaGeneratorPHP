@@ -1,8 +1,8 @@
 <?php 
-global $SRMTrainDays;
-if ($SRMTrainDays > 0)
+global $SRM200;
+if ($SRM200 > 0)
     {
-        $html .= "<h2>" . dayHeader($SRMTrainDays, "SRM User Training") . "</h2>\n"
+        $html .= "<h2>" . dayHeader($SRM200, "SRM Admin Training") . "</h2>\n"
         . "<h3>SRM Training Topics</h3>\n"
         . "<ul><li>SRM Prerequisites</li>\n"
         . "<li>Adding and removing devices</li>\n"

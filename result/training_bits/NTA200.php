@@ -1,17 +1,32 @@
 <?php 
-global $NTATrainDays;
-if ($NTATrainDays > 0)
+global $NTA200;
+if ($NTA200 > 0)
     {
-        $html .= "<h2>" . dayHeader($NTATrainDays, "NTA User Training") . "</h2>\n"
+        $html .= "<h2>" . dayHeader($NTA200, "NTA Admin Training") . "</h2>\n"
         . "<h3>NTA Training Topics</h3>\n"
-        . "<ul><li>Flow technologies and NBAR2</li>\n"
-        . "<ul><li>Netflow configuration example on Cisco device(s)</li></ul>\n"
-        . "<li>CBQoS polling</li>\n"
-        . "<li>IP address groups</li>\n"
-        . "<li>Custom application monitoring</li>\n"
-        . "<li>NTA flow navigator searches</li>\n"
-        . "<li>Custom NetFlow views</li>\n"
-        . "<li>Integrating endpoint-centric resources with node detail views</li>\n"
-        . "</ul>";
+        . "<ul>\n"
+        . "<li>Understanding Orion NTA Prerequisites<br />\n"
+        . "<ul>\n"
+        . "<li>Database Performance Considerations</li>\n"
+        . "<li>Flow Technologies</li>\n"
+        . "<li>Configuring NetFlow Sources</li>\n"
+        . "</ul>\n"
+        . "</li>\n"
+        . "<li>NetFlow Design Theories</li>\n"
+        . "<li>Using the Orion NTA Web Console<br />\n"
+        . "<ul>\n"
+        . "<li>Viewing NetFlow Sources</li>\n"
+        . "<li>Working &amp; Monitored Applications</li>\n"
+        . "<li>Working &amp; IP Address Groups</li>\n"
+        . "<li>Orion NTA Data Retention</li>\n"
+        . "<li>Configuration of NetFlow on common CISCO devices<br />\n"
+        . "<ul>\n"
+        . "<li>Configuration using both CLI and NCM</li>\n"
+        . "</ul>\n"
+        . "</li>\n"
+        . "</ul>\n"
+        . "</li>\n"
+        . "</ul>\n";
+        
     }
 ?>

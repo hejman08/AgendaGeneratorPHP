@@ -69,7 +69,7 @@ if (isset($_POST['APITraining'])) { $API200 = $_POST['APITraining']; } else { $A
 //NPM
 $chkIncludeNPM = isset($_POST['chkIncludeNPM']) ? 1 : 0;
 if (isset($_POST['NPMDays'])) { $NPMDays = $_POST['NPMDays']; } else { $NPMDays = null;}
-if (isset($_POST['NPM100'])) { $NPM200 = $_POST['NPM100']; } else { $NPM100 = null;}
+if (isset($_POST['NPM100'])) { $NPM100 = $_POST['NPM100']; } else { $NPM100 = null;}
 if (isset($_POST['NPM200'])) { $NPM200 = $_POST['NPM200']; } else { $NPM200 = null;}
 
 //NCM
@@ -86,7 +86,7 @@ if (isset($_POST['NTA200'])) { $NTA200 = $_POST['NTA200']; } else { $NTA200 = nu
 //SAM
 $chkIncludeSAM = isset($_POST['chkIncludeSAM']) ? 1 : 0;
 if (isset($_POST['SAMDays'])) { $SAMDays = $_POST['SAMDays']; } else { $SAMDays = null;}
-if (isset($_POST['SAM100'])) { $SAM200 = $_POST['SAM100']; } else { $SAM100 = null;}
+if (isset($_POST['SAM100'])) { $SAM100 = $_POST['SAM100']; } else { $SAM100 = null;}
 if (isset($_POST['SAM200'])) { $SAM200 = $_POST['SAM200']; } else { $SAM200 = null;}
 
 //IPAM

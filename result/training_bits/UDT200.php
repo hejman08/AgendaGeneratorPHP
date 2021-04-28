@@ -1,14 +1,22 @@
 <?php 
-global $UDTTrainDays;
-if ($UDTTrainDays > 0)
+global $UDT200;
+if ($UDT200 > 0)
     {
-        $html .= "<h2>" . dayHeader($UDTTrainDays, "UDT User Training") . "</h2>\n"
-        . "<h3>UDT Training Topics</h3>"
-        . "<ul><li>Adding nodes and ports to UDT</li>\n"
-        . "<li>Mapping ports to hostname, MAC address and/or IP address</li>\n"
-        . "<li>Monitoring Active Directory domain controllers for user login data</li>\n"
-        . "<li>White list management</li>\n"
-        . "<li>Watch list management</li>\n"
-        . "</ul>";
+        $html .= "<h2>" . dayHeader($UDT200, "UDT Admin Training") . "</h2>\n"
+        . "<h3>UDT Training Topics</h3>\n"
+        . "<ul>\n"
+        . "<li>Understanding and using UDT</li>\n"
+        . "<li>Adding nodes using UDT</li>\n"
+        . "<li>Understanding Ports vs Interfaces</li>\n"
+        . "<li>User Tracking</li>\n"
+        . "<li>Working with Lists<br />\n"
+        . "<ul>\n"
+        . "<li>Whitelisting</li>\n"
+        . "<li>Watch list</li>\n"
+        . "</ul>\n"
+        . "</li>\n"
+        . "<li>Reports and Alerts</li>\n"
+        . "</ul>\n";
+        
     }
 ?>

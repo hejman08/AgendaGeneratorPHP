@@ -1,8 +1,8 @@
 <?php 
-global $DPATrainDays;
-if ($DPATrainDays > 0)
+global $DPA200;
+if ($DPA200 > 0)
     {
-        $html .= "<h2>" . dayHeader($DPATrainDays, "DPA User Training") . "</h2>\n"
+        $html .= "<h2>" . dayHeader($DPA200, "DPA Admin Training") . "</h2>\n"
         . "<h3>DPA Training Topics</h3>\n"
         . "<ul><li>Navigating the application user interface</li>\n"
         . "<li>Using DPA to troubleshoot database issues</li>\n"
