@@ -260,10 +260,10 @@ if ($AWSDays >  0 || $chkIncludeAWSs == 1 || $numAWSsInstalled > 0 || $numAWSsTo
 		$modulesToBeInstalled .= "<li>Additional Web Servers - Qty. " . $numAWSsToInstall . "</li>";
 	}
 }	
-if ($HADays >  0 || $chkIncludeHA == 1)	
+if ($HADays >  0 || $chkIncludeHA == 1 || $numHAInstalled > 0 || $numHAToInstall > 0)	
 {	
     $isOrionEng = true;
-	$modules .= "<li>HA</li>\n";
+	$modules .= "<li>Orion HA</li>\n";
 	$hasNetworkModules = true;
 	$hasHA = true;
 	$acronyms .= "<li><strong>HA</strong> - SolarWinds Orion High Availability</li>\n";
