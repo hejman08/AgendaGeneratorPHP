@@ -266,14 +266,14 @@ if ($HADays >  0 || $chkIncludeHA == 1)
 	$modules .= "<li>HA</li>\n";
 	$hasNetworkModules = true;
 	$hasHA = true;
-	$acronyms .= "<li><strong>HA</strong> - SolarWinds High Availability</li>\n";
+	$acronyms .= "<li><strong>HA</strong> - SolarWinds Orion High Availability</li>\n";
 	
 	if ($numHAInstalled > 0){
-		$modulesInstalled .= "<li>Additional Polling Engines - Qty. " . $numAPEsInstalled . "</li>";
+		$modulesInstalled .= "<li>Orion HA - Qty. " . $numHAInstalled . "</li>";
 	}
 	
 	if ($numAPEsToInstall> 0){
-		$modulesToBeInstalled .= "<li>Additional Polling Engines - Qty. " . $numAPEsToInstall . "</li>";
+		$modulesToBeInstalled .= "<li>Orion HA - Qty. " . $numHAToInstall . "</li>";
 	}
 }	
 if ($EOCDays > 0 || $chkIncludeEOC == 1)

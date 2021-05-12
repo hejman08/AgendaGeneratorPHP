@@ -187,7 +187,7 @@ if (isset($_POST['numAWSsInstalled'])) { $numAWSsInstalled = $_POST['numAWSsInst
 if (isset($_POST['numHAInstalled'])) { $numHAInstalled = $_POST['numHAInstalled']; } else { $numHAInstalled = null;}
 if (isset($_POST['numAPEsToInstall'])) { $numAPEsToInstall = $_POST['numAPEsToInstall']; } else { $numAPEsToInstall = null;}
 if (isset($_POST['numAWSsToInstall'])) { $numAWSsToInstall = $_POST['numAWSsToInstall']; } else { $numAWSsToInstall = null;}
-if (isset($_POST['numHAToInstall'])) { $numHAToInstall = $_POST['numAWSsToInstall']; } else { $numAWSsToInstall = null;}
+if (isset($_POST['numHAToInstall'])) { $numHAToInstall = $_POST['numHAToInstall']; } else { $numHAToInstall = null;}
 if (isset($_POST['numDPA'])) { $numDPA = $_POST['numDPA']; } else { $numDPA = null;}
 if (isset($_POST['numWHD'])) { $numWHD = $_POST['numWHD']; } else { $numWHD = null;}
 if (isset($_POST['NPMSize'])) { $NPMSize = $_POST['NPMSize']; } else {$NPMSize = null; } 

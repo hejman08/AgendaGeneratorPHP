@@ -14,7 +14,7 @@ if ($numAPEsInstalled != '') {
     $numAPEs += $numAPEsInstalled;
 }
 if ($numAPEsToInstall != '') {
-    $numAPEs += $numAPEsInstalled;
+    $numAPEs += $numAPEsToInstall;
 }
 
 $ModuleCount = 12; //start with max # of modules and remove from each blank sized module in Orion
