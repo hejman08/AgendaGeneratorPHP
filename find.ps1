@@ -1,0 +1,1 @@
+﻿Get-ChildItem -recurse | Select-String -pattern "dummy" | group path | select name

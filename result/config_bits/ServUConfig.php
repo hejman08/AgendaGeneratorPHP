@@ -9,7 +9,7 @@ if ($ServUDays > 0)
         . "<li>Serv-U MFT Server</li></ul>\n"
         . "<li>Import of Users – Qty: 250</li>\n"
         . "<ul><li>Domains: 5</li>\n"
-        . "<li>Loop1 Systems will make an attempt to export/import usernames and passwords from the existing solution, but it may require "
+        . "<li>Loop1 Engineer will make an attempt to export/import usernames and passwords from the existing solution, but it may require "
         . "password changes for users to be successful.</li>\n"
         . "<li>Segregation of users to maintain PCI compliance</li>\n"
         . "<li>Integration with Active Directory</li></ul>\n"

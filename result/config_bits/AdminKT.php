@@ -20,7 +20,7 @@ if ($AdminKTDays > 0)
                        # $html .= "<li>Enterprise monitoring best practices</li></ul>\n";
                      
             . "<h3>Verbal Knowledge Transfer</h3>\n"
-            . "<ul><li>Review of key configurations implemented by Loop1 Systems during the engagement";
+            . "<ul><li>Review of key configurations implemented by Loop1 during the engagement";
             
             if ($isOrionEng == true)
                 {

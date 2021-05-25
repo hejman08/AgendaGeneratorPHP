@@ -16,7 +16,7 @@ if ($NPMDays > 0)
         . "<li>Sensor selection</li></ul>\n"
         . "<li>Custom property strategy / configuration / assignment</li>\n"
         . "<li>Group and dependency building</li>\n"
-        . "<ul><li><b class='impact'>Note:</b> group and dependency creation can be an extremely time-consuming process. The Loop1 Systems engineer will create as many as time allows. If a specific "
+        . "<ul><li><b class='impact'>Note:</b> group and dependency creation can be an extremely time-consuming process. The Loop1 engineer will create as many as time allows. If a specific "
         . "quantity is agreed upon it will be indicated here*</li></ul>\n"
         . "<li>Core Dashboard cleanup</li>\n"
         . "<ul><li>Unused / unnecessary resources</li>\n"

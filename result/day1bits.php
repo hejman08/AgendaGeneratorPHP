@@ -49,7 +49,7 @@ function day1Bits() {
         . "<li>Monitoring Gaps</li>\n"
         . "<ul>\n<li>Unused features of currently owned modules</li>\n"
         . "<li>Additional SolarWinds modules that may benefit client</li>\n</ul>\n</ul>\n"
-        . "<h3>Health Check Documentation Creation (Loop1 Systems engineer will go offline to produce required documentation)</h3>\n"
+        . "<h3>Health Check Documentation Creation (Loop1 engineer will go offline to produce required documentation)</h3>\n"
         . "<ul>\n<li>Health Assessment details & recommendations</li>\n</ul>\n";
     }
     if ($HCReviewDays > 0)
