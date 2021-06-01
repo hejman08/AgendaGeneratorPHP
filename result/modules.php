@@ -295,6 +295,11 @@ if ($KiwiDays >  0 || $chkIncludeKiwi == 1)
 	$hasNetworkModules = true;
 	$hasKiwi = true;
 	$acronyms .= "<li><strong>Kiwi Syslog Server</strong></li>\n";
+	if ($chkKiwiInstalled == 1) {
+		$modulesInstalled .= "<li>Kiwi Syslog Server</li>";
+	} else {
+		$modulesToBeInstalled .= "<li>Kiwi Syslog Server</li>";
+	}
 }	
 if ($DWDays >  0 || $chkIncludeDW == 1)	
 {	

@@ -532,6 +532,18 @@ $ModuleCount = 12; //start with max # of modules and remove from each blank size
                 $ReturnStr .= "<li>Drives:</li><ul>\n";
                 $ReturnStr .= "<li>80GB Standard OS Drive (C:)</li>\n";
                 $ReturnStr .= "<li>40GB Application Data Drive (D:)</li>\n</ul>\n</ul>\n";
+            } 
+            if ($hasKiwi == true)
+            {
+                $ReturnStr .= "<h2>Kiwi Syslog Server</h2>\n";
+                $ReturnStr .= "<ul>";
+                $ReturnStr .= "<li>OS - Server 2016 or 2019</li>\n";
+                $ReturnStr .= "<li>CPU - 2 Cores @2.4GHz or better</li>\n";
+                $ReturnStr .= "<li>RAM - 2GB</li>\n";
+                $ReturnStr .= "<li>.Net Framework 4.8</li>\n";
+                $ReturnStr .= "<li>Drives:</li><ul>\n";
+                $ReturnStr .= "<li>80GB Standard OS Drive (C:)</li>\n";
+                $ReturnStr .= "<li>20GB Application Data Drive (D:)</li>\n</ul>\n</ul>\n";
             }
             $DPAUnit = "GB";
             if ($hasDPA == true)

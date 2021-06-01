@@ -224,6 +224,7 @@ $chkDPAInstalled = isset($_POST['chkDPAInstalled']) ? 1 : 0;
 $chkWHDInstalled = isset($_POST['chkWHDInstalled']) ? 1 : 0;
 $chkPMInstalled = isset($_POST['chkPMInstalled']) ? 1 : 0;
 $chkARMInstalled = isset($_POST['chkARMInstalled']) ? 1 : 0;
+$chkKiwiInstalled = isset($_POST['chkKiwiInstalled']) ? 1 : 0;
 
 
 ?>
