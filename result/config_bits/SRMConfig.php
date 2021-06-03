@@ -9,7 +9,7 @@ if ($SRMDays > 0)
             . "<li>Validation/Import of storage arrays</li>\n";
             if ($chkSRMProfiler == true) { 
                 $html .= "<li>Validation/Import of fiber channel switches (Profiler only)</li>\n"
-                . "<li>SRM Profiler integration with Orion Platform</li></ul></ul>\n"; 
+                . "<li>SRM Profiler integration with Orion Platform</li>\n"; 
             }
             $html .= "<li>Advanced alert configuration</li>\n"
             . "<ul>\n"
@@ -29,6 +29,6 @@ if ($SRMDays > 0)
             . "</ul>\n"
             . "</ul>\n";
             
-        }
     }
+    
 ?>
