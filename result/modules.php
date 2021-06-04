@@ -184,9 +184,9 @@ if ($DPADays >  0 || $DPA200 > 0 || $chkIncludeDPA == 1 || $numDPA > 0)
 	$hasDPA = true;
 	$acronyms .= "<li><strong>DPA</strong> - Database Performance Analyzer</li>\n";
 	if ($chkDPAInstalled == 1) {
-		$modulesInstalled .= "<li>DPA - " . $DPASize . " Instances</li>";
+		$modulesInstalled .= "<li>DPA - " . $numDPA . " Instances</li>";
 	} else {
-		$modulesToBeInstalled .= "<li>DPA - " . $DPASize . " Instances</li>";
+		$modulesToBeInstalled .= "<li>DPA - " . $numDPA . " Instances</li>";
 	}
 }	
 if ($WHDDays >  0 || $WHD200 > 0 || $chkIncludeWHD == 1 || $numWHD > 0)	
