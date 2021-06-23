@@ -146,7 +146,7 @@ $ModuleCount = 12; //start with max # of modules and remove from each blank size
         case "SLA 50":
             $VNQMWeight = 2;
             break;
-        case "SLA X":
+        case "SLAX":
             $VNQMWeight = 3;
             break;
         default:
