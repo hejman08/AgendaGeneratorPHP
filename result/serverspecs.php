@@ -17,6 +17,14 @@ if ($numAPEsToInstall != '') {
     $numAPEs += $numAPEsToInstall;
 }
 
+if ($numAWSsInstalled != '') {
+    $numAWSs += $numAWSsInstalled;
+}
+if ($numAWSsToInstall != '') {
+    $numAWSs += $numAWSsToInstall;
+}
+
+
 $ModuleCount = 12; //start with max # of modules and remove from each blank sized module in Orion
 
     //Weight Orion modules based on size selected
