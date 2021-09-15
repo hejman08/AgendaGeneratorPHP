@@ -25,6 +25,11 @@ function day1Bits() {
         . $servers
         . "<h3>Best Practices Evaluation</h3>\n"
         . $modules
+        ."<h3>Orion Security Assessment</h3>"
+        . "<ul>\n<li>SolarWinds Orion Software Configuration</li>\n"
+        . "<li>Microsoft SQL Configuration</li>\n"
+        . "<li>SolarWinds Server/Platform Configuration</li>\n"
+        . "<li>Network Assessment (requires NCM)</li>\n</ul>\n"
         . "<h3>Recommendations</h3>\n"
         . "<ul>\n<li>Future Considerations</li>\n<ul>"
         . "<li>Scalability Limits</li>\n"
